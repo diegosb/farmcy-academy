@@ -1,6 +1,5 @@
 ---
 templateKey: index-page
-image: /img/home-jumbotron.jpg
 hero:
   buttonText: ACESSE TODO O CONTEÚDO
   callActionBig: 7 dias grátis.
@@ -8,7 +7,7 @@ hero:
   heading: >-
     Aprenda o que há de mais atual em alimentação e saúde com especialistas do
     mundo inteiro.
-  imageDesktop: /img/bg_plataforma.png
-  imageMobile: /img/bg_plataforma.png
+  imageDesktop: /img/background-3x.jpg
+  imageMobile: /img/background-mobile.jpg
 ---
 
