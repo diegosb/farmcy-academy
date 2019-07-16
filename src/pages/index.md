@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  buttonText: ACESSE TODO O CONTEÚDO
+  buttonText: Acesse todo o conteúdo
   callActionBig: 7 dias grátis.
   callActionSmall: Tenha acesso ilimitado por
   heading: >-
