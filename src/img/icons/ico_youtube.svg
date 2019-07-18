@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44.527" height="29.611" viewBox="0 0 44.527 29.611">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="44.527" height="29.611" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_youtube" transform="translate(0)" clip-path="url(#clip-path)">
+    <path id="Caminho_166" data-name="Caminho 166" d="M554.073,563.333a9.536,9.536,0,0,0-9.771-9.282H519.316a9.535,9.535,0,0,0-9.77,9.282v11.046a9.536,9.536,0,0,0,9.77,9.283H544.3a9.537,9.537,0,0,0,9.771-9.283Zm-14.694,6.792-11.2,5.267c-.44.225-1.931-.076-1.931-.551V564.03c0-.48,1.5-.782,1.944-.544l10.725,5.543C539.362,569.272,539.834,569.891,539.379,570.125Z" transform="translate(-509.546 -554.051)" fill="#fff"/>
+  </g>
+</svg>

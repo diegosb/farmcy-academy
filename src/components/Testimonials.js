@@ -1,28 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { v4 } from 'uuid'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
 
-const Testimonials = ({ testimonials }) => (
-  <div>
-    {testimonials.map(testimonial => (
-      <article key={v4()} className="message">
-        <div className="message-body">
-          {testimonial.quote}
-          <br />
-          <cite> – {testimonial.author}</cite>
-        </div>
-      </article>
-    ))}
-  </div>
+import Section from './common/Section'
+import Heading from './common/Heading'
+import Button from './common/Button'
+import media from '../theme/media'
+import Subheading from './common/Subheading'
+
+const TestimonialsSection = styled(Section)`
+  padding: 60px 0 120px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ${media.xs`
+      padding: 40px 0;
+  `};
+`
+
+const Testimonials = () => (
+  <TestimonialsSection>
+    <Heading>Conheça quem já faz parte da jornada</Heading>
+    <Subheading>Faça parte da mudança e transforme sua vida agora.</Subheading>
+    <div>Testimonials</div>
+    <Button element={<Link to="/form" />}>INSCREVA-SE AGORA</Button>
+  </TestimonialsSection>
 )
-
-Testimonials.propTypes = {
-  testimonials: PropTypes.arrayOf(
-    PropTypes.shape({
-      quote: PropTypes.string,
-      author: PropTypes.string,
-    })
-  ),
-}
 
 export default Testimonials

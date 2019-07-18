@@ -1,115 +1,130 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import styled from 'styled-components'
+import Container from './common/Container'
+import media from '../theme/media'
 
-import logo from '../img/logo.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import logo from '../img/logo.png'
+import facebook from '../img/icons/ico_facebook.svg'
+import instagram from '../img/icons/ico_instagram.svg'
+import mail from '../img/icons/ico_mail.svg'
+import youtube from '../img/icons/ico_youtube.svg'
 
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
-                    <li>
-                      <Link to="/" className="navbar-item">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/about">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
-                      </Link>
-                    </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    )
+const FooterWrapper = styled.footer`
+  background: ${({ theme }) => theme.colors.dark};
+  padding: 80px 0;
+  color: ${({ theme }) => theme.colors.footer};
+  ${media.xs`
+     padding: 20px 0;
+  `};
+  > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-}
+`
 
-export default Footer
+const Logo = styled.img`
+  width: 255px;
+  height: auto;
+  ${media.xs`
+      display: none;
+  `};
+`
+
+const A = styled.a`
+  font-size: ${({ theme }) => theme.font.size.small};
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.footer};
+  
+  :active,
+  :focus,
+  :hover {
+    color: ${({ theme }) => theme.colors.footer}
+    opacity: 0.85;
+    text-decoration: none;
+    outline: none;
+  }
+
+  ${media.xs`
+  font-size: ${({ theme }) => theme.font.size.xsmall};
+    `};
+`
+
+const SocialLinks = styled.div`
+  a {
+    margin-left: 25px;
+  }
+  ${media.xs`
+      display: none;
+  `};
+`
+
+const OnlyMobile = styled(Container)`
+  > div {
+    display: none;
+    margin: 0 auto;
+    ${media.xs`
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    `};
+  }
+
+  p {
+    margin: 14px 0 0;
+    :not(:last-child) {
+      border-right: 1px solid;
+    }
+    :last-child {
+      padding: 0 0 0 10px;
+    }
+    :first-child {
+      padding: 0 10px 0 0;
+    }
+    :nth-child(2) {
+      padding: 0 10px;
+    }
+  }
+`
+
+const LinkTag = ({ children, href }) => (
+  <A href={href} target="_blank" rel="noreferrer noopener">
+    {children}
+  </A>
+)
+
+export default function Footer() {
+  return (
+    <FooterWrapper>
+      <Container>
+        <Logo src={logo} alt="Urban Farmcy Logo" />
+        <LinkTag href="https://www.urbanfarmcy.com.br">a urban farmcy</LinkTag>
+        <LinkTag href="https://farmcyacademy.club.hotmart.com/login">plataforma farmcy academy</LinkTag>
+        <LinkTag href="https://drive.google.com/open?id=1PXCrYKE9OTqSvN1T8frS5133ptiHA4dn">termos de uso</LinkTag>
+        <SocialLinks>
+          <LinkTag href="https://www.youtube.com/channel/UCqj-1coJQk8IXIGeSb4uQ_A">
+            <img src={youtube} alt="Youtube do Urban Farmcy" />
+          </LinkTag>
+          <LinkTag href="https://www.facebook.com/farmcyacademy">
+            <img src={facebook} alt="Facebook do Urban Farmcy" />
+          </LinkTag>
+          <LinkTag href="https://www.instagram.com/farmcyacademy/?hl=pt-br">
+            <img src={instagram} alt="Instagram do Urban Farmcy" />
+          </LinkTag>
+          <A href="mailto:sac@urbanfarmcy.com.br">
+            <img src={mail} alt="" />
+          </A>
+        </SocialLinks>
+      </Container>
+      <OnlyMobile>
+        <div>
+          <A as="p">2019</A>
+          <A as="p">Urban Farmcy</A>
+          <A as="p">Farmcy Academy</A>
+        </div>
+      </OnlyMobile>
+    </FooterWrapper>
+  )
+}

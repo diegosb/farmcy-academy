@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29.477" height="32.553" viewBox="0 0 29.477 32.553">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="29.476" height="32.553" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_respostasdeespecialistas" transform="translate(0)" clip-path="url(#clip-path)">
+    <path id="Caminho_198" data-name="Caminho 198" d="M416.219,443.685a3.326,3.326,0,1,0,3.33,3.33A3.327,3.327,0,0,0,416.219,443.685Z" transform="translate(-392.058 -437.035)" fill="#fff"/>
+    <path id="Caminho_199" data-name="Caminho 199" d="M387.179,443.685a3.326,3.326,0,1,0,3.325,3.33A3.332,3.332,0,0,0,387.179,443.685Z" transform="translate(-381.861 -437.035)" fill="#fff"/>
+    <path id="Caminho_200" data-name="Caminho 200" d="M400.831,433.438a4.921,4.921,0,1,0,4.921,4.919A4.926,4.926,0,0,0,400.831,433.438Z" transform="translate(-386.096 -433.438)" fill="#fff"/>
+    <path id="Caminho_201" data-name="Caminho 201" d="M422.52,470.812h-5.81V460.194a8.781,8.781,0,0,0-1.009-4.036,5.268,5.268,0,0,1,1.5-.241,5.326,5.326,0,0,1,5.321,5.318Z" transform="translate(-393.044 -441.33)" fill="#fff"/>
+    <path id="Caminho_202" data-name="Caminho 202" d="M386.588,460.194v10.617h-5.8v-9.576a5.324,5.324,0,0,1,5.32-5.318,5.2,5.2,0,0,1,1.491.241A8.813,8.813,0,0,0,386.588,460.194Z" transform="translate(-380.786 -441.33)" fill="#fff"/>
+    <path id="Caminho_203" data-name="Caminho 203" d="M391.6,472.023h15.428V458.334a7.714,7.714,0,1,0-15.428,0Z" transform="translate(-384.584 -439.47)" fill="#fff"/>
+  </g>
+</svg>

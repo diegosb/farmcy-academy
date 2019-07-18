@@ -1,13 +1,31 @@
-var proxy = require('http-proxy-middleware')
+const proxy = require('http-proxy-middleware')
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
-    description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+    title: 'Farmcy Academy',
+    description: 'Farmcy Academy website',
   },
   plugins: [
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: 'Roboto',
+            variants: ['300', '400', '700'],
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'YOUR_GOOGLE_ANALYTICS_TRACKING_ID',
+      },
+    },
     'gatsby-plugin-sass',
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -86,7 +104,7 @@ module.exports = {
         pathRewrite: {
           '/.netlify/functions/': '',
         },
-      })
+      }),
     )
   },
 }
