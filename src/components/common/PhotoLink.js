@@ -65,7 +65,10 @@ const PhotoLink = ({ imageInfo, title, subtitle }) => (
   </Box>
 )
 
-PhotoLink.propTypes = {}
-PhotoLink.defaultProps = {}
+PhotoLink.propTypes = {
+  imageInfo: PropTypes.shape({}).isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+}
 
 export default PhotoLink

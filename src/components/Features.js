@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
@@ -30,7 +30,7 @@ FeatureGrid.propTypes = {
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
       text: PropTypes.string,
     }),
-  ),
+  ).isRequired,
 }
 
 export default FeatureGrid

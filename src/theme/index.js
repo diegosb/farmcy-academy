@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import media from './media'
 
 const theme = {
   colors: {
@@ -13,6 +12,7 @@ const theme = {
     text: '#404241',
     darkText: '#707070',
     footer: '#ebebeb',
+    ice: '#f9f9f9',
   },
   font: {
     family: '"Roboto", sans- serif',

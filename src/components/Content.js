@@ -8,8 +8,8 @@ export const HTMLContent = ({ content, className }) => (
 const Content = ({ content, className }) => <div className={className}>{content}</div>
 
 Content.propTypes = {
-  content: PropTypes.node,
-  className: PropTypes.string,
+  content: PropTypes.node.isRequired,
+  className: PropTypes.string.isRequired,
 }
 
 HTMLContent.propTypes = Content.propTypes

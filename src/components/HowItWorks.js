@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Row, Col } from 'react-flexbox-grid'
 
 import Section from './common/Section'
 import SectionTitle from './common/SectionTitle'

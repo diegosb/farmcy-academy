@@ -30,7 +30,7 @@ Pricing.propTypes = {
       description: PropTypes.string,
       items: PropTypes.array,
     }),
-  ),
+  ).isRequired,
 }
 
 export default Pricing

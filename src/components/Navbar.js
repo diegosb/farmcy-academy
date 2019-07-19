@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/logo.svg'
 
-const Navbar = class extends React.Component {
+class Navbar extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
