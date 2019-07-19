@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import media from '../../theme/media'
 
@@ -9,6 +10,7 @@ import logo from '../../img/logo.png'
 const Logo = styled.img`
   width: 205px;
   height: auto;
+  cursor: pointer;
   ${media.xs`
     width: 120px;
   `};
@@ -25,7 +27,9 @@ const HeaderWrapper = styled.header`
 const Header = ({ withLogin }) => {
   return (
     <HeaderWrapper>
-      <Logo src={logo} alt="Farmcy Academy Logo" />
+      <Link to="/">
+        <Logo src={logo} alt="Farmcy Academy Logo" />
+      </Link>
       {withLogin ? (
         <Button type="transparent" element="a" href="https://farmcyacademy.club.hotmart.com/login">
           Login

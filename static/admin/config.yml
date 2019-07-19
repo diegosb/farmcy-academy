@@ -38,17 +38,17 @@ collections:
               {label: "Imagem fundo Mobile", name: imageMobile, widget: image}
             ]}
 
-      - file: "src/pages/about/index.md"
+      - file: "src/pages/cursos/index.md"
         label: "About"
-        name: "about"
+        name: "cursos"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cursos-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
 
-      - file: "src/pages/products/index.md"
+      - file: "src/pages/especialistas/index.md"
         label: "Products Page"
-        name: "products"
+        name: "especialistas"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
           - {label: Title, name: title, widget: string}

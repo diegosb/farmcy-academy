@@ -107,7 +107,7 @@ const Hero = ({ bgImage, bgImageMobile, title, buttonText, callActionSmall, call
                 </CTAText>
               </Col>
             </Row>
-            <Button>{buttonText}</Button>
+            <Button to="/form">{buttonText}</Button>
           </Col>
         </Row>
         <Bottom>

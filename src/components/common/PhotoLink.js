@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
+import arrow from '../../img/icons/next.svg'
 
 const Box = styled.div`
   width: 270px;
@@ -16,6 +17,7 @@ const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   :before {
     content: '';
     position: absolute;
@@ -55,6 +57,12 @@ const Subtitle = styled.p`
   text-transform: uppercase;
 `
 
+const NextIcon = styled.img`
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+`
+
 const PhotoLink = ({ imageInfo, title, subtitle }) => (
   <Box>
     <Image imageInfo={imageInfo} />
@@ -62,6 +70,7 @@ const PhotoLink = ({ imageInfo, title, subtitle }) => (
       <Subtitle>{subtitle}</Subtitle>
       <Title>{title}</Title>
     </Text>
+    <NextIcon src={arrow} alt="Ver detalhes" />
   </Box>
 )
 

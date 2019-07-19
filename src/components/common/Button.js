@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { darken } from 'polished'
 import media from '../../theme/media'
 
 export default styled(
@@ -26,12 +27,13 @@ export default styled(
   text-transform: uppercase;
   font-size: ${({ theme }) => theme.font.size.button};
   font-weight: ${({ theme, type }) => (type === 'transparent' ? theme.font.weight.light : theme.font.weight.bold)};
-  transition: opacity 250ms ease;
+  transition: background-color 250ms ease, color 250ms ease;
   text-decoration: none;
-
+  cursor: pointer;
   :hover {
-    opacity: 0.75;
-    color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme, type }) =>
+      darken(0.05, type === 'transparent' ? 'transparent' : theme.colors.primary)};
+    color: ${({ theme }) => darken(0.05, theme.colors.white)};
     text-decoration: none;
   }
 

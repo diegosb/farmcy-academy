@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import useSiteMetadata from './SiteMetadata'
+import useSiteMetadata from '../hooks/useSiteMetadata'
 
 const Headers = () => {
   const { title, description } = useSiteMetadata()

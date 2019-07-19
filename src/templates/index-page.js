@@ -1,6 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
@@ -9,9 +7,10 @@ import Banner from '../components/Banner'
 import HowItWorks from '../components/HowItWorks'
 import Member from '../components/Member'
 import Testimonials from '../components/Testimonials'
+import useIndexPageData from '../hooks/useIndexPageData'
 
-const IndexPage = ({ data }) => {
-  const { hero } = data.markdownRemark.frontmatter
+const IndexPage = () => {
+  const { hero } = useIndexPageData()
   return (
     <Layout>
       <Hero
@@ -31,41 +30,33 @@ const IndexPage = ({ data }) => {
   )
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }).isRequired,
-}
-
 export default IndexPage
 
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        hero {
-          heading
-          callActionSmall
-          callActionBig
-          buttonText
-          imageDesktop {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          imageMobile {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query IndexPageTemplate {
+//     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+//       frontmatter {
+//         hero {
+//           heading
+//           callActionSmall
+//           callActionBig
+//           buttonText
+//           imageDesktop {
+//             childImageSharp {
+//               fluid(maxWidth: 2048, quality: 100) {
+//                 ...GatsbyImageSharpFluid
+//               }
+//             }
+//           }
+//           imageMobile {
+//             childImageSharp {
+//               fluid(maxWidth: 2048, quality: 100) {
+//                 ...GatsbyImageSharpFluid
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

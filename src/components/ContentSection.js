@@ -1,45 +1,37 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import media from '../theme/media'
+import { Link } from 'gatsby'
 
 import Section from './common/Section'
 import SectionTitle from './common/SectionTitle'
 import Heading from './common/Heading'
 import Subheading from './common/Subheading'
-import PhotoLink from './common/PhotoLink'
 import mockPhoto from '../img/alexatala.png'
+import arrowRight from '../img/icons/arrow-right.svg'
+import Products from './common/Products'
 
-const TypeHeader = styled.h4`
-  width: 100%;
-  color: ${({ theme }) => theme.colors.text};
-  font-size: 35px;
-  text-align: left;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  ${media.xs`
-    font-size: ${({ theme }) => theme.font.size.medium};
-    text-align: center;
-  `};
+const ContentSection = styled(Section)`
+  padding-bottom: 80px;
 `
 
-const TypeSection = styled.div`
-  margin: 60px 0 0;
+const SeeMore = styled.div`
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-`
-
-const Links = styled.div`
-  display: flex;
+  justify-content: flex-end;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  ${media.xs`
-      justify-content: center;
-    `} > div {
-    margin-bottom: 40px;
+  a {
+    font-size: 20px;
+    font-weight: ${({ theme }) => theme.font.weight.light};
+    color: ${({ theme }) => theme.colors.lightText};
+    img {
+      margin-left: 8px;
+    }
+    :focus,
+    :active,
+    :hover {
+      color: ${({ theme }) => theme.colors.lightText};
+      text-decoration: none;
+      outline: none;
+    }
   }
 `
 
@@ -118,30 +110,24 @@ const images = [
   },
 ]
 
-const ContentSection = () => (
-  <Section id="#conteudo">
+const Content = () => (
+  <ContentSection id="#conteudo" bgColor="ice">
     <SectionTitle>Conteúdo</SectionTitle>
     <Heading>O conhecimento de grandes autoridades a serviço da sua saúde.</Heading>
     <Subheading>Conteúdos exclusivos e novos especialistas toda semana</Subheading>
-    <TypeSection>
-      <TypeHeader>Nossos especialistas</TypeHeader>
-      <Links>
-        {images.map(img => (
-          <PhotoLink key={img.id} title={img.title} subtitle={img.subtitle} imageInfo={img.imageInfo} />
-        ))}
-      </Links>
-    </TypeSection>
-    <TypeSection>
-      <TypeHeader>Nossos cursos</TypeHeader>
-      <Links>
-        {images.map(img => (
-          <PhotoLink key={img.id} title={img.title} subtitle={img.subtitle} imageInfo={img.imageInfo} />
-        ))}
-      </Links>
-    </TypeSection>
-  </Section>
+    <Products images={images} title="Nossos especialistas" />
+    <SeeMore>
+      <Link to="/especialistas">
+        Ver mais <img src={arrowRight} alt="Ver mais" />
+      </Link>
+    </SeeMore>
+    <Products images={images} title="Nossos cursos" max={4} />
+    <SeeMore>
+      <Link to="/cursos">
+        Ver mais <img src={arrowRight} alt="Ver mais" />
+      </Link>
+    </SeeMore>
+  </ContentSection>
 )
-ContentSection.propTypes = {}
-ContentSection.defaultProps = {}
 
-export default ContentSection
+export default Content
