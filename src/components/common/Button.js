@@ -36,7 +36,7 @@ export default styled(
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+
   :active,
   :focus,
   :hover {
@@ -53,5 +53,6 @@ export default styled(
       type === 'transparent' ? theme.font.size.small : theme.font.size.regular};
     padding: ${({ type }) => (type === 'transparent' ? '0.75em 0' : '1em')};
     height: ${({ type }) => (type === 'transparent' ? 'auto' : '48px')};
+    margin: 0 auto;
   `};
 `
