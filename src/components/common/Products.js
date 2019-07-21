@@ -32,22 +32,36 @@ const Links = styled.div`
   justify-content: space-between;
   ${media.xs`
       justify-content: center;
-    `} > div {
+    `} > a {
     margin-bottom: 30px;
   }
 `
 
-const Products = ({ images, max, title }) => (
+const Products = ({ images, max, title, to }) => (
   <TypeSection>
     <TypeHeader>{title}</TypeHeader>
     <Links>
       {images.map((img, index) => {
         if (max) {
           return index + 1 <= max ? (
-            <PhotoLink key={img.id} title={img.title} subtitle={img.subtitle} imageInfo={img.imageInfo} />
+            <PhotoLink
+              key={img.id}
+              title={img.title}
+              subtitle={img.subtitle}
+              imageInfo={img.imageInfo}
+              to={to}
+            />
           ) : null
         }
-        return <PhotoLink key={img.id} title={img.title} subtitle={img.subtitle} imageInfo={img.imageInfo} />
+        return (
+          <PhotoLink
+            key={img.id}
+            title={img.title}
+            subtitle={img.subtitle}
+            imageInfo={img.imageInfo}
+            to={to}
+          />
+        )
       })}
     </Links>
   </TypeSection>
@@ -57,6 +71,7 @@ Products.propTypes = {
   images: PropTypes.arrayOf(PropTypes.object).isRequired,
   max: PropTypes.number,
   title: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
 }
 
 Products.defaultProps = {

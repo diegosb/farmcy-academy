@@ -3,16 +3,17 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import Section from './common/Section'
-import Heading from './common/Heading'
-import bgImage from '../img/BG_ImpactoSocial.png'
+import { Heading } from './common/typography'
 import Button from './common/Button'
 import media from '../theme/media'
+import { HTMLContent } from './Content'
 
 const MemberSection = styled(Section)`
   padding: 60px 0 120px;
   background-position: center;
   background-size: cover;
-  background-image: ${({ bgImage }) => `url(${bgImage.childImageSharp ? bgImage.childImageSharp.fluid.src : bgImage})`};
+  background-image: ${({ bgImage }) =>
+    `url(${bgImage.childImageSharp ? bgImage.childImageSharp.fluid.src : bgImage})`};
   > div {
     display: flex;
     flex-direction: column;
@@ -44,25 +45,15 @@ const TextInfo = styled.div`
   `};
 `
 
-const Member = () => (
+const Member = ({ bgImage, title, description, buttonText, textAboveButton }) => (
   <MemberSection bgImage={bgImage} bgColor="lightDark">
-    <Heading color="white">Uma decisão de impacto social.</Heading>
+    <Heading color="white">{title}</Heading>
     <TextInfo>
-      <p>
-        Parte da sua mensalidade é destinada para a produção de uma série totalmente gratuita, que tem a missão de levar
-        conhecimento e informação sobre alimentação e saúde para todos os brasileiros.
-      </p>
-      <p>
-        Além de melhorar a sua qualidade de vida, você possibilita que muitas outras pessoas também adquiram
-        conhecimento para transformar suas vidas.
-      </p>
-      <p>Até agora, já são mais de 40 mil pessoas impactadas.</p>
+      <HTMLContent content={description} />
     </TextInfo>
-    <Heading color="white">Seja um membro e financie essa causa</Heading>
-    <Button element={<Link to="/form" />}>INSCREVA-SE AGORA</Button>
+    <Heading color="white">{textAboveButton}</Heading>
+    <Button element={<Link to="/registro" />}>{buttonText}</Button>
   </MemberSection>
 )
-Member.propTypes = {}
-Member.defaultProps = {}
 
 export default Member

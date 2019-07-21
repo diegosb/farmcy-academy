@@ -101,8 +101,12 @@ export default function Footer() {
       <Container>
         <Logo src={logo} alt="Urban Farmcy Logo" />
         <LinkTag href="https://www.urbanfarmcy.com.br">a urban farmcy</LinkTag>
-        <LinkTag href="https://farmcyacademy.club.hotmart.com/login">plataforma farmcy academy</LinkTag>
-        <LinkTag href="https://drive.google.com/open?id=1PXCrYKE9OTqSvN1T8frS5133ptiHA4dn">termos de uso</LinkTag>
+        <LinkTag href="https://farmcyacademy.club.hotmart.com/login">
+          plataforma farmcy academy
+        </LinkTag>
+        <LinkTag href="https://drive.google.com/open?id=1PXCrYKE9OTqSvN1T8frS5133ptiHA4dn">
+          termos de uso
+        </LinkTag>
         <SocialLinks>
           <LinkTag href="https://www.youtube.com/channel/UCqj-1coJQk8IXIGeSb4uQ_A">
             <img src={youtube} alt="Youtube do Urban Farmcy" />

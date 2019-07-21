@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import Section from './common/Section'
-import Button from './common/Button'
-import media from '../theme/media'
+import Section from './Section'
+import Button from './Button'
+import media from '../../theme/media'
 
 const BannerSection = styled(Section)`
   padding: 90px 0;
@@ -37,7 +37,7 @@ const Text = styled.h3`
 const Banner = () => (
   <BannerSection bgColor="dark">
     <Text>Tenha acesso ilimitado por 7 dias grátis.</Text>
-    <Button element={<Link />} to="/form">
+    <Button element={<Link />} to="/registro">
       EXPERIMENTE AGORA
     </Button>
   </BannerSection>

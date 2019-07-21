@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
 import arrow from '../../img/icons/next.svg'
 
-const Box = styled.div`
+const Box = styled(Link)`
   width: 270px;
   height: 180px;
   border-radius: 9px;
@@ -63,8 +64,8 @@ const NextIcon = styled.img`
   right: 15px;
 `
 
-const PhotoLink = ({ imageInfo, title, subtitle }) => (
-  <Box>
+const PhotoLink = ({ imageInfo, title, subtitle, to }) => (
+  <Box to={to}>
     <Image imageInfo={imageInfo} />
     <Text>
       <Subtitle>{subtitle}</Subtitle>

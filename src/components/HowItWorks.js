@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Section from './common/Section'
-import SectionTitle from './common/SectionTitle'
-import Heading from './common/Heading'
+import { SectionTitle, Heading } from './common/typography'
 import Hexagon, { InfoBox, Circle } from './common/Hexagon'
 import refresh from '../img/icons/ico_atualizacaoconstante.svg'
 import playlist from '../img/icons/ico_playlist.svg'
@@ -57,7 +56,8 @@ const data = {
   },
   especialistas: {
     title: 'Respostas de especialistas',
-    text: 'Seja qual for a sua dúvida, reunimos as respostas de grandes autoridades no assunto em um só lugar.',
+    text:
+      'Seja qual for a sua dúvida, reunimos as respostas de grandes autoridades no assunto em um só lugar.',
     icon: especialistas,
   },
   qualidade: {
@@ -67,7 +67,8 @@ const data = {
   },
   personalizado: {
     title: 'Aprendizado personalizado',
-    text: 'Conhecimento na palma da sua mão. Estude no seu ritmo, do seu jeito, quando e onde quiser.',
+    text:
+      'Conhecimento na palma da sua mão. Estude no seu ritmo, do seu jeito, quando e onde quiser.',
     icon: aprendizado,
   },
   diversidade: {

@@ -1,0 +1,5 @@
+export { default as CTAText } from './CTAText'
+export { default as Heading } from './Heading'
+export { default as MainHeroText } from './MainHeroText'
+export { default as SectionTitle } from './SectionTitle'
+export { default as Subheading } from './Subheading'

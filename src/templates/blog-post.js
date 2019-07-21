@@ -6,7 +6,14 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const BlogPostTemplate = ({ content, contentComponent, description, tags, title, helmet }) => {
+export const BlogPostTemplate = ({
+  content,
+  contentComponent,
+  description,
+  tags,
+  title,
+  helmet,
+}) => {
   const PostContent = contentComponent || Content
 
   return (
@@ -23,7 +30,7 @@ export const BlogPostTemplate = ({ content, contentComponent, description, tags,
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map(tag => (
-                    <li key={tag + `tag`}>
+                    <li key={`${tag} tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>
                   ))}
@@ -39,10 +46,10 @@ export const BlogPostTemplate = ({ content, contentComponent, description, tags,
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.object,
+  contentComponent: PropTypes.func.isRequired,
+  description: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  helmet: PropTypes.shape({}).isRequired,
 }
 
 const BlogPost = ({ data }) => {
@@ -70,7 +77,7 @@ const BlogPost = ({ data }) => {
 BlogPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
-  }),
+  }).isRequired,
 }
 
 export default BlogPost

@@ -1,6 +1,9 @@
 import { css } from 'styled-components'
 
 export const breakpoints = {
+  xxs: {
+    max: 360,
+  },
   xs: {
     max: 767,
   },
@@ -43,12 +46,14 @@ export const mq = (from, until) => {
         }
       `
     }
+    return css``
   }
 }
 
 export default Object.keys(breakpoints).reduce((media, breakpoint) => {
   const emSizeMin = breakpoints[breakpoint].min
   const emSizeMax = breakpoints[breakpoint].max
+  // eslint-disable-next-line no-param-reassign
   media[breakpoint] = (...args) => {
     if (emSizeMin && emSizeMax) {
       return css`
@@ -71,6 +76,7 @@ export default Object.keys(breakpoints).reduce((media, breakpoint) => {
         }
       `
     }
+    return css``
   }
   return media
 }, {})

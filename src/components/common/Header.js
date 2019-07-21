@@ -22,6 +22,9 @@ const HeaderWrapper = styled.header`
   align-items: center;
   padding: 0;
   margin: 0;
+  a:focus {
+    outline: none;
+  }
 `
 
 const Header = ({ withLogin }) => {

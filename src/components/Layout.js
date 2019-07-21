@@ -6,14 +6,14 @@ import Footer from './Footer'
 import theme, { GlobalStyle } from '../theme'
 import Headers from './Headers'
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, noFooter }) => {
   return (
     <ThemeProvider theme={theme}>
       <div>
         <Headers />
         <GlobalStyle />
         <div>{children}</div>
-        <Footer />
+        {!noFooter ? <Footer /> : null}
       </div>
     </ThemeProvider>
   )

@@ -3,10 +3,9 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import Section from './common/Section'
-import SectionTitle from './common/SectionTitle'
-import Heading from './common/Heading'
-import Subheading from './common/Subheading'
-import mockPhoto from '../img/alexatala.png'
+import { SectionTitle, Heading, Subheading } from './common/typography'
+import mockPhoto from '../img/ativo-9.png'
+import mockPhoto2 from '../img/ativo-69.png'
 import arrowRight from '../img/icons/arrow-right.svg'
 import Products from './common/Products'
 
@@ -35,77 +34,116 @@ const SeeMore = styled.div`
   }
 `
 
-const images = [
+const imagesSpecialist = [
   {
     id: 1,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
     },
   },
   {
     id: 2,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
     },
   },
   {
     id: 3,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
     },
   },
   {
     id: 4,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
     },
   },
   {
     id: 5,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
     },
   },
   {
     id: 6,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
     },
   },
   {
     id: 7,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
     },
   },
   {
     id: 8,
-    title: 'Alex Atala',
-    subtitle: 'Restaurante D.O.M.',
+    title: 'Walter Willet',
+    subtitle: 'Descrição especialista',
     imageInfo: {
       image: mockPhoto,
-      alt: 'Alex Atala',
+      alt: 'Walter Willet',
+    },
+  },
+]
+
+const imagesCourses = [
+  {
+    id: 1,
+    title: 'Curso 01',
+    subtitle: 'Descrição curso',
+    imageInfo: {
+      image: mockPhoto2,
+      alt: 'Curso 01',
+    },
+  },
+  {
+    id: 2,
+    title: 'Curso 02',
+    subtitle: 'Descrição curso',
+    imageInfo: {
+      image: mockPhoto2,
+      alt: 'Curso 02',
+    },
+  },
+  {
+    id: 3,
+    title: 'Curso 03',
+    subtitle: 'Descrição curso',
+    imageInfo: {
+      image: mockPhoto2,
+      alt: 'Curso 03',
+    },
+  },
+  {
+    id: 4,
+    title: 'Curso 04',
+    subtitle: 'Descrição curso',
+    imageInfo: {
+      image: mockPhoto2,
+      alt: 'Curso 04',
     },
   },
 ]
@@ -115,13 +153,13 @@ const Content = () => (
     <SectionTitle>Conteúdo</SectionTitle>
     <Heading>O conhecimento de grandes autoridades a serviço da sua saúde.</Heading>
     <Subheading>Conteúdos exclusivos e novos especialistas toda semana</Subheading>
-    <Products images={images} title="Nossos especialistas" />
+    <Products images={imagesSpecialist} title="Nossos especialistas" to="/especialista" />
     <SeeMore>
       <Link to="/especialistas">
         Ver mais <img src={arrowRight} alt="Ver mais" />
       </Link>
     </SeeMore>
-    <Products images={images} title="Nossos cursos" max={4} />
+    <Products images={imagesCourses} title="Nossos cursos" max={4} to="/curso" />
     <SeeMore>
       <Link to="/cursos">
         Ver mais <img src={arrowRight} alt="Ver mais" />

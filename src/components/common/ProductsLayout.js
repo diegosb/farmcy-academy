@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 import Layout from '../Layout'
 import useIndexPageData from '../../hooks/useIndexPageData'
-import Hero from '../Hero'
+import Hero from './Hero'
 import Section from './Section'
-import Banner from '../Banner'
+import Banner from './Banner'
 
 const BorderBlack = styled.div`
   background: #000;

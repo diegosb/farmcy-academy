@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { mq } from '../../theme/media'
+import { mq } from '../../../theme/media'
 
 export default styled.h2`
   font-size: ${({ theme }) => theme.font.size.xlarge};

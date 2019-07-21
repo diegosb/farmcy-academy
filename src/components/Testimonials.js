@@ -1,12 +1,10 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Section from './common/Section'
-import Heading from './common/Heading'
+import { Heading, Subheading } from './common/typography'
 import Button from './common/Button'
-import Subheading from './common/Subheading'
 import Testimonial from './common/Testimonial'
 import userPhoto from '../img/fulanodetal.jpg'
 import media from '../theme/media'
@@ -62,9 +60,11 @@ const Testimonials = () => (
     <Heading>Conheça quem já faz parte da jornada</Heading>
     <Subheading>Faça parte da mudança e transforme sua vida agora.</Subheading>
     <UsersTestimonials>
-      {users.map(user => <Testimonial key={user.id} name={user.name} text={user.text} photo={user.photo} />)}
+      {users.map(user => (
+        <Testimonial key={user.id} name={user.name} text={user.text} photo={user.photo} />
+      ))}
     </UsersTestimonials>
-    <Button element={<Link to="/form" />}>INSCREVA-SE AGORA</Button>
+    <Button element={<Link to="/registro" />}>INSCREVA-SE AGORA</Button>
   </TestimonialsSection>
 )
 
