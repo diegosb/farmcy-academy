@@ -83,7 +83,11 @@ const images = [
 const CoursesPage = () => {
   return (
     <ProductsLayout>
-      <Products images={[...images, ...images, ...images]} title="Cursos Farmcy Academy" />
+      <Products
+        images={[...images, ...images, ...images]}
+        title="Cursos Farmcy Academy"
+        to="/curso"
+      />
       <ReturnHome />
     </ProductsLayout>
   )

@@ -36,6 +36,7 @@ export default styled(
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   :active,
   :focus,
   :hover {

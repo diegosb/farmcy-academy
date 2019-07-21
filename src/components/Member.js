@@ -26,7 +26,7 @@ const MemberSection = styled(Section)`
 `
 
 const TextInfo = styled.div`
-  color: ${({ theme }) => theme.colors.darkText};
+  color: ${({ theme }) => theme.colors.lightText};
   font-size: ${({ theme }) => theme.font.size.medium};
   font-weight: ${({ theme }) => theme.font.weight.light};
   line-height: 1.25;
@@ -39,6 +39,7 @@ const TextInfo = styled.div`
   ${media.xs`
     font-size: 16px;
     margin: 30px auto;
+    line-height: 1.4;
     p {
       margin-bottom: 20px;
     }
