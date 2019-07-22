@@ -63,7 +63,7 @@ const HeroDetails = ({
 }) => (
   <HeroSection bgImage={bgImage} bgImageMobile={bgImageMobile}>
     <Container css="display: flex; flex-direction: column; justify-content: space-between">
-      <Header />
+      <Header withLogin />
       <Row bottom="xs">
         <Col md={6}>
           <MainHeroText>{title}</MainHeroText>

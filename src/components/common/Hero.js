@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Row, Col } from 'react-flexbox-grid'
+import { Link } from 'gatsby'
 
 import Container from './Container'
 import Button from './Button'
@@ -31,9 +32,9 @@ const HeroSection = styled.section`
     padding-bottom: 80px;
     background-size: 140%;
     background-image: ${({ bgImageMobile }) =>
-      `url(${bgImageMobile.childImageSharp
-        ? bgImageMobile.childImageSharp.fluid.src
-        : bgImageMobile})`};  
+      `url(${
+        bgImageMobile.childImageSharp ? bgImageMobile.childImageSharp.fluid.src : bgImageMobile
+      })`};  
       > div > .row {
         flex-grow: 1;
         align-items: flex-end;
@@ -89,7 +90,7 @@ const Hero = ({ bgImage, bgImageMobile, title, buttonText, callActionSmall, call
                 <CTAText callActionSmall={callActionSmall} callActionBig={callActionBig} />
               </Col>
             </Row>
-            <Button to="/registro">{buttonText}</Button>
+            <Button element={<Link to="registro" />}>{buttonText}</Button>
           </Col>
         </Row>
         <Bottom>

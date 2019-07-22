@@ -8,6 +8,18 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Farmcy Academy`,
+        short_name: `Farmcy Academy`,
+        start_url: `/`,
+        background_color: `#000`,
+        theme_color: `#32ba69`,
+        display: `standalone`,
+        icon: `src/img/logo.png`,
+      },
+    },
     'gatsby-plugin-offline',
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,

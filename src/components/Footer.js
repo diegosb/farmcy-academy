@@ -117,8 +117,8 @@ export default function Footer() {
           <LinkTag href="https://www.instagram.com/farmcyacademy/?hl=pt-br">
             <img src={instagram} alt="Instagram do Urban Farmcy" />
           </LinkTag>
-          <A href="mailto:sac@urbanfarmcy.com.br">
-            <img src={mail} alt="" />
+          <A href="mailto:sac@urbanfarmcy.com.br" aria-label="Enviar email">
+            <img src={mail} alt="Email" />
           </A>
         </SocialLinks>
       </Container>
