@@ -29,9 +29,9 @@ const HeroSection = styled.section`
     padding-bottom: 40px;
     background-size: 150%;
     background-image: ${({ bgImageMobile }) =>
-      `url(${
-        bgImageMobile.childImageSharp ? bgImageMobile.childImageSharp.fluid.src : bgImageMobile
-      })`};  
+      `url(${bgImageMobile.childImageSharp
+        ? bgImageMobile.childImageSharp.fluid.src
+        : bgImageMobile})`};  
   `};
   ${media.xxs`
     min-height: 120vh;

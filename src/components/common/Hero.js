@@ -32,9 +32,9 @@ const HeroSection = styled.section`
     padding-bottom: 80px;
     background-size: 140%;
     background-image: ${({ bgImageMobile }) =>
-      `url(${
-        bgImageMobile.childImageSharp ? bgImageMobile.childImageSharp.fluid.src : bgImageMobile
-      })`};  
+      `url(${bgImageMobile.childImageSharp
+        ? bgImageMobile.childImageSharp.fluid.src
+        : bgImageMobile})`};  
       > div > .row {
         flex-grow: 1;
         align-items: flex-end;

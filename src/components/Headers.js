@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import useSiteMetadata from '../hooks/useSiteMetadata'
+import ogImage from '../img/og-image.png'
 
 const Headers = () => {
   const { title, description } = useSiteMetadata()
@@ -22,7 +23,7 @@ const Headers = () => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content="/" />
-      <meta property="og:image" itemProp="image" content="../img/og-image.png" />
+      <meta property="og:image" itemProp="image" content={ogImage} />
     </Helmet>
   )
 }
