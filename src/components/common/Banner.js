@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Section from './Section'
@@ -34,16 +35,16 @@ const Text = styled.h3`
   `};
 `
 
-const Banner = () => (
+const Banner = ({ title, buttonText }) => (
   <BannerSection bgColor="dark">
-    <Text>Tenha acesso ilimitado por 7 dias grátis.</Text>
-    <Button element={<Link />} to="/registro">
-      EXPERIMENTE AGORA
-    </Button>
+    <Text>{title}</Text>
+    <Button element={<Link to="/registro" />}>{buttonText}</Button>
   </BannerSection>
 )
 
-Banner.propTypes = {}
-Banner.defaultProps = {}
+Banner.propTypes = {
+  title: PropTypes.string.isRequired,
+  buttonText: PropTypes.string.isRequired,
+}
 
 export default Banner

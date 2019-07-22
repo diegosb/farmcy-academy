@@ -8,31 +8,9 @@ import HowItWorks from '../components/HowItWorks'
 import Member from '../components/Member'
 import Testimonials from '../components/Testimonials'
 import useIndexPageData from '../hooks/useIndexPageData'
-import bgImage from '../img/BG_ImpactoSocial.png'
-
-const description = `
-        <p>
-        Parte da sua mensalidade é destinada para a produção de uma série totalmente gratuita, que
-        tem a missão de levar conhecimento e informação sobre alimentação e saúde para todos os
-        brasileiros.
-      </p>
-      <p>
-        Além de melhorar a sua qualidade de vida, você possibilita que muitas outras pessoas também
-        adquiram conhecimento para transformar suas vidas.
-      </p>
-      <p>Até agora, já são mais de 40 mil pessoas impactadas.</p>
-`
-
-const memberData = {
-  title: 'Uma decisão de impacto social.',
-  description,
-  buttonText: 'Inscreva-se Agora',
-  textAboveButton: 'Seja um membro e financie essa causa',
-  bgImage,
-}
 
 const IndexPage = () => {
-  const { hero } = useIndexPageData()
+  const { hero, banner, contentHeaders, howItWorks, member } = useIndexPageData()
   return (
     <Layout>
       <Hero
@@ -43,10 +21,10 @@ const IndexPage = () => {
         callActionSmall={hero.callActionSmall}
         callActionBig={hero.callActionBig}
       />
-      <ContentSection />
-      <HowItWorks />
-      <Banner />
-      <Member {...memberData} />
+      <ContentSection {...contentHeaders} />
+      <HowItWorks {...howItWorks} />
+      <Banner {...banner} />
+      <Member {...member} />
       <Testimonials />
     </Layout>
   )

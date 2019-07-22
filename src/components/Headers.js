@@ -18,10 +18,11 @@ const Headers = () => {
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#000" />
       <meta name="description" content={description} />
-      <meta property="og:type" content="business.business" />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:url" content="/" />
-      <meta property="og:image" content="../img/og-image.png" />
+      <meta property="og:image" itemProp="image" content="../img/og-image.png" />
     </Helmet>
   )
 }

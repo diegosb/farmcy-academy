@@ -46,13 +46,13 @@ const TextInfo = styled.div`
   `};
 `
 
-const Member = ({ bgImage, title, description, buttonText, textAboveButton }) => (
+const Member = ({ bgImage, title, description, buttonText, titleCTA }) => (
   <MemberSection bgImage={bgImage} bgColor="lightDark">
     <Heading color="white">{title}</Heading>
     <TextInfo>
       <HTMLContent content={description} />
     </TextInfo>
-    <Heading color="white">{textAboveButton}</Heading>
+    <Heading color="white">{titleCTA}</Heading>
     <Button element={<Link to="/registro" />}>{buttonText}</Button>
   </MemberSection>
 )

@@ -51,32 +51,26 @@ collections:
               {label: "Texto topo centro", name: refresh, widget: object, fields: [
                 {label: "Título", name: title, widget: string},
                 {label: "Descrição", name: description, widget: text},
-                {label: "Icone", name: icon, widget: image},
               ]},
               {label: "Texto topo esquerdo", name: organizacao, widget: object, fields: [
                 {label: "Título", name: title, widget: string},
                 {label: "Descrição", name: description, widget: text},
-                {label: "Icone", name: icon, widget: image},
               ]},
               {label: "Texto topo direito", name: atualizacao, widget: object, fields: [
                 {label: "Título", name: title, widget: string},
                 {label: "Descrição", name: description, widget: text},
-                {label: "Icone", name: icon, widget: image},
               ]},
               {label: "Texto abaixo centro", name: especialistas, widget: object, fields: [
                 {label: "Título", name: title, widget: string},
                 {label: "Descrição", name: description, widget: text},
-                {label: "Icone", name: icon, widget: image},
               ]},
               {label: "Texto abaixo esquerda", name: qualidade, widget: object, fields: [
                 {label: "Título", name: title, widget: string},
                 {label: "Descrição", name: description, widget: text},
-                {label: "Icone", name: icon, widget: image},
               ]},
               {label: "Texto abaixo direita", name: diversidade, widget: object, fields: [
                 {label: "Título", name: title, widget: string},
                 {label: "Descrição", name: description, widget: text},
-                {label: "Icone", name: icon, widget: image},
               ]},
              ]},
           ]}
@@ -87,11 +81,12 @@ collections:
           - {label: "Seja membro", name: member, widget: object, fields: [
               {label: "Título cabeçalho", name: title, widget: string},
               {label: "Texto principal", name: description, widget: markdown},
-              {label: "Título CTA", name: title, widget: string},
+              {label: "Título CTA", name: titleCTA, widget: string},
               {label: "Texto botão CTA", name: buttonText, widget: string},
+              {label: "Imagem de fundo", name: bgImage, widget: image}
             ]}
           - {label: "Seção depoimentos", name: testimonials, widget: object, fields: [
               {label: "Título cabeçalho", name: title, widget: string},
-              {label: "Subtítulo", name: description, widget: markdown},
+              {label: "Subtítulo", name: description, widget: string},
               {label: "Texto botão CTA", name: buttonText, widget: string},
             ]}

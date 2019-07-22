@@ -148,18 +148,18 @@ const imagesCourses = [
   },
 ]
 
-const Content = () => (
+const Content = ({ heading, headingCourses, headingSpecialist, subHeading, title }) => (
   <ContentSection id="#conteudo" bgColor="ice">
-    <SectionTitle>Conteúdo</SectionTitle>
-    <Heading>O conhecimento de grandes autoridades a serviço da sua saúde.</Heading>
-    <Subheading>Conteúdos exclusivos e novos especialistas toda semana</Subheading>
-    <Products images={imagesSpecialist} title="Nossos especialistas" to="/especialista" />
+    <SectionTitle>{title}</SectionTitle>
+    <Heading>{heading}</Heading>
+    <Subheading>{subHeading}</Subheading>
+    <Products images={imagesSpecialist} title={headingSpecialist} to="/especialista" />
     <SeeMore>
       <Link to="/especialistas">
         Ver mais <img src={arrowRight} alt="Ver mais" />
       </Link>
     </SeeMore>
-    <Products images={imagesCourses} title="Nossos cursos" max={4} to="/curso" />
+    <Products images={imagesCourses} title={headingCourses} max={4} to="/curso" />
     <SeeMore>
       <Link to="/cursos">
         Ver mais <img src={arrowRight} alt="Ver mais" />

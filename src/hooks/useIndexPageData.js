@@ -26,6 +26,58 @@ const useIndexPageData = () => {
                 }
               }
             }
+            contentHeaders {
+              heading
+              headingCourses
+              headingSpecialist
+              subHeading
+              title
+            }
+            howItWorks {
+              boxes {
+                atualizacao {
+                  description
+                  title
+                }
+                diversidade {
+                  description
+                  title
+                }
+                especialistas {
+                  description
+                  title
+                }
+                organizacao {
+                  description
+                  title
+                }
+                qualidade {
+                  description
+                  title
+                }
+                refresh {
+                  description
+                  title
+                }
+              }
+            }
+            banner {
+              buttonText
+              title
+            }
+            member {
+              buttonText
+              description
+              title
+              titleCTA
+              bgImage {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
         }
       }
