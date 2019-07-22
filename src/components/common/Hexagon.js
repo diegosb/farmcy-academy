@@ -185,7 +185,7 @@ const Hexagon = ({ data }) => (
             <h5>{data.organizacao.title}</h5>
             {data.organizacao.text}
             <Circle position="tl">
-              <img src={data.organizacao.icon} alt="" />
+              <img src={data.organizacao.icon} alt="Icone organização" />
             </Circle>
           </InfoBox>
         </ColLeft>
@@ -194,7 +194,7 @@ const Hexagon = ({ data }) => (
             <h5>{data.atualizacao.title}</h5>
             {data.atualizacao.text}
             <Circle position="tc">
-              <img src={data.atualizacao.icon} alt="" />
+              <img src={data.atualizacao.icon} alt="Icone atualização" />
             </Circle>
           </InfoBox>
         </TopCenter>
@@ -203,7 +203,7 @@ const Hexagon = ({ data }) => (
             <h5>{data.especialistas.title}</h5>
             {data.especialistas.text}
             <Circle position="tr">
-              <img src={data.especialistas.icon} alt="" />
+              <img src={data.especialistas.icon} alt="Icone especialistas" />
             </Circle>
           </InfoBox>
         </ColRight>
@@ -214,7 +214,7 @@ const Hexagon = ({ data }) => (
             <h5>{data.qualidade.title}</h5>
             {data.qualidade.text}
             <Circle position="bl">
-              <img src={data.qualidade.icon} alt="" />
+              <img src={data.qualidade.icon} alt="Icone qualidade" />
             </Circle>
           </InfoBox>
         </ColLeft>
@@ -223,7 +223,7 @@ const Hexagon = ({ data }) => (
             <h5>{data.diversidade.title}</h5>
             {data.diversidade.text}
             <Circle>
-              <img src={data.diversidade.icon} alt="" />
+              <img src={data.diversidade.icon} alt="Icone diversidade" />
             </Circle>
           </InfoBox>
         </BottomCenter>
@@ -232,14 +232,14 @@ const Hexagon = ({ data }) => (
             <h5>{data.personalizado.title}</h5>
             {data.personalizado.text}
             <Circle position="br">
-              <img src={data.personalizado.icon} alt="" />
+              <img src={data.personalizado.icon} alt="Icone personalizado" />
             </Circle>
           </InfoBox>
         </ColRight>
       </Row>
     </InfoWrapper>
     <HexagonDraw>
-      <Logo src={logo} />
+      <Logo src={logo} alt="Logo farmcy academy" />
     </HexagonDraw>
   </HexagonWrapper>
 )
