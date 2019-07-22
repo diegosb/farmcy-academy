@@ -37,5 +37,61 @@ collections:
               {label: "Imagem fundo Desktop", name: imageDesktop, widget: image},
               {label: "Imagem fundo Mobile", name: imageMobile, widget: image}
             ]}
-
-
+          - {label: "Seção conteúdo", name: contentHeaders, widget: object, fields: [
+              {label: "Título Cabeçalho", name: title, widget: string},
+              {label: "Título da seção", name: heading, widget: string},
+              {label: "Subtítulo", name: subHeading, widget: string},
+              {label: "Texto especialistas", name: headingSpecialist, widget: string},
+              {label: "Texto cursos", name: headingCourses, widget: string},
+            ]}
+          - {label: "Como Funciona", name: howItWorks, widget: object, fields: [
+             {label: "Título Cabeçalho", name: title, widget: string},
+             {label: "Título da sessão", name: heading, widget: string},
+             {label: "Caixas como funciona", name: boxes, widget: object, fields: [
+              {label: "Texto topo centro", name: refresh, widget: object, fields: [
+                {label: "Título", name: title, widget: string},
+                {label: "Descrição", name: description, widget: text},
+                {label: "Icone", name: icon, widget: image},
+              ]},
+              {label: "Texto topo esquerdo", name: organizacao, widget: object, fields: [
+                {label: "Título", name: title, widget: string},
+                {label: "Descrição", name: description, widget: text},
+                {label: "Icone", name: icon, widget: image},
+              ]},
+              {label: "Texto topo direito", name: atualizacao, widget: object, fields: [
+                {label: "Título", name: title, widget: string},
+                {label: "Descrição", name: description, widget: text},
+                {label: "Icone", name: icon, widget: image},
+              ]},
+              {label: "Texto abaixo centro", name: especialistas, widget: object, fields: [
+                {label: "Título", name: title, widget: string},
+                {label: "Descrição", name: description, widget: text},
+                {label: "Icone", name: icon, widget: image},
+              ]},
+              {label: "Texto abaixo esquerda", name: qualidade, widget: object, fields: [
+                {label: "Título", name: title, widget: string},
+                {label: "Descrição", name: description, widget: text},
+                {label: "Icone", name: icon, widget: image},
+              ]},
+              {label: "Texto abaixo direita", name: diversidade, widget: object, fields: [
+                {label: "Título", name: title, widget: string},
+                {label: "Descrição", name: description, widget: text},
+                {label: "Icone", name: icon, widget: image},
+              ]},
+             ]},
+          ]}
+          - {label: "Banner CTA", name: banner, widget: object, fields: [
+              {label: "Texto principal", name: title, widget: string},
+              {label: "Texto botão", name: buttonText, widget: string},
+            ]}
+          - {label: "Seja membro", name: member, widget: object, fields: [
+              {label: "Título cabeçalho", name: title, widget: string},
+              {label: "Texto principal", name: description, widget: markdown},
+              {label: "Título CTA", name: title, widget: string},
+              {label: "Texto botão CTA", name: buttonText, widget: string},
+            ]}
+          - {label: "Seção depoimentos", name: testimonials, widget: object, fields: [
+              {label: "Título cabeçalho", name: title, widget: string},
+              {label: "Subtítulo", name: description, widget: markdown},
+              {label: "Texto botão CTA", name: buttonText, widget: string},
+            ]}

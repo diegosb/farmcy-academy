@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.496" height="29.644" viewBox="0 0 14.496 29.644">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="14.496" height="29.644" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ico_facebook" transform="translate(0)" clip-path="url(#clip-path)">
+    <path id="Caminho_164" data-name="Caminho 164" d="M578.436,568.99v14.332a.383.383,0,0,0,.393.373h5.6a.383.383,0,0,0,.393-.373V568.756h4.061a.385.385,0,0,0,.392-.342l.391-4.389a.382.382,0,0,0-.392-.405h-4.452v-3.113a1.358,1.358,0,0,1,1.39-1.322h3.13a.383.383,0,0,0,.393-.373v-4.389a.383.383,0,0,0-.393-.372h-5.289a5.484,5.484,0,0,0-5.62,5.339v4.231h-2.8a.383.383,0,0,0-.393.373v4.389a.383.383,0,0,0,.393.373h2.8Z" transform="translate(-575.242 -554.051)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

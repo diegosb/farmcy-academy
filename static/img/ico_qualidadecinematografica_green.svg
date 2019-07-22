@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.479" height="30.479" viewBox="0 0 30.479 30.479">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="30.479" height="30.479" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="movie" clip-path="url(#clip-path)">
+    <path id="Caminho_211" data-name="Caminho 211" d="M89.81,163.034H86.048l3.784-3.794-3.739-3.825h-5.3l3.8,3.794L80.7,163.034H76.2l3.866-3.794-3.821-3.825H70.856l3.795,3.794-3.891,3.825H66.943l3.869-3.794-3.824-3.825H63.162v30.479H93.641V155.414H89.906l3.735,3.81Zm.022,19.009H66.972v-3.81h22.86Zm0-7.579H66.972v-3.81h22.86Z" transform="translate(-63.162 -155.414)" fill="#32ba69"/>
+  </g>
+</svg>

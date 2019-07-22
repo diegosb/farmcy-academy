@@ -121,6 +121,7 @@ export const InfoBox = styled.div`
   width: 268px;
   position: relative;
   line-height: 1.15;
+  text-align: left;
   h5 {
     color: ${({ theme }) => theme.colors.white};
     font-weight: ${({ theme }) => theme.font.weight.bold};
