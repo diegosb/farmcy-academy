@@ -13,6 +13,10 @@ const PreviewCompatibleImage = ({ imageInfo, ...props }) => {
     return <Img fluid={childImageSharp.fluid} alt={alt} {...props} />
   }
 
+  if (image.relativePath) {
+    return <img src={`/img/${image.relativePath}`} alt={alt} />
+  }
+
   if (image && typeof image === 'string') return <img src={image} alt={alt} {...props} />
 
   return null

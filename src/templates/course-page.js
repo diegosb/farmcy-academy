@@ -1,15 +1,15 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-import HeroDetails from '../../components/common/HeroDetails'
-import BannerSpecialist from '../../components/common/BannerSpecialist'
-import CourseInfo from '../../components/common/CourseInfo'
-import workloadIcon from '../../img/icons/ico_cargahoraria.svg'
-import listIcon from '../../img/icons/ico_organizacaodeaprendizado.svg'
-import cinemaIcon from '../../img/icons/ico_qualidadecinematografica_green.svg'
-import availableIcon from '../../img/icons/ico_jadisponivel.svg'
-import viewIcon from '../../img/icons/ico_metodologia.svg'
-import bgImage from '../../img/BG_Curso_PauloMagoo.png'
-import CourseModules from '../../components/CourseModules'
+import Layout from '../components/Layout'
+import HeroDetails from '../components/common/HeroDetails'
+import Banner from '../components/common/Banner'
+import CourseInfo from '../components/common/CourseInfo'
+import workloadIcon from '../img/icons/ico_cargahoraria.svg'
+import listIcon from '../img/icons/ico_organizacaodeaprendizado.svg'
+import cinemaIcon from '../img/icons/ico_qualidadecinematografica_green.svg'
+import availableIcon from '../img/icons/ico_jadisponivel.svg'
+import viewIcon from '../img/icons/ico_metodologia.svg'
+import bgImage from '../img/BG_Curso_PauloMagoo.png'
+import CourseModules from '../components/CourseModules'
 
 const details = [
   {
@@ -74,7 +74,7 @@ const Course = () => (
       details={details}
     />
     <CourseModules modules={modules} />
-    <BannerSpecialist />
+    <Banner />
   </Layout>
 )
 

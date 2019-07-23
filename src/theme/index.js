@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import '../components/common/css-reset.css'
 
 const theme = {
   colors: {
@@ -53,7 +54,7 @@ export const GlobalStyle = createGlobalStyle`
   
   html, body {
     background-color: #131313;
-    font-family: ${theme.font.family};
+    font-family: ${theme.font.family}!important;
     font-size: ${theme.font.size.regular};
     color: ${theme.colors.white};
   }

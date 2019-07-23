@@ -6,23 +6,51 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blogs Disponíveis"
-    folder: "src/pages/blog"
+  - name: "cursos"
+    label: "Cursos"
+    folder: "src/pages/cursos"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "course-page"}
+      - {label: "Nome do Curso", name: "title", widget: "string"}
+      - {label: "Descrição para Thumbnail", name: "thumbnailDescription", widget: "text"}
+      - {label: "Imagem Thumbnail", name: "thumbnailImage", widget: image}
+      - {label: "Image Landing Curso", name: "bgImage", widget: image}
+      - {label: "Título Landing Curso", name: "titleLanding", widget: "string"}
+      - {label: "Curriculo Curso", name: "curriculum", widget: "markdown"}
+      - {label: "Conteúdo", name: "description", widget: "markdown"}
+      - {label: "Lista", name: "details", widget: "list", fields: [
+        {label: Icone, name: icon, widget: image},
+        {label: Texto, name: text, widget: string}
+      ]}
+      - {label: "Módulos", name: "details", widget: "list", fields: [
+          {label: "Título", name: title, widget: string},
+          {label: "Descrição", name: description, widget: markdown}
+        ]}
+
+  - name: "especialistas"
+    label: "Especialistas"
+    folder: "src/pages/especialista"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialist-page"}
+      - {label: "Nome do Especialista", name: "title", widget: "string"}
+      - {label: "Descrição para Thumbnail", name: "thumbnailDescription", widget: "text"}
+      - {label: "Imagem Thumbnail", name: "thumbnailImage", widget: image}
+      - {label: "Image Landing Especialista", name: "bgImage", widget: image}
+      - {label: "Título Landing Especialista", name: "titleLanding", widget: "string"}
+      - {label: "Curriculo Especialista", name: "curriculum", widget: "markdown"}
+      - {label: "Conteúdo", name: "description", widget: "markdown"}
+      - {label: "Lista", name: "details", widget: "list", fields: [
+          {label: Icone, name: icon, widget: image},
+          {label: Texto, name: text, widget: string}
+        ]}
+
 
   - name: "pages"
-    label: "Page"
+    label: "Pages"
     files:
       - file: "src/pages/index.md"
         label: "Landing Page"
@@ -90,3 +118,34 @@ collections:
               {label: "Subtítulo", name: description, widget: string},
               {label: "Texto botão CTA", name: buttonText, widget: string},
             ]}
+
+      - file: "src/pages/especialistas/index.md"
+        label: "Especialistas"
+        name: "specialists"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialists-page"}
+          - {label: "Texto Pequeno Acima do Botão", name: callActionSmall, widget: string, required: false}
+          - {label: "Texto Grande Acima do Botão", name: callActionBig, widget: string, required: false}
+          - {label: "Text Botão CTA Topo", name: buttonText, widget: string}
+          - {label: "Text Botão CTA Lista", name: buttonTextList, widget: string}
+          - {label: "Banner CTA", name: banner, widget: object, fields: [
+              {label: "Texto principal", name: title, widget: string},
+              {label: "Texto secundário", name: secondaryTitle, widget: string},
+              {label: "Texto botão", name: buttonText, widget: string},
+            ]}
+
+      - file: "src/pages/cursos/index.md"
+        label: "Cursos"
+        name: "courses"
+        fields:
+            - {label: "Template Key", name: "templateKey", widget: "hidden", default: "courses-page"}
+            - {label: "Texto Pequeno Acima do Botão", name: callActionSmall, widget: string, required: false}
+            - {label: "Texto Grande Acima do Botão", name: callActionBig, widget: string, required: false}
+            - {label: "Text Botão CTA Topo", name: buttonText, widget: string}
+            - {label: "Text Botão CTA Lista", name: buttonTextList, widget: string}
+            - {label: "Banner CTA", name: banner, widget: object, fields: [
+              {label: "Texto principal", name: title, widget: string},
+              {label: "Texto secundário", name: secondaryTitle, widget: string},
+              {label: "Texto botão", name: buttonText, widget: string},
+            ]
+          }

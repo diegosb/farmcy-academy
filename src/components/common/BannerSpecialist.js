@@ -50,9 +50,7 @@ const BannerSpecialist = () => (
       Outras dezenas de especialistas já fazem parte da plataforma Farmcy Academy, e você está a
       poucos cliques de garantir 7 dias de acesso grátis.
     </SubText>
-    <Button element={<Link />} to="/registro">
-      EXPERIMENTE AGORA
-    </Button>
+    <Button element={<Link to="/registro" />}>EXPERIMENTE AGORA</Button>
   </BannerSection>
 )
 

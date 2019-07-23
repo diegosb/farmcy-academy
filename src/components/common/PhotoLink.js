@@ -20,6 +20,7 @@ const Box = styled(Link)`
   align-items: center;
   cursor: pointer;
   :before {
+    z-index: 1;
     content: '';
     position: absolute;
     bottom: 0;
@@ -32,13 +33,14 @@ const Box = styled(Link)`
 
 const Image = styled(PreviewCompatibleImage)`
   height: 100%;
-  width: auto;
+  width: 100%;
 `
 
 const Text = styled.div`
   position: absolute;
   left: 15px;
   bottom: 12px;
+  z-index: 2;
 `
 
 const Title = styled.h5`
@@ -62,6 +64,7 @@ const NextIcon = styled.img`
   position: absolute;
   bottom: 15px;
   right: 15px;
+  z-index: 2;
 `
 
 const PhotoLink = ({ imageInfo, title, subtitle, to }) => (

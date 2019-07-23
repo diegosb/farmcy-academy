@@ -37,29 +37,37 @@ const Links = styled.div`
   }
 `
 
-const Products = ({ images, max, title, to }) => (
+const Products = ({ images, max, title }) => (
   <TypeSection>
     <TypeHeader>{title}</TypeHeader>
     <Links>
       {images.map((img, index) => {
+        const { node } = img
+        const { frontmatter } = node
         if (max) {
           return index + 1 <= max ? (
             <PhotoLink
-              key={img.id}
-              title={img.title}
-              subtitle={img.subtitle}
-              imageInfo={img.imageInfo}
-              to={to}
+              key={node.id}
+              title={frontmatter.name}
+              subtitle={frontmatter.thumbnailDescription}
+              imageInfo={{
+                image: frontmatter.thumbnailImage,
+                alt: frontmatter.name,
+              }}
+              to={node.fields.slug}
             />
           ) : null
         }
         return (
           <PhotoLink
-            key={img.id}
-            title={img.title}
-            subtitle={img.subtitle}
-            imageInfo={img.imageInfo}
-            to={to}
+            key={node.id}
+            title={frontmatter.name}
+            subtitle={frontmatter.thumbnailDescription}
+            imageInfo={{
+              image: frontmatter.thumbnailImage,
+              alt: frontmatter.name,
+            }}
+            to={node.fields.slug}
           />
         )
       })}
@@ -71,7 +79,6 @@ Products.propTypes = {
   images: PropTypes.arrayOf(PropTypes.object).isRequired,
   max: PropTypes.number,
   title: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
 }
 
 Products.defaultProps = {

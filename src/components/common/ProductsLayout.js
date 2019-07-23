@@ -14,7 +14,7 @@ const BorderBlack = styled.div`
 `
 
 const ProductsLayout = ({ children }) => {
-  const { hero } = useIndexPageData()
+  const { hero, banner } = useIndexPageData()
   return (
     <Layout>
       <Hero
@@ -26,7 +26,7 @@ const ProductsLayout = ({ children }) => {
         callActionBig={hero.callActionBig}
       />
       <Section>{children}</Section>
-      <Banner />
+      <Banner {...banner} />
       <BorderBlack />
     </Layout>
   )

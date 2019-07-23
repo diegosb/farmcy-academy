@@ -4,10 +4,9 @@ import { Link } from 'gatsby'
 
 import Section from './common/Section'
 import { SectionTitle, Heading, Subheading } from './common/typography'
-import mockPhoto from '../img/ativo-9.png'
-import mockPhoto2 from '../img/ativo-69.png'
 import arrowRight from '../img/icons/arrow-right.svg'
 import Products from './common/Products'
+import useAllSpecialists from '../hooks/useSpecialists'
 
 const ContentSection = styled(Section)`
   padding-bottom: 80px;
@@ -34,138 +33,27 @@ const SeeMore = styled.div`
   }
 `
 
-const imagesSpecialist = [
-  {
-    id: 1,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-  {
-    id: 2,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-  {
-    id: 3,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-  {
-    id: 4,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-  {
-    id: 5,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-  {
-    id: 6,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-  {
-    id: 7,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-  {
-    id: 8,
-    title: 'Walter Willet',
-    subtitle: 'Descrição especialista',
-    imageInfo: {
-      image: mockPhoto,
-      alt: 'Walter Willet',
-    },
-  },
-]
-
-const imagesCourses = [
-  {
-    id: 1,
-    title: 'Curso 01',
-    subtitle: 'Descrição curso',
-    imageInfo: {
-      image: mockPhoto2,
-      alt: 'Curso 01',
-    },
-  },
-  {
-    id: 2,
-    title: 'Curso 02',
-    subtitle: 'Descrição curso',
-    imageInfo: {
-      image: mockPhoto2,
-      alt: 'Curso 02',
-    },
-  },
-  {
-    id: 3,
-    title: 'Curso 03',
-    subtitle: 'Descrição curso',
-    imageInfo: {
-      image: mockPhoto2,
-      alt: 'Curso 03',
-    },
-  },
-  {
-    id: 4,
-    title: 'Curso 04',
-    subtitle: 'Descrição curso',
-    imageInfo: {
-      image: mockPhoto2,
-      alt: 'Curso 04',
-    },
-  },
-]
-
-const Content = ({ heading, headingCourses, headingSpecialist, subHeading, title }) => (
-  <ContentSection id="#conteudo" bgColor="ice">
-    <SectionTitle>{title}</SectionTitle>
-    <Heading>{heading}</Heading>
-    <Subheading>{subHeading}</Subheading>
-    <Products images={imagesSpecialist} title={headingSpecialist} to="/especialista" />
-    <SeeMore>
-      <Link to="/especialistas">
-        Ver mais <img src={arrowRight} alt="Ver mais" />
-      </Link>
-    </SeeMore>
-    <Products images={imagesCourses} title={headingCourses} max={4} to="/curso" />
-    <SeeMore>
-      <Link to="/cursos">
-        Ver mais <img src={arrowRight} alt="Ver mais" />
-      </Link>
-    </SeeMore>
-  </ContentSection>
-)
+const Content = ({ heading, headingCourses, headingSpecialist, subHeading, title }) => {
+  const specialists = useAllSpecialists()
+  return (
+    <ContentSection id="#conteudo" bgColor="ice">
+      <SectionTitle>{title}</SectionTitle>
+      <Heading>{heading}</Heading>
+      <Subheading>{subHeading}</Subheading>
+      <Products images={specialists} title={headingSpecialist} to="/especialista" />
+      <SeeMore>
+        <Link to="/especialistas">
+          Ver mais <img src={arrowRight} alt="Ver mais" />
+        </Link>
+      </SeeMore>
+      <Products images={specialists} title={headingCourses} max={4} to="/curso" />
+      <SeeMore>
+        <Link to="/cursos">
+          Ver mais <img src={arrowRight} alt="Ver mais" />
+        </Link>
+      </SeeMore>
+    </ContentSection>
+  )
+}
 
 export default Content

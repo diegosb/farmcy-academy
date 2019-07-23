@@ -1,6 +1,5 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import '@atlaskit/css-reset'
 
 import Footer from './Footer'
 import theme, { GlobalStyle } from '../theme'

@@ -7,6 +7,8 @@ import { Link } from 'gatsby'
 import media from '../../theme/media'
 import Section from './Section'
 import Button from './Button'
+import { HTMLContent } from '../Content'
+import PreviewCompatibleImage from '../PreviewCompatibleImage'
 
 const CourseSection = styled(Section)`
   color: ${({ theme }) => theme.colors.text};
@@ -90,13 +92,20 @@ const CourseInfo = ({ name, description, details }) => (
     </Row>
     <Row center="xs" start="sm">
       <Col xs={12} md={6}>
-        <Description>{description}</Description>
+        <Description>
+          <HTMLContent content={description} />
+        </Description>
       </Col>
       <Col xs={12} md={6}>
         <List>
           {details.map(({ icon, text }) => (
             <ListItem key={text}>
-              <img src={icon} alt="Icone detalhes" />
+              <PreviewCompatibleImage
+                imageInfo={{
+                  alt: 'Icone detalhes',
+                  image: icon,
+                }}
+              />
               <span>{text}</span>
             </ListItem>
           ))}
