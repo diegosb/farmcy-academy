@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Isabella Vorccaro
 thumbnailDescription: As respostas de
-thumbnailImage: /img/isabella_vorccaro.png
-bgImage: /img/isabella_vorccaro.png
+thumbnailImage: /img/isabella_vorccaro.jpg
+bgImage: /img/isabella_vorccaro.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Isabella Vorcaro
 curriculum: >-
   Nutricionista holística que trabalha a saúde do corpo em sua totalidade
