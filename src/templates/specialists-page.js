@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Products from '../../components/common/Products'
-import ReturnHome from '../../components/common/ReturnHome'
-import ProductsLayout from '../../components/common/ProductsLayout'
-import useAllSpecialists from '../../hooks/useSpecialists'
+import Products from '../components/common/Products'
+import ReturnHome from '../components/common/ReturnHome'
+import ProductsLayout from '../components/common/ProductsLayout'
+import useAllSpecialists from '../hooks/useSpecialists'
 
 const ProductPage = () => {
   const specialists = useAllSpecialists()

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Products from '../../components/common/Products'
-import mockPhoto from '../../img/alexatala.png'
-import ReturnHome from '../../components/common/ReturnHome'
-import ProductsLayout from '../../components/common/ProductsLayout'
+import Products from '../components/common/Products'
+import mockPhoto from '../img/alexatala.png'
+import ReturnHome from '../components/common/ReturnHome'
+import ProductsLayout from '../components/common/ProductsLayout'
 
 const images = [
   {
