@@ -19,8 +19,8 @@ howItWorks:
   boxes:
     atualizacao:
       description: >-
-        Seja qual for a sua dúvida, reunimos as respostas de grandes autoridades
-        no assunto em um só lugar.
+        Considerando os mais variados assuntos, reunimos os pontos de vista de
+        grandes autoridades em um só lugar.
       title: Respostas de especialistas
     diversidade:
       description: >-
@@ -40,13 +40,13 @@ howItWorks:
     qualidade:
       description: >-
         Produções em alta qualidade trazem prazer e inspiração para o
-        aprendizado
+        aprendizado.
       title: Qualidade cinematográfica
     refresh:
       description: >-
         A cada semana, um novo conteúdo para você estudar, aprender e se
         inspirar. Já são mais de 100 horas de conteúdo gravado.
-      title: Atualização constante
+      title: Aprendizagem constante
   heading: 'Ao assinar a Farmcy Academy, você receberá instantaneamente:'
   title: Como funciona
 banner:
@@ -62,11 +62,11 @@ testimonials:
   buttonText: Inscreva-se agora
   description: Faça parte da mudança e transforme sua vida agora
   testimonialList:
-    - name: Fulano de tal
+    - name: Flavio Souza
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
       text: Aqui vai um depoimento sobre o produto
-    - name: Fulano de tal
+    - name: Ana Maria Weiler
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
       text: _Aqui vai um depoimento sobre o produto_
