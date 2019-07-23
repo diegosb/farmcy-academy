@@ -70,9 +70,9 @@ testimonials:
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
       text: >-
-        _Sempre dependi muito dos outros para entender sobre alimentação e
-        saúde, até acessar todo esse conteúdo. Tenho assistido às aulas da
-        plataforma e aproveitado muito, os professores são super didáticos._
+        Sempre dependi muito dos outros para entender sobre alimentação e saúde,
+        até acessar todo esse conteúdo. Tenho assistido às aulas da plataforma e
+        aproveitado muito, os professores são super didáticos.
     - name: Fulano de tal
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
