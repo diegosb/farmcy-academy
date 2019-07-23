@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Eloísa Dutra Caldas
 thumbnailDescription: As respostas de
-thumbnailImage: /img/captura-de-tela-2019-07-23-às-16.50.10.png
-bgImage: /img/captura-de-tela-2019-07-23-às-16.50.10.png
+thumbnailImage: /img/captura-de-tela-2019-07-23-às-16.50.jpg
+bgImage: /img/captura-de-tela-2019-07-23-às-16.50.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Eloísa Dutra Caldas
 curriculum: >-
   Professora Titular do Curso de Ciências Farmacêuticas da UnB, onde ingressou
