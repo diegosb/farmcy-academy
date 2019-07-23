@@ -31,7 +31,7 @@ const Infos = styled.div`
   align-items: center;
   flex-direction: column;
   > div {
-    text-align: center;
+    description-align: center;
     margin-bottom: 18px;
     :last-child {
       margin-bottom: 0;
@@ -43,89 +43,73 @@ const Infos = styled.div`
 `
 
 const data = {
-  atualizacao: {
-    title: 'Atualização constante',
-    text:
-      'A cada semana, um novo conteúdo para você estudar, aprender e se inspirar. Já são mais de 100 horas de conteúdo gravado.',
+  refresh: {
     icon: refresh,
   },
   organizacao: {
-    title: 'Organização do aprendizado',
-    text: 'Conteúdo estruturado e organizado com indicadores que facilitam o estudo e a navegação.',
     icon: playlist,
   },
-  especialistas: {
-    title: 'Respostas de especialistas',
-    text:
-      'Seja qual for a sua dúvida, reunimos as respostas de grandes autoridades no assunto em um só lugar.',
+  atualizacao: {
     icon: especialistas,
   },
   qualidade: {
-    title: 'Qualidade cinematográfica',
-    text: 'Produções em alta qualidade trazem prazer e inspiração para o aprendizado',
     icon: qualidade,
   },
-  personalizado: {
-    title: 'Aprendizado personalizado',
-    text:
-      'Conhecimento na palma da sua mão. Estude no seu ritmo, do seu jeito, quando e onde quiser.',
+  diversidade: {
     icon: aprendizado,
   },
-  diversidade: {
-    title: 'Diversidade de pontos de vista',
-    text:
-      'Informação sem restrição, conhecimento de sobra para que você faça suas melhores escolhas, de acordo com os seus valores.',
+  especialistas: {
     icon: diversidade,
   },
 }
 
-const HowItWorks = () => (
+const HowItWorks = ({ boxes }) => (
   <HowItWorkSection bgColor="lightDark">
     <SectionTitle color="darkText">Como funciona</SectionTitle>
     <Heading color="white">Ao assinar a Farmcy Academy, você receberá instantaneamente:</Heading>
-    <Hexagon data={data} />
+    <Hexagon icons={data} boxes={boxes} />
     <Infos>
       <InfoBox>
-        <h5>{data.organizacao.title}</h5>
-        {data.organizacao.text}
+        <h5>{boxes.organizacao.title}</h5>
+        {boxes.organizacao.description}
       </InfoBox>
       <Circle isMobile>
         <img src={data.organizacao.icon} alt="" />
       </Circle>
       <InfoBox>
-        <h5>{data.atualizacao.title}</h5>
-        {data.atualizacao.text}
+        <h5>{boxes.refresh.title}</h5>
+        {boxes.refresh.description}
+      </InfoBox>
+      <Circle isMobile>
+        <img src={data.refresh.icon} alt="" />
+      </Circle>
+      <InfoBox>
+        <h5>{boxes.atualizacao.title}</h5>
+        {boxes.atualizacao.description}
       </InfoBox>
       <Circle isMobile>
         <img src={data.atualizacao.icon} alt="" />
       </Circle>
       <InfoBox>
-        <h5>{data.especialistas.title}</h5>
-        {data.especialistas.text}
-      </InfoBox>
-      <Circle isMobile>
-        <img src={data.especialistas.icon} alt="" />
-      </Circle>
-      <InfoBox>
-        <h5>{data.qualidade.title}</h5>
-        {data.qualidade.text}
+        <h5>{boxes.qualidade.title}</h5>
+        {boxes.qualidade.description}
       </InfoBox>
       <Circle isMobile>
         <img src={data.qualidade.icon} alt="" />
       </Circle>
       <InfoBox>
-        <h5>{data.diversidade.title}</h5>
-        {data.diversidade.text}
+        <h5>{boxes.especialistas.title}</h5>
+        {boxes.especialistas.description}
+      </InfoBox>
+      <Circle isMobile>
+        <img src={data.especialistas.icon} alt="" />
+      </Circle>
+      <InfoBox>
+        <h5>{boxes.diversidade.title}</h5>
+        {boxes.diversidade.description}
       </InfoBox>
       <Circle isMobile>
         <img src={data.diversidade.icon} alt="" />
-      </Circle>
-      <InfoBox>
-        <h5>{data.personalizado.title}</h5>
-        {data.personalizado.text}
-      </InfoBox>
-      <Circle isMobile>
-        <img src={data.personalizado.icon} alt="" />
       </Circle>
     </Infos>
   </HowItWorkSection>

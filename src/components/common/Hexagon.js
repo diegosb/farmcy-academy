@@ -119,6 +119,7 @@ export const InfoBox = styled.div`
   font-size: ${({ theme }) => theme.font.size.regular};
   padding: 20px 14px;
   width: 268px;
+  height: 130px;
   position: relative;
   line-height: 1.15;
   text-align: left;
@@ -177,34 +178,34 @@ const BottomCenter = styled(Col)`
   left: 20%;
 `
 
-const Hexagon = ({ data }) => (
+const Hexagon = ({ boxes, icons }) => (
   <HexagonWrapper>
     <InfoWrapper>
       <Row center="sm">
         <ColLeft sm={4}>
           <InfoBox>
-            <h5>{data.organizacao.title}</h5>
-            {data.organizacao.text}
+            <h5>{boxes.organizacao.title}</h5>
+            {boxes.organizacao.description}
             <Circle position="tl">
-              <img src={data.organizacao.icon} alt="Icone organização" />
+              <img src={icons.organizacao.icon} alt="Icone organização" />
             </Circle>
           </InfoBox>
         </ColLeft>
         <TopCenter sm={4}>
           <InfoBox>
-            <h5>{data.atualizacao.title}</h5>
-            {data.atualizacao.text}
+            <h5>{boxes.refresh.title}</h5>
+            {boxes.refresh.description}
             <Circle position="tc">
-              <img src={data.atualizacao.icon} alt="Icone atualização" />
+              <img src={icons.refresh.icon} alt="Icone atualização" />
             </Circle>
           </InfoBox>
         </TopCenter>
         <ColRight sm={4}>
           <InfoBox>
-            <h5>{data.especialistas.title}</h5>
-            {data.especialistas.text}
+            <h5>{boxes.atualizacao.title}</h5>
+            {boxes.atualizacao.description}
             <Circle position="tr">
-              <img src={data.especialistas.icon} alt="Icone especialistas" />
+              <img src={icons.atualizacao.icon} alt="Icone especialistas" />
             </Circle>
           </InfoBox>
         </ColRight>
@@ -212,28 +213,28 @@ const Hexagon = ({ data }) => (
       <Row between="sm">
         <ColLeft sm={4}>
           <InfoBox>
-            <h5>{data.qualidade.title}</h5>
-            {data.qualidade.text}
+            <h5>{boxes.qualidade.title}</h5>
+            {boxes.qualidade.description}
             <Circle position="bl">
-              <img src={data.qualidade.icon} alt="Icone qualidade" />
+              <img src={icons.qualidade.icon} alt="Icone qualidade" />
             </Circle>
           </InfoBox>
         </ColLeft>
         <BottomCenter sm={5}>
           <InfoBox>
-            <h5>{data.diversidade.title}</h5>
-            {data.diversidade.text}
+            <h5>{boxes.especialistas.title}</h5>
+            {boxes.especialistas.description}
             <Circle>
-              <img src={data.diversidade.icon} alt="Icone diversidade" />
+              <img src={icons.especialistas.icon} alt="Icone personalizado" />
             </Circle>
           </InfoBox>
         </BottomCenter>
         <ColRight sm={4}>
           <InfoBox>
-            <h5>{data.personalizado.title}</h5>
-            {data.personalizado.text}
+            <h5>{boxes.diversidade.title}</h5>
+            {boxes.diversidade.description}
             <Circle position="br">
-              <img src={data.personalizado.icon} alt="Icone personalizado" />
+              <img src={icons.diversidade.icon} alt="Icone diversidade " />
             </Circle>
           </InfoBox>
         </ColRight>
@@ -246,7 +247,8 @@ const Hexagon = ({ data }) => (
 )
 
 Hexagon.propTypes = {
-  data: PropTypes.shape({}).isRequired,
+  boxes: PropTypes.shape({}).isRequired,
+  icons: PropTypes.shape({}).isRequired,
 }
 
 export default Hexagon
