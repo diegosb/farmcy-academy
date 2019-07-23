@@ -26,7 +26,7 @@ details:
     text: >-
       O ponto de vista de Dr. Emílio Moriguchi sobre o mundo da alimentação
       direto no seu celular
-  - icon: /img/ico_jadisponivel.svg
-    text: Já disponível na plataforma
+  - icon: /img/ico_cargahoraria.svg
+    text: Em breve na plataforma
 ---
 
