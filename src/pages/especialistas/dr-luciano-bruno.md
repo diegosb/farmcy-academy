@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Dr. Luciano Bruno
 thumbnailDescription: As respostas de
-thumbnailImage: /img/dr.-luciano-bruno.png
-bgImage: /img/dr.-luciano-bruno.png
+thumbnailImage: /img/luciano-bruno.jpg
+bgImage: /img/luciano-bruno.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Luciano Bruno
 curriculum: >-
   Nutricionista mestre e doutor em Alimentos e Nutrição, Health Coach pelo
