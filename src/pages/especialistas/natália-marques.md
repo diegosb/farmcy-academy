@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Natália Marques
 thumbnailDescription: As respostas de
-thumbnailImage: /img/captura-de-tela-2019-07-23-às-16.44.42.png
-bgImage: /img/captura-de-tela-2019-07-23-às-16.44.42.png
+thumbnailImage: /img/captura-de-tela-2019-07-23-às-16.44.jpg
+bgImage: /img/captura-de-tela-2019-07-23-às-16.44.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Natália Marques
 curriculum: >-
   Nutricionista formada pelo Institute for Functional Medicine (Washington),
