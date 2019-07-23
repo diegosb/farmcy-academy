@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Marcelo Facini
 thumbnailDescription: As respostas de
-thumbnailImage: /img/marcelo_facini.png
-bgImage: /img/marcelo_facini.png
+thumbnailImage: /img/marcelo_facini.jpg
+bgImage: /img/marcelo_facini.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Marcelo Facini
 curriculum: >-
   Consultor em Gastronomia Funcional e Coach de Saúde e Bem-estar. Estudou nas
