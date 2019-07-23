@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Dr. Walter Willet
 thumbnailDescription: As respostas de
-thumbnailImage: /img/ativo-9.png
-bgImage: /img/bg_curso_walterwillet.png
+thumbnailImage: /img/ativo-9.jpg
+bgImage: /img/bg_curso_walterwillet.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Walter Willet
 curriculum: >-
   Dr. Walter C. Willett é um médico americano e pesquisador de nutrição.
