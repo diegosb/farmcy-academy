@@ -4,7 +4,7 @@ title: Raymond McCauley
 thumbnailDescription: As respostas de
 thumbnailImage: /img/43.-raymond-mccauley.png
 bgImage: /img/43.-raymond-mccauley.png
-titleLanding: Aprenda sobre saúde e alimentação com Dr. Walter Willet
+titleLanding: Aprenda sobre saúde e alimentação com Raymond McCauley
 curriculum: Chairman de Digital Biology da Singularity University.
 description: >-
   Raymond McCauley traz seu ponto de vista sobre diversos tópicos referentes à
