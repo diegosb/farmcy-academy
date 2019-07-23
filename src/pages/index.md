@@ -24,8 +24,8 @@ howItWorks:
       title: Respostas de especialistas
     diversidade:
       description: >-
-        Conhecimento na palma da sua mão. Estude no seu ritmo, do seu jeito,
-        quando e onde quiser.
+        Conhecimento na palma da sua mão. Estude no seu ritmo, quando e onde
+        quiser.
       title: Aprendizado personalizado
     especialistas:
       description: >-
