@@ -16,5 +16,18 @@ description: >-
   alimentação e saúde: consumo de carne, dietas baixas em carboidratos, fontes
   de proteína vegetal, suplementação de vitamina B12, vegetarianismo e
   veganismo, e muito mais.
+details:
+  - icon: /img/ico_entrevistacom.svg
+    text: Entrevista com Alessandra Luglio
+  - icon: /img/ico_organizacaodeaprendizado.svg
+    text: Conteúdo organizado por assuntos
+  - icon: /img/ico_qualidadecinematografica_green.svg
+    text: Qualidade cinematográfica
+  - icon: /img/ico_pontodevista.svg
+    text: >-
+      O ponto de vista da Alessandra Luglio sobre o mundo da alimentação direto
+      no seu celular
+  - icon: /img/ico_jadisponivel.svg
+    text: Já disponível na plataforma
 ---
 
