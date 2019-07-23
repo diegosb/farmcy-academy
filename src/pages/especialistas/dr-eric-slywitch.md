@@ -12,9 +12,9 @@ curriculum: >-
   relacionarmos com o mundo.
 description: >-
   Dr. Eric Slywitch traz seu ponto de vista sobre diversos tópicos referentes à
-  alimentação e saúde: tecnologia e agricultura, as possibilidades da
-  agricultura vertical, o futuro do nosso planeta e da nossa alimentação, e
-  muito mais.
+  alimentação e saúde: doenças e nossos hábitos alimentares, consumo de
+  proteínas, macro e micronutrientes, índice glicêmico e pico de insulina,
+  açúcares e adoçantes, os benefícios do jejum e muito mais.
 details:
   - icon: /img/ico_entrevistacom.svg
     text: Entrevista com Dr. Eric Slywitch
