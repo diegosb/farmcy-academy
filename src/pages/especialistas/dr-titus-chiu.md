@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Dr. Titus Chiu
 thumbnailDescription: As respostas de
-thumbnailImage: /img/41.-titus-chiu.png
-bgImage: /img/41.-titus-chiu.png
+thumbnailImage: /img/titus-chiu.jpg
+bgImage: /img/titus-chiu.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Titus Chiu
 curriculum: >-
   Médico neurologista, autor do bestseller “Brain Save” e palestrante
