@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Marcelo Traldi
 thumbnailDescription: As respostas de
-thumbnailImage: /img/marcelotraldi.png
-bgImage: /img/marcelotraldi.png
+thumbnailImage: /img/marcelotraldi.jpg
+bgImage: /img/marcelotraldi.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Marcelo Traldi
 curriculum: >-
   Professor graduado em Tecnologia em Hotelaria e mestre em Administração,
