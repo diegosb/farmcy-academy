@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Marco de Boer
 thumbnailDescription: As respostas de
-thumbnailImage: /img/marco_de_boer.png
-bgImage: /img/marco_de_boer.png
+thumbnailImage: /img/marco_de_boer.jpg
+bgImage: /img/marco_de_boer.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Marco de Boer
 curriculum: >-
   Empreendedor, Marco de Boer é  co-fundador, diretor criativo e estratégico da
