@@ -6,7 +6,6 @@ import Section from './common/Section'
 import { Heading, Subheading } from './common/typography'
 import Button from './common/Button'
 import Testimonial from './common/Testimonial'
-import userPhoto from '../img/fulanodetal.jpg'
 import media from '../theme/media'
 
 const TestimonialsSection = styled(Section)`
@@ -34,37 +33,22 @@ const UsersTestimonials = styled.div`
   `};
 `
 
-const users = [
-  {
-    id: 1,
-    text: 'Aqui vai um depoimento sobre o produto',
-    name: 'Fulano de tal',
-    photo: userPhoto,
-  },
-  {
-    id: 2,
-    text: 'Aqui vai um depoimento sobre o produto',
-    name: 'Fulano de tal',
-    photo: userPhoto,
-  },
-  {
-    id: 3,
-    text: 'Aqui vai um depoimento sobre o produto',
-    name: 'Fulano de tal',
-    photo: userPhoto,
-  },
-]
-
-const Testimonials = () => (
+const Testimonials = ({ buttonText, description, title, testimonialList }) => (
   <TestimonialsSection bgColor="ice">
-    <Heading>Conheça quem já faz parte da jornada</Heading>
-    <Subheading>Faça parte da mudança e transforme sua vida agora.</Subheading>
+    <Heading>{title}</Heading>
+    <Subheading>{description}</Subheading>
     <UsersTestimonials>
-      {users.map(user => (
-        <Testimonial key={user.id} name={user.name} text={user.text} photo={user.photo} />
+      {testimonialList.map(user => (
+        <Testimonial
+          key={user.name}
+          name={user.name}
+          subtitle={user.subtitle}
+          text={user.text}
+          photo={user.photo}
+        />
       ))}
     </UsersTestimonials>
-    <Button element={<Link to="/registro" />}>INSCREVA-SE AGORA</Button>
+    <Button element={<Link to="/registro" />}>{buttonText}</Button>
   </TestimonialsSection>
 )
 

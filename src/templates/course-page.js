@@ -11,7 +11,6 @@ import useCoursePageData from '../hooks/UseCoursePage'
 const Course = ({ data }) => {
   const { frontmatter: course } = data.markdownRemark
   const { callActionSmall, callActionBig, buttonText, buttonTextList, banner } = useCoursePageData()
-  console.log(course)
   return (
     <Layout>
       <HeroDetails
@@ -62,10 +61,10 @@ export const pageQuery = graphql`
             }
           }
         }
-        #        modules {
-        #          title
-        #          description
-        #        }
+        modules {
+          title
+          description
+        }
       }
     }
   }

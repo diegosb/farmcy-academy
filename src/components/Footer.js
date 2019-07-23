@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Container from './common/Container'
 import media from '../theme/media'
@@ -21,6 +22,9 @@ const FooterWrapper = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  a:focus {
+    outline: none;
   }
 `
 
@@ -99,7 +103,9 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <Container>
-        <Logo src={logo} alt="Urban Farmcy Logo" />
+        <Link to="/">
+          <Logo src={logo} alt="Urban Farmcy Logo" />
+        </Link>
         <LinkTag href="https://www.urbanfarmcy.com.br">a urban farmcy</LinkTag>
         <LinkTag href="https://farmcyacademy.club.hotmart.com/login">
           plataforma farmcy academy

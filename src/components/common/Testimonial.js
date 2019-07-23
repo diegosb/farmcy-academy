@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
 import media from '../../theme/media'
+import { HTMLContent } from '../Content'
 
 const TestomonialBox = styled.div`
   width: 369px;
@@ -58,22 +59,29 @@ const Username = styled.div`
   }
 `
 
-const Testimonial = ({ text, name, photo }) => (
+const Testimonial = ({ text, name, photo, subtitle }) => (
   <TestomonialBox>
-    <Text>{text}</Text>
+    <Text>
+      <HTMLContent content={text} />
+    </Text>
     <UserInfo>
-      <UserPhoto imageInfo={{ image: photo, alt: 'Foto usuário' }} />
+      {photo ? <UserPhoto imageInfo={{ image: photo, alt: 'Foto usuário' }} /> : null}
       <Username>
         <h5>{name}</h5>
-        <small>Membro da Farmcy Academy</small>
+        <small>{subtitle}</small>
       </Username>
     </UserInfo>
   </TestomonialBox>
 )
 Testimonial.propTypes = {
   text: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
+  photo: PropTypes.shape({}),
+}
+
+Testimonial.defaultProps = {
+  photo: null,
 }
 
 export default Testimonial

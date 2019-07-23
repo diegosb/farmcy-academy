@@ -117,6 +117,12 @@ collections:
               {label: "Título cabeçalho", name: title, widget: string},
               {label: "Subtítulo", name: description, widget: string},
               {label: "Texto botão CTA", name: buttonText, widget: string},
+              {label: Depoimentos, name: testimonialList, widget: list, fields: [
+                {label: Foto, name: photo, widget: image, required: false},
+                {label: Nome, name: name, widget: string},
+                {label: Subtitulo, name: subtitle, widget: string},
+                {label: Texto, name: text, widget: markdown}
+              ]}
             ]}
 
       - file: "src/pages/especialistas/index.md"
@@ -149,3 +155,23 @@ collections:
               {label: "Texto botão", name: buttonText, widget: string},
             ]
           }
+
+      - file: "src/pages/registro/index.md"
+        label: "Formulário"
+        name: "register"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "register-page"}
+          - {label: "Primeiro Passo", name: firstStep, widget: object, fields: [
+            {label: "Título", name: title, widget: string},
+            {label: "Texto botão", name: buttonText, widget: string}
+          ]}
+          - {label: "Segundo Passo", name: secondStep, widget: object, fields: [
+            {label: "Título", name: title, widget: string},
+            {label: "Link vídeo Youtube", name: linkYT, widget: string},
+            {label: "Texto botão", name: buttonText, widget: string}
+          ]}
+          - {label: "Terceiro Passo", name: thirdStep, widget: object, fields: [
+            {label: "Título", name: title, widget: string},
+            {label: "Texto", name: text, widget: string},
+            {label: "Texto botão", name: buttonText, widget: string}
+          ]}

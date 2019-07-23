@@ -78,6 +78,23 @@ const useIndexPageData = () => {
                 }
               }
             }
+            testimonials {
+              buttonText
+              description
+              title
+              testimonialList {
+                name
+                subtitle
+                text
+                photo {
+                  childImageSharp {
+                    fluid(maxWidth: 60, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

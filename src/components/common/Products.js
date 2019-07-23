@@ -31,11 +31,15 @@ const Links = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   ${media.xs`
       justify-content: center;
     `} > a {
     margin-bottom: 30px;
+    margin-right: 2%;
+    :nth-of-type(4) {
+      margin-right: 0;
+    }
   }
 `
 

@@ -10,7 +10,7 @@ import Testimonials from '../components/Testimonials'
 import useIndexPageData from '../hooks/useIndexPageData'
 
 const IndexPage = () => {
-  const { hero, banner, contentHeaders, howItWorks, member } = useIndexPageData()
+  const { hero, banner, contentHeaders, howItWorks, member, testimonials } = useIndexPageData()
   return (
     <Layout>
       <Hero
@@ -25,7 +25,7 @@ const IndexPage = () => {
       <HowItWorks {...howItWorks} />
       <Banner {...banner} />
       <Member {...member} />
-      <Testimonials />
+      <Testimonials {...testimonials} />
     </Layout>
   )
 }

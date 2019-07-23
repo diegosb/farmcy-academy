@@ -3,12 +3,12 @@ import { Row, Col } from 'react-flexbox-grid'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-import Section from '../../components/common/Section'
-import Button from '../../components/common/Button'
-import Layout from '../../components/Layout'
-import Steps from '../../components/Steps'
-import logo from '../../img/logo.png'
-import media from '../../theme/media'
+import Section from '../components/common/Section'
+import Button from '../components/common/Button'
+import Layout from '../components/Layout'
+import Steps from '../components/Steps'
+import logo from '../img/logo.png'
+import media from '../theme/media'
 
 function encode(data) {
   const formData = new FormData()
@@ -52,6 +52,7 @@ const Title = styled.h2`
 const Description = styled.p`
   font-size: ${({ theme }) => theme.font.size.regular};
   font-weight: ${({ theme }) => theme.font.weight.light};
+  color: ${({ theme }) => theme.colors.white};
   text-align: center;
   margin-bottom: 35px;
   max-width: 400px;
