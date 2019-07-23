@@ -4,7 +4,7 @@ title: Dr. Titus Chiu
 thumbnailDescription: As respostas de
 thumbnailImage: /img/41.-titus-chiu.png
 bgImage: /img/41.-titus-chiu.png
-titleLanding: Aprenda sobre saúde e alimentação com Barry Smith
+titleLanding: Aprenda sobre saúde e alimentação com Dr. Titus Chiu
 curriculum: >-
   Médico neurologista, autor do bestseller “Brain Save” e palestrante
   internacional premiado. Dr. Titus Chiu usa a medicina e neurologia funcional
