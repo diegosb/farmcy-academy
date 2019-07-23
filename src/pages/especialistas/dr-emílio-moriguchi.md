@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Dr. Emílio Moriguchi
 thumbnailDescription: As respostas de
-thumbnailImage: /img/emilio_moriguchi.png
-bgImage: /img/emilio_moriguchi.png
+thumbnailImage: /img/emilio_moriguchi.jpg
+bgImage: /img/emilio_moriguchi.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Emílio Moriguchi
 curriculum: >-
   Dr. Moriguchi é considerado uma das maiores autoridades em geriatria no
