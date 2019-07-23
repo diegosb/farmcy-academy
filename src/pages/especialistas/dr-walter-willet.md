@@ -24,7 +24,7 @@ details:
     text: Qualidade cinematográfica
   - icon: /img/ico_pontodevista.svg
     text: >-
-      O ponto de vista do Dr. Walter Willet sobre o mundo da alimentação direto
+      O ponto de vista de Dr. Walter Willet sobre o mundo da alimentação direto
       no seu celular
   - icon: /img/ico_jadisponivel.svg
     text: Já disponível na plataforma
