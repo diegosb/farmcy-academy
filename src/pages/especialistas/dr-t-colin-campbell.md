@@ -1,7 +1,7 @@
 ---
 templateKey: specialist-page
 title: Dr. T. Colin Campbell
-thumbnailDescription: Descrição especialista
+thumbnailDescription: As respostas de
 thumbnailImage: /img/34.-thomas-collin.png
 bgImage: /img/34.-thomas-collin.png
 titleLanding: Aprenda sobre saúde e alimentação com Dr. T. Colin Campbell.
