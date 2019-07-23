@@ -73,10 +73,14 @@ testimonials:
         Sempre dependi muito dos outros para entender sobre alimentação e saúde,
         até acessar todo esse conteúdo. Tenho assistido às aulas da plataforma e
         aproveitado bastante, os professores são super didáticos.
-    - name: Fulano de tal
+    - name: Vinícius Canhedo
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
-      text: '**Aqui vai um depoimento sobre o produto**'
+      text: >-
+        Estou com vocês desde o início. A plataforma ficou sensacional, agradeço
+        muito a vocês. Com esse conteúdo, posso disseminar conhecimento de
+        qualidade sobre alimentação. Os vídeos são sensacionais, bem
+        explicativos.
   title: Conheça quem já faz parte da jornada
 ---
 
