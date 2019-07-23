@@ -61,6 +61,19 @@ member:
 testimonials:
   buttonText: Inscreva-se agora
   description: Faça parte da mudança e transforme sua vida agora
+  testimonialList:
+    - name: Fulano de tal
+      photo: /img/fulanodetal.jpg
+      subtitle: Membro da Farmcy Academy
+      text: Aqui vai um depoimento sobre o produto
+    - name: Fulano de tal
+      photo: /img/fulanodetal.jpg
+      subtitle: Membro da Farmcy Academy
+      text: _Aqui vai um depoimento sobre o produto_
+    - name: Fulano de tal
+      photo: /img/fulanodetal.jpg
+      subtitle: Membro da Farmcy Academy
+      text: '**Aqui vai um depoimento sobre o produto**'
   title: Conheça quem já faz parte da jornada
 ---
 
