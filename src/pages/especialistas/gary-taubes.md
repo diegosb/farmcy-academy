@@ -1,7 +1,7 @@
 ---
 templateKey: specialist-page
 title: Gary Taubes
-thumbnailDescription: Descrição especialista
+thumbnailDescription: As respostas de
 thumbnailImage: /img/45.-gary-taubes.png
 bgImage: /img/45.-gary-taubes.png
 titleLanding: Aprenda sobre saúde e alimentação com Gary Taubes.
