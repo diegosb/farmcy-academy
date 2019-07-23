@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Brian Kateman
 thumbnailDescription: As respostas de
-thumbnailImage: /img/38.-brian-kateman.png
-bgImage: /img/38.-brian-kateman.png
+thumbnailImage: /img/brian-kateman.jpg
+bgImage: /img/brian-kateman.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Brian Kateman
 curriculum: >-
   Co-fundador e presidente da "Reducetarian Foundation", uma organização sem
