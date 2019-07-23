@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Gary Taubes
 thumbnailDescription: As respostas de
-thumbnailImage: /img/45.-gary-taubes.png
-bgImage: /img/45.-gary-taubes.png
+thumbnailImage: /img/gary-taubes.jpg
+bgImage: /img/gary-taubes.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Gary Taubes.
 curriculum: >-
   Um dos mais prestigiados jornalistas científicos da atualidade, investiga a
