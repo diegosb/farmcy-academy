@@ -69,7 +69,14 @@ testimonials:
     - name: Ana Maria Weiler
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
-      text: _Aqui vai um depoimento sobre o produto_
+      text: >-
+        _Tenho assistido às aulas da plataforma e aproveitado muito. Sou de uma
+        geração que foi pro mercado de trabalho cedo, sem dar muita bola pra
+        alimentação. Seguia o básico, contava calorias e optava por alimentos
+        light e dependia muito do que me falavam na televisão. Nunca realmente
+        adquiri esse conhecimento, até acessar a plataforma Farmcy Academy e
+        todo esse conteúdo. A aula com o Dr. Pedro foi ótima, e a com Paulo
+        "Magoo" também, mega didático. A gente aprende muito sobre alimentação._
     - name: Fulano de tal
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
