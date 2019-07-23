@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Dra. Daniela Liebscher
 thumbnailDescription: As respostas de
-thumbnailImage: /img/daniela_liebscher.png
-bgImage: /img/daniela_liebscher.png
+thumbnailImage: /img/daniela_liebscher.jpg
+bgImage: /img/daniela_liebscher.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dra. Daniela Liebscher
 curriculum: >-
   Médica e pesquisadora alemã, especialista em jejum e nutrição plant-based no
