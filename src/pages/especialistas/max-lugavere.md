@@ -18,15 +18,15 @@ description: >-
   muito mais.
 details:
   - icon: /img/ico_entrevistacom.svg
-    text: Entrevista com Dr. Eric Slywitch
+    text: Entrevista com Max Lugavere
   - icon: /img/ico_organizacaodeaprendizado.svg
     text: Conteúdo organizado por assuntos
   - icon: /img/ico_qualidadecinematografica_green.svg
     text: Qualidade cinematográfica
   - icon: /img/ico_pontodevista.svg
     text: >-
-      O ponto de vista de Dr. Eric Slywitch sobre o mundo da alimentação direto
-      no seu celular
+      O ponto de vista de Max Lugavere sobre o mundo da alimentação direto no
+      seu celular
   - icon: /img/ico_cargahoraria.svg
     text: Em breve na plataforma
 ---
