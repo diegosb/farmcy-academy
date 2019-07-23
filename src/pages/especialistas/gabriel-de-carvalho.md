@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Gabriel de Carvalho
 thumbnailDescription: As respostas de
-thumbnailImage: /img/gabrieldecarvalho.png
-bgImage: /img/gabrieldecarvalho.png
+thumbnailImage: /img/gabrieldecarvalho.jpg
+bgImage: /img/gabrieldecarvalho.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Gabriel de Carvalho
 curriculum: >-
   Nutricionista e Farmacêutico Bioquímico, foi o introdutor da Nutrição

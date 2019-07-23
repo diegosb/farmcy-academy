@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Fabiana Sabatini
 thumbnailDescription: As respostas de
-thumbnailImage: /img/fabianasabatini.png
-bgImage: /img/fabianasabatini.png
+thumbnailImage: /img/fabianasabatini.jpg
+bgImage: /img/fabianasabatini.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Fabiana Sabatini
 curriculum: >-
   Nutricionista Funcional Integrativa e Esportiva com formação nos cursos de

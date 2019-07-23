@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Alex Atala
 thumbnailDescription: As respostas de
-thumbnailImage: /img/alexatala.png
-bgImage: /img/alexatala.png
+thumbnailImage: /img/alexatala.jpg
+bgImage: /img/alexatala.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Alex Atala.
 curriculum: >-
   Renomado e multi-premiado chef brasileiro, é dono do D.O.M., um dos poucos

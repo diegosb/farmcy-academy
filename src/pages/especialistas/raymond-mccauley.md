@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Raymond McCauley
 thumbnailDescription: As respostas de
-thumbnailImage: /img/43.-raymond-mccauley.png
-bgImage: /img/43.-raymond-mccauley.png
+thumbnailImage: /img/raymond-mccauley.jpg
+bgImage: /img/raymond-mccauley.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Raymond McCauley
 curriculum: Chairman de Digital Biology da Singularity University.
 description: >-

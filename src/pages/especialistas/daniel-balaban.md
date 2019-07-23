@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Daniel Balaban
 thumbnailDescription: As respostas de
-thumbnailImage: /img/daniel_balaban_cam1.01_11_02_06.still001.png
-bgImage: /img/daniel_balaban_cam1.01_11_02_06.still001.png
+thumbnailImage: /img/daniel_balaban_cam1.01_11_02_06.jpg
+bgImage: /img/daniel_balaban_cam1.01_11_02_06.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Walter Willet
 curriculum: >-
   Economista, diretor e representante brasileiro do Programa Mundial de

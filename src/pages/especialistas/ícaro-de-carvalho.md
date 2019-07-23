@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Ícaro de Carvalho
 thumbnailDescription: As respostas de
-thumbnailImage: /img/icaro-de-carvalho.png
-bgImage: /img/icaro-de-carvalho.png
+thumbnailImage: /img/icaro-de-carvalho.jpg
+bgImage: /img/icaro-de-carvalho.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Ícaro de Carvalho
 curriculum: >-
   Empresário, redator publicitário e business-designer. Fundou o “O Novo
