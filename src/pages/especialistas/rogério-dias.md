@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Rogério Dias
 thumbnailDescription: As respostas de
-thumbnailImage: /img/captura-de-tela-2019-07-23-às-16.20.04.png
-bgImage: /img/captura-de-tela-2019-07-23-às-16.20.04.png
+thumbnailImage: /img/captura-de-tela-2019-07-23-às-16.20.jpg
+bgImage: /img/captura-de-tela-2019-07-23-às-16.20.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Rogério Dias
 curriculum: >-
   Vice-presidente da Associação Brasileira de Agroecologia (ABA) para a região
