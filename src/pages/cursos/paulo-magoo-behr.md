@@ -1,7 +1,7 @@
 ---
 templateKey: course-page
 title: Paulo "Magoo" Behr
-thumbnailDescription: Descrição do curso
+thumbnailDescription: Descrição do curso1
 thumbnailImage: /img/ativo-69.png
 bgImage: /img/bg_curso_paulomagoo.png
 titleLanding: Evolução humana e alimentação ancestral com Paulo Magoo
