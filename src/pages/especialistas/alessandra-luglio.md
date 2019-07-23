@@ -1,7 +1,7 @@
 ---
 templateKey: specialist-page
 title: Alessandra Luglio
-thumbnailDescription: Descrição especialista
+thumbnailDescription: As respostas de
 thumbnailImage: /img/aleluglio.jpg
 bgImage: /img/aleluglio.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Alessandra Luglio
