@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Section from './Section'
 import Button from './Button'
@@ -43,15 +44,18 @@ const SubText = styled.p`
   `};
 `
 
-const BannerSpecialist = () => (
+const BannerSpecialist = ({ buttonText, secondaryTitle, title }) => (
   <BannerSection bgColor="darkest">
-    <Text>Tenha 7 dias grátis de acesso ilimitado a todos os especialistas.</Text>
-    <SubText>
-      Outras dezenas de especialistas já fazem parte da plataforma Farmcy Academy, e você está a
-      poucos cliques de garantir 7 dias de acesso grátis.
-    </SubText>
-    <Button element={<Link to="/registro" />}>EXPERIMENTE AGORA</Button>
+    <Text>{title}</Text>
+    <SubText>{secondaryTitle}</SubText>
+    <Button element={<Link to="/registro" />}>{buttonText}</Button>
   </BannerSection>
 )
+
+BannerSpecialist.propTypes = {
+  buttonText: PropTypes.string.isRequired,
+  secondaryTitle: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+}
 
 export default BannerSpecialist

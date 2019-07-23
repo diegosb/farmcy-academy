@@ -9,7 +9,7 @@ const ProductPage = () => {
   const specialists = useAllSpecialists()
   return (
     <ProductsLayout>
-      <Products images={specialists} title="Especialistas Farmcy Academy" to="/especialista" />
+      <Products images={specialists} title="Especialistas Farmcy Academy" to="especialista" />
       <ReturnHome />
     </ProductsLayout>
   )

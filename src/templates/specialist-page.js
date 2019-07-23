@@ -5,14 +5,28 @@ import Layout from '../components/Layout'
 import HeroDetails from '../components/common/HeroDetails'
 import BannerSpecialist from '../components/common/BannerSpecialist'
 import CourseInfo from '../components/common/CourseInfo'
+import useSpecialistPageData from '../hooks/useSpecialistPage'
 
 const Specialist = ({ data }) => {
   const { frontmatter: specialist } = data.markdownRemark
+  const {
+    callActionSmall,
+    callActionBig,
+    buttonText,
+    buttonTextList,
+    banner,
+  } = useSpecialistPageData()
   return (
     <Layout>
-      <HeroDetails {...specialist} bgImageMobile={specialist.bgImage} />
-      <CourseInfo {...specialist} />
-      <BannerSpecialist />
+      <HeroDetails
+        {...specialist}
+        bgImageMobile={specialist.bgImage}
+        callActionSmall={callActionSmall}
+        callActionBig={callActionBig}
+        buttonText={buttonText}
+      />
+      <CourseInfo {...specialist} buttonTextList={buttonTextList} />
+      <BannerSpecialist {...banner} />
     </Layout>
   )
 }
@@ -28,7 +42,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        title
+        titleLanding
         bgImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
@@ -36,7 +50,7 @@ export const pageQuery = graphql`
             }
           }
         }
-        name
+        titleLanding
         curriculum
         callActionSmall
         callActionBig

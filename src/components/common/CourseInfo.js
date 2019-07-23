@@ -83,11 +83,11 @@ const ListItem = styled.li`
   }
 `
 
-const CourseInfo = ({ name, description, details }) => (
+const CourseInfo = ({ title, description, details, buttonTextList }) => (
   <CourseSection>
     <Row center="xs" start="sm">
       <Col xs={12}>
-        <Name>{name}</Name>
+        <Name>{title}</Name>
       </Col>
     </Row>
     <Row center="xs" start="sm">
@@ -110,23 +110,19 @@ const CourseInfo = ({ name, description, details }) => (
             </ListItem>
           ))}
         </List>
-        <Button element={<Link to="/registro" />}>Acessar agora</Button>
+        <Button element={<Link to="/registro" />}>{buttonTextList}</Button>
       </Col>
     </Row>
   </CourseSection>
 )
 CourseInfo.propTypes = {
-  name: PropTypes.string,
-  description: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  buttonTextList: PropTypes.string.isRequired,
   details: PropTypes.shape({
     icon: PropTypes.string,
     text: PropTypes.string,
   }).isRequired,
-}
-CourseInfo.defaultProps = {
-  name: 'Dr. Walter Willet',
-  description:
-    'Aqui vai um texto não muito grande vendendo o conteúdo que está na plataforma e que a pessoa vai poder acessar assim que assinar.',
 }
 
 export default CourseInfo

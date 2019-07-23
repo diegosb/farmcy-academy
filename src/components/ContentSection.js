@@ -6,7 +6,6 @@ import Section from './common/Section'
 import { SectionTitle, Heading, Subheading } from './common/typography'
 import arrowRight from '../img/icons/arrow-right.svg'
 import Products from './common/Products'
-import useAllSpecialists from '../hooks/useSpecialists'
 
 const ContentSection = styled(Section)`
   padding-bottom: 80px;
@@ -34,19 +33,18 @@ const SeeMore = styled.div`
 `
 
 const Content = ({ heading, headingCourses, headingSpecialist, subHeading, title }) => {
-  const specialists = useAllSpecialists()
   return (
     <ContentSection id="#conteudo" bgColor="ice">
       <SectionTitle>{title}</SectionTitle>
       <Heading>{heading}</Heading>
       <Subheading>{subHeading}</Subheading>
-      <Products images={specialists} title={headingSpecialist} to="/especialista" />
+      <Products title={headingSpecialist} key="especialistas" to="especialistas" />
       <SeeMore>
         <Link to="/especialistas">
           Ver mais <img src={arrowRight} alt="Ver mais" />
         </Link>
       </SeeMore>
-      <Products images={specialists} title={headingCourses} max={4} to="/curso" />
+      <Products title={headingCourses} max={4} key="cursos" to="cursos" />
       <SeeMore>
         <Link to="/cursos">
           Ver mais <img src={arrowRight} alt="Ver mais" />

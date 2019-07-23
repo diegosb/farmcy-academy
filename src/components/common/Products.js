@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import PhotoLink from './PhotoLink'
 import media from '../../theme/media'
+import useAllSpecialists from '../../hooks/useSpecialists'
+import useAllCourses from '../../hooks/useCourses'
 
 const TypeHeader = styled.h4`
   width: 100%;
@@ -37,18 +39,33 @@ const Links = styled.div`
   }
 `
 
-const Products = ({ images, max, title }) => (
-  <TypeSection>
-    <TypeHeader>{title}</TypeHeader>
-    <Links>
-      {images.map((img, index) => {
-        const { node } = img
-        const { frontmatter } = node
-        if (max) {
-          return index + 1 <= max ? (
+const Products = ({ max, title, to }) => {
+  const images = to === 'cursos' ? useAllCourses() : useAllSpecialists()
+  return (
+    <TypeSection>
+      <TypeHeader>{title}</TypeHeader>
+      <Links>
+        {images.map((img, index) => {
+          const { node } = img
+          const { frontmatter } = node
+          if (max) {
+            return index + 1 <= max ? (
+              <PhotoLink
+                key={node.id}
+                title={frontmatter.title}
+                subtitle={frontmatter.thumbnailDescription}
+                imageInfo={{
+                  image: frontmatter.thumbnailImage,
+                  alt: frontmatter.name,
+                }}
+                to={node.fields.slug}
+              />
+            ) : null
+          }
+          return (
             <PhotoLink
               key={node.id}
-              title={frontmatter.name}
+              title={frontmatter.title}
               subtitle={frontmatter.thumbnailDescription}
               imageInfo={{
                 image: frontmatter.thumbnailImage,
@@ -56,27 +73,14 @@ const Products = ({ images, max, title }) => (
               }}
               to={node.fields.slug}
             />
-          ) : null
-        }
-        return (
-          <PhotoLink
-            key={node.id}
-            title={frontmatter.name}
-            subtitle={frontmatter.thumbnailDescription}
-            imageInfo={{
-              image: frontmatter.thumbnailImage,
-              alt: frontmatter.name,
-            }}
-            to={node.fields.slug}
-          />
-        )
-      })}
-    </Links>
-  </TypeSection>
-)
+          )
+        })}
+      </Links>
+    </TypeSection>
+  )
+}
 
 Products.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.object).isRequired,
   max: PropTypes.number,
   title: PropTypes.string.isRequired,
 }

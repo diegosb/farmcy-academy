@@ -62,14 +62,14 @@ const Course = () => (
     <HeroDetails
       bgImageMobile={bgImage}
       bgImage={bgImage}
-      title="Evolução humana e alimentação ancestral com Paulo Magoo"
+      titleLanding="Evolução humana e alimentação ancestral com Paulo Magoo"
       curriculum={`Entender a história faz parte de uma alimentação saudável. Neste curso, Paulo "Magoo" Behr contextualiza a ancestralidade humana e a conecta com o mundo atual, pontua as diferenças e as principais causas pelas quais sofremos tanto com a má alimentação do mundo moderno.`}
       callActionSmall="Tenha acesso ilimitado por"
       callActionBig="7 dias grátis"
       buttonText="Acesse todo o conteúdo"
     />
     <CourseInfo
-      name={`Paulo "Magoo" Behr`}
+      title={`Paulo "Magoo" Behr`}
       description="PaleoCoach, profissional do exercício e palestrante com mais de 30 anos de experiência mudando o corpo e a vida das pessoas, além de contribuir na carreira profissional de milhares de colegas em centenas de cursos ministrados no Brasil e exterior."
       details={details}
     />

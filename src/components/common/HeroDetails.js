@@ -55,7 +55,7 @@ const Description = styled.p`
 const HeroDetails = ({
   bgImage,
   bgImageMobile,
-  title,
+  titleLanding,
   curriculum,
   buttonText,
   callActionSmall,
@@ -66,7 +66,7 @@ const HeroDetails = ({
       <Header withLogin />
       <Row bottom="xs">
         <Col md={6}>
-          <MainHeroText>{title}</MainHeroText>
+          <MainHeroText>{titleLanding}</MainHeroText>
           <Description>{curriculum}</Description>
         </Col>
         <Col md={6}>
@@ -82,9 +82,9 @@ const HeroDetails = ({
   </HeroSection>
 )
 HeroDetails.propTypes = {
-  bgImage: PropTypes.string.isRequired,
-  bgImageMobile: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  bgImage: PropTypes.shape({}).isRequired,
+  bgImageMobile: PropTypes.shape({}).isRequired,
+  titleLanding: PropTypes.string.isRequired,
   curriculum: PropTypes.string.isRequired,
   callActionSmall: PropTypes.string.isRequired,
   callActionBig: PropTypes.string.isRequired,

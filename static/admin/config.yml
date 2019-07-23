@@ -24,14 +24,14 @@ collections:
         {label: Icone, name: icon, widget: image},
         {label: Texto, name: text, widget: string}
       ]}
-      - {label: "Módulos", name: "details", widget: "list", fields: [
+      - {label: "Módulos", name: "modules", widget: "list", fields: [
           {label: "Título", name: title, widget: string},
           {label: "Descrição", name: description, widget: markdown}
-        ]}
+      ]}
 
   - name: "especialistas"
     label: "Especialistas"
-    folder: "src/pages/especialista"
+    folder: "src/pages/especialistas"
     create: true
     slug: "{{slug}}"
     fields:

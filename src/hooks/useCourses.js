@@ -1,10 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby'
 
-const useAllSpecialists = () => {
+const useAllCourses = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
-      query SpecialistsQuery {
-        allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "specialist-page" } } }) {
+      query CoursesQuery {
+        allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "course-page" } } }) {
           edges {
             node {
               id
@@ -31,4 +31,4 @@ const useAllSpecialists = () => {
   return allMarkdownRemark.edges
 }
 
-export default useAllSpecialists
+export default useAllCourses
