@@ -2,8 +2,8 @@
 templateKey: specialist-page
 title: Sebastian Joy
 thumbnailDescription: As respostas de
-thumbnailImage: /img/sebastian_joy.png
-bgImage: /img/sebastian_joy.png
+thumbnailImage: /img/sebastian_joy.jpg
+bgImage: /img/sebastian_joy.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Sebastian Joy
 curriculum: >-
   CEO da Federação Vegetariana Alemã (VEBU) e da ProVeg, board member da
