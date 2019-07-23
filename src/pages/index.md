@@ -70,10 +70,9 @@ testimonials:
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
       text: >-
-        _Tenho assistido às aulas da plataforma e aproveitado muito. Sempre
-        dependi muito dos outros para entender sobre o assunto, até acessar todo
-        esse conteúdo. A aula com o Dr. Pedro foi ótima, e a com Paulo "Magoo"
-        também, mega didático. A gente aprende muito sobre alimentação._
+        _Sempre dependi muito dos outros para entender sobre alimentação e
+        saúde, até acessar todo esse conteúdo. Tenho assistido às aulas da
+        plataforma e aproveitado muito, os professores são super didáticos._
     - name: Fulano de tal
       photo: /img/fulanodetal.jpg
       subtitle: Membro da Farmcy Academy
