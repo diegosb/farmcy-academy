@@ -6,13 +6,15 @@ thumbnailImage: /img/ativo-9.png
 bgImage: /img/bg_curso_walterwillet.png
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Walter Willet
 curriculum: >-
-  Walter C. Willett, é um médico americano e pesquisador de nutrição.
-  Atualmente, Willett é o professor Fredrick John Stare de Epidemiologia e
-  Nutrição na Escola de Saúde Pública de Harvard e foi o presidente de seu
+  Dr. Walter C. Willett é um médico americano e pesquisador de nutrição.
+  Atualmente, Dr. Willett é o professor Fredrick John Stare de Epidemiologia e
+  Nutrição na Escola de Saúde Pública de Harvard e foi o presidente do
   departamento de nutrição de 1991 a 2017.
 description: >-
-  Aqui vai um texto não muito grande vendendo o conteúdo que está na plataforma
-  e que a pessoa vai poder acessar assim que assinar.
+  Dr. Walter Willet traz seu ponto de vista sobre diversos tópicos referentes à
+  alimentação e saúde: os pilares da nutrição, predisposição genética e doenças,
+  jejum intermitente, dietas baixas em carboidratos, o alimento como cura, e
+  muito mais.
 details:
   - icon: /img/ico_entrevistacom.svg
     text: Entrevista com Dr. Walter Willet
