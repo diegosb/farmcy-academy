@@ -1,7 +1,7 @@
 ---
 templateKey: specialist-page
 title: Dr. Walter Willet
-thumbnailDescription: Descrição especialista
+thumbnailDescription: As respostas de
 thumbnailImage: /img/ativo-9.png
 bgImage: /img/bg_curso_walterwillet.png
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Walter Willet
