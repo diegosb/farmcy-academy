@@ -55,7 +55,7 @@ banner:
 member:
   bgImage: /img/bg_impactosocial.png
   buttonText: Inscreva-se agora
-  description: ' <p>Parte da sua mensalidade é destinada para a produção de uma série totalmente gratuita, que tem a missão de levar conhecimento e informação sobre alimentação e saúde para todos os brasileiros.</p><p>Além de melhorar a sua qualidade de vida, você possibilita que muitas outras pessoas também adquiram conhecimento para transformar suas vidas.</p><p>Até agora, já são mais de 40 mil pessoas impactadas.</p>'
+  description: ' <p>Parte da sua mensalidade é destinada para a produção de uma série totalmente gratuita, que tem a missão de levar conhecimento e informação sobre alimentação e saúde para todos os brasileiros.</p><p>Além de melhorar a sua qualidade de vida, você possibilita que muitas outras pessoas também adquiram conhecimento para transformar suas vidas.</p><p>Até agora, já são mais de 50 mil pessoas impactadas.</p>'
   title: Uma decisão de impacto social
   titleCTA: Seja um membro e financie essa causa
 testimonials:
