@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Alessandra Luglio
 thumbnailDescription: As respostas de
 thumbnailImage: /img/aleluglio.jpg
-bgImage: /img/aleluglio.jpg
+bgImage: /img/aleluglio1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Alessandra Luglio
 curriculum: >-
   Nutricionista plant-based, é coordenadora do Departamento de Medicina e
