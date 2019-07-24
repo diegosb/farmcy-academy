@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Nancy Chen
 thumbnailDescription: As respostas de
 thumbnailImage: /img/44.-nancy-chen.jpg
-bgImage: /img/44.-nancy-chen.jpg
+bgImage: /img/nancychen1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Nancy Chen
 curriculum: >-
   Antropóloga da medicina, suas linhas de pesquisa incluem o estudo de
