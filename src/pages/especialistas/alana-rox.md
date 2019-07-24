@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Alana Rox
 thumbnailDescription: As respostas de
 thumbnailImage: /img/alana_rox_cam1.jpg
-bgImage: /img/alana_rox_cam1.jpg
+bgImage: /img/alanarox.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Alana Rox
 curriculum: >-
   Vegetariana desde criança, é praticante de uma alimentação vegana e atualmente
