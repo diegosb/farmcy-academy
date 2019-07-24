@@ -1,6 +1,8 @@
 ---
 templateKey: landing-page
 title: teste-landing
+titlePage: Farmcy Academy - Teste landing
+descriptionPage: Teste da landing page
 textAbovePg1: >-
   <h2>Já está disponível o primeiro episódio da série gratuita "O Que Você Vai
   Comer Amanhã"!</h2>
