@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. Paul Seifert
 thumbnailDescription: As respostas de
 thumbnailImage: /img/paul_seifert.jpg
-bgImage: /img/paul_seifert.jpg
+bgImage: /img/paulseifert1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Paul Seifert
 curriculum: >-
   Disseminador do conceito de "Soul Food", possui experiência na área da
