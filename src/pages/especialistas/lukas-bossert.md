@@ -10,7 +10,7 @@ curriculum: >-
   bem-estar ideal através de uma proposta mega healthy, alinhando corpo e mente
   em busca de hábitos cada vez mais saudáveis.
 description: >-
-  Niko Rittenau traz seu ponto de vista sobre diversos tópicos referentes à
+  Lukas Bossert traz seu ponto de vista sobre diversos tópicos referentes à
   alimentação, saúde e muito mais.
 details:
   - icon: /img/ico_entrevistacom.svg
