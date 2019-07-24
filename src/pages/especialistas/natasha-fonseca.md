@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Natasha Fonseca
 thumbnailDescription: As respostas de
 thumbnailImage: /img/natasha_fonseca.jpg
-bgImage: /img/natasha_fonseca.jpg
+bgImage: /img/natasha1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Natasha Fonseca
 curriculum: >-
   Nutricionista e Mestre em Neurociências pela UFRGS. Primeira instrutora de
