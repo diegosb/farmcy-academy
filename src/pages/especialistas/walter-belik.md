@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Walter Belik
 thumbnailDescription: As respostas de
 thumbnailImage: /img/walter_belik_cam1.00_38_29_21.still001.jpg
-bgImage: /img/walter_belik_cam1.00_38_29_21.still001.jpg
+bgImage: /img/walterbelik1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Walter Belik
 curriculum: >-
   Professor do Instituto de Economia da UNICAMP, ele se dedica a pensar na
