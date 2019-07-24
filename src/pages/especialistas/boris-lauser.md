@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Boris Lauser
 thumbnailDescription: As respostas de
 thumbnailImage: /img/boris_lauser.jpg
-bgImage: /img/boris_lauser.jpg
+bgImage: /img/borislauser1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Boris Lauser
 curriculum: >-
   Estudou em conceituadas escolas de raw food, incluindo a Tree of Life e a
