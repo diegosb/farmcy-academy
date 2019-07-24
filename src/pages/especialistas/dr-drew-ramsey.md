@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. Drew Ramsey
 thumbnailDescription: As respostas de
 thumbnailImage: /img/drew-ramsey.jpg
-bgImage: /img/drew-ramsey.jpg
+bgImage: /img/drdrew1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Drew Ramsey.
 curriculum: >-
   Psiquiatra e fundador da "Brain Food Clinic", é um dos principais defensores
