@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. Uronal Zancan
 thumbnailDescription: As respostas de
 thumbnailImage: /img/uronalzancan.jpg
-bgImage: /img/uronalzancan.jpg
+bgImage: /img/uronal1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Uronal Zancan
 curriculum: >-
   Médico ortopedista há mais de 4 décadas e, desde 2006, um estudioso do
