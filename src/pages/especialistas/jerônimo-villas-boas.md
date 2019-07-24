@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Jerônimo Villas Boas
 thumbnailDescription: As respostas de
 thumbnailImage: /img/jeronimo_villas_boas.jpg
-bgImage: /img/jeronimo_villas_boas.jpg
+bgImage: /img/jeronimoooooooooo1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Jerônimo Villas Boas
 curriculum: >-
   Ecólogo, especialista na cadeia de produtos da sociodiversidade. Mestre em
