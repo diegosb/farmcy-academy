@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Rafael Coimbra
 thumbnailDescription: As respostas de
 thumbnailImage: /img/rafaelcoimbra.jpg
-bgImage: /img/rafaelcoimbra.jpg
+bgImage: /img/rafaelcoimbra1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Rafael Coimbra
 curriculum: >-
   Publicitário, largou a vida das agências por conta de seu interesse pelo
