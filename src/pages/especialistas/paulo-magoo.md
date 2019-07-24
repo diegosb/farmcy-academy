@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Paulo "Magoo"
 thumbnailDescription: As respostas de
 thumbnailImage: /img/paulomagoo.jpg
-bgImage: /img/paulomagoo.jpg
+bgImage: /img/magoo11.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Paulo "Magoo"
 curriculum: >-
   Paleo Coach, profissional do exercício e palestrante com mais de 30 anos de
