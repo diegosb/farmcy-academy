@@ -1,0 +1,5 @@
+---
+templateKey: register-page
+
+---
+

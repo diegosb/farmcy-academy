@@ -183,4 +183,20 @@ collections:
             ]
           }
 
-
+  - name: "landings"
+    label: "Landing Pages"
+    folder: "src/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "landing-page"}
+        - {label: "Url da página", name: "title", widget: "string"}
+        - {label: "Texto acima do vídeo na página 01", name: "textAbovePg1", widget: "markdown"}
+        - {label: "Código do vídeo Youtube página 01", name: "youtubePg01", widget: "string"}
+        - {label: "Texto abaixo do vídeo na página 01", name: "textBelowPg01", widget: "markdown"}
+        - {label: "Texto Botão página 01", name: "buttonPg01", widget: "string"}
+        - {label: "Texto acima do vídeo na página 02", name: "textAbovePg2", widget: "markdown"}
+        - {label: "Código do vídeo Youtube página 02", name: "youtubePg02", widget: "string"}
+        - {label: "Texto abaixo do vídeo na página 02", name: "textBelowPg02", widget: "markdown"}
+        - {label: "Texto Botão página 02", name: "buttonPg02", widget: "string"}
+        - {label: "Link Botão página 02", name: "buttonLink", widget: "string"}

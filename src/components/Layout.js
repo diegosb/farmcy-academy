@@ -5,11 +5,11 @@ import Footer from './Footer'
 import theme, { GlobalStyle } from '../theme'
 import Headers from './Headers'
 
-const TemplateWrapper = ({ children, noFooter }) => {
+const TemplateWrapper = ({ children, noFooter, setTitle, setDescription }) => {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Headers />
+        <Headers setTitle={setTitle} setDescription={setDescription} />
         <GlobalStyle />
         <div>{children}</div>
         {!noFooter ? <Footer /> : null}
