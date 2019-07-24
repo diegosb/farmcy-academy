@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Lukas Bossert
 thumbnailDescription: As respostas de
 thumbnailImage: /img/lukas_bossert.jpg
-bgImage: /img/lukas_bossert.jpg
+bgImage: /img/lukasbossert1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Lukas Bossert
 curriculum: >-
   Um dos três fundadores do Daluma, traz a essência do seu interesse pelo
