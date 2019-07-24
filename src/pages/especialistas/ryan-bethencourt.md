@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Ryan Bethencourt
 thumbnailDescription: As respostas de
 thumbnailImage: /img/42.-ryan-bethencourt.jpg
-bgImage: /img/42.-ryan-bethencourt.jpg
+bgImage: /img/ryanbethen1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Ryan Bethencourt
 curriculum: >-
   Cientista, empreendedor e biohacker, mais conhecido por seu trabalho como
