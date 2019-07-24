@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Samantha Elkrief
 thumbnailDescription: As respostas de
 thumbnailImage: /img/37.-samantha-elkrief.jpg
-bgImage: /img/37.-samantha-elkrief.jpg
+bgImage: /img/samanthaelk1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Samantha Elkrief
 curriculum: >-
   Health Coach, professora e chef que ajuda as pessoas a viverem mais felizes e
