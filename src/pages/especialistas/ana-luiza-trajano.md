@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Ana Luiza Trajano
 thumbnailDescription: As respostas de
 thumbnailImage: /img/ana_luiza_trajano.jpg
-bgImage: /img/ana_luiza_trajano.jpg
+bgImage: /img/analuizatajano1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Ana Luiza Trajano
 curriculum: >-
   Chef que tem como foco de trabalho a valorização da cultura e culinária
