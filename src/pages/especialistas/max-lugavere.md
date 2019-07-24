@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Max Lugavere
 thumbnailDescription: As respostas de
 thumbnailImage: /img/max-lugavere.jpg
-bgImage: /img/max-lugavere.jpg
+bgImage: /img/maxluga1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Max Lugavere
 curriculum: >-
   Jornalista de saúde e ciência, autor e cineasta. Conhecido pelo documentário
