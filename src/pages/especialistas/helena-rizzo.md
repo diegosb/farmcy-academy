@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Helena Rizzo
 thumbnailDescription: As respostas de
 thumbnailImage: /img/helena_rizzo.jpg
-bgImage: /img/helena_rizzo.jpg
+bgImage: /img/helenarizzo1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Helena Rizzo
 curriculum: >-
   Eleita a melhor chef mulher do mundo, Helena Rizzo é proprietária de um dos
