@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Anna Elisa de Castro
 thumbnailDescription: As respostas de
 thumbnailImage: /img/annaelisadecastro.jpg
-bgImage: /img/annaelisadecastro.jpg
+bgImage: /img/annaelisadecastro1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Anna Elisa de Castro
 curriculum: >-
   Chef formada pelos cursos da Natural Gourmet Institute e do Institute for
