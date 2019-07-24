@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Marcelo Kessler
 thumbnailDescription: As respostas de
 thumbnailImage: /img/marcelokessler.jpg
-bgImage: /img/marcelokessler.jpg
+bgImage: /img/marcelokessler1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Marcelo Kessler
 curriculum: >-
   Um dos grandes especialistas em obesidade da América Latina, fundador e
