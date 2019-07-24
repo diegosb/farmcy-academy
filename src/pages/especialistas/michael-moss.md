@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Michael Moss
 thumbnailDescription: As respostas de
 thumbnailImage: /img/40.-michael-moss.jpg
-bgImage: /img/40.-michael-moss.jpg
+bgImage: /img/michaelmoss1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Michael Moss
 curriculum: >-
   Vencedor do Prêmio Pullitzer e do Prêmio Gerald Loeb, é jornalista
