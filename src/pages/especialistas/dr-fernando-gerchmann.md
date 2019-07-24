@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. Fernando Gerchmann
 thumbnailDescription: As respostas de
 thumbnailImage: /img/fernando_gerchman_cam1.jpg
-bgImage: /img/fernando_gerchman_cam1.jpg
+bgImage: /img/fernandogerchman1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Fernando Gerchmann
 curriculum: >-
   Doutor em endocrinologia formado pela UFRGS, estudou Divisão de Metabologia,
