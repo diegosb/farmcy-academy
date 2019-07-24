@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Michael Carolan
 thumbnailDescription: As respostas de
 thumbnailImage: /img/michael_carolan_cam1.00_50_11_09.still001.jpg
-bgImage: /img/michael_carolan_cam1.00_50_11_09.still001.jpg
+bgImage: /img/michaelcarolan1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Michael Carolan
 curriculum: >-
   Ph.D. em Sociologia pela Iowa State University, autor dos livros "No One Eats
