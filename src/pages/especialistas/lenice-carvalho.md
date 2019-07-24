@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Lenice Carvalho
 thumbnailDescription: As respostas de
 thumbnailImage: /img/lenicedecarvalho.jpg
-bgImage: /img/lenicedecarvalho.jpg
+bgImage: /img/lenicecarvalho1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Lenice Carvalho
 curriculum: >-
   Nutricionista com especialização em Ciências do Esporte pela UFRGS (1991) e
