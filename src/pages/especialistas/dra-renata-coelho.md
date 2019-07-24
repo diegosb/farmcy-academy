@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dra. Renata Coelho
 thumbnailDescription: As respostas de
 thumbnailImage: /img/renata_coelho_cam2.jpg
-bgImage: /img/renata_coelho_cam2.jpg
+bgImage: /img/renatacoelho1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dra. Renata Coelho
 curriculum: >-
   Médica cardiologista e adepta de uma alimentação viva, é colunista no site
