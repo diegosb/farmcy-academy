@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Marcelo Scofano
 thumbnailDescription: As respostas de
 thumbnailImage: /img/marceloscofano.jpg
-bgImage: /img/marceloscofano.jpg
+bgImage: /img/marceloscofano1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Marcelo Scofano
 curriculum: >-
   Estudioso em azeites, formado pelo IFAPA, na Espanha. Como consultor e
