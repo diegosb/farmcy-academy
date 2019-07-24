@@ -1,6 +1,6 @@
 ---
 templateKey: specialist-page
-title: Alex Atala
+title: Alex Atala 
 thumbnailDescription: As respostas de
 thumbnailImage: >-
   https://res.cloudinary.com/dccmvgzia/image/upload/v1563925410/alexatala_kggl0h.jpg

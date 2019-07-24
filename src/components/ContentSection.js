@@ -38,7 +38,7 @@ const Content = ({ heading, headingCourses, headingSpecialist, subHeading, title
       <SectionTitle>{title}</SectionTitle>
       <Heading>{heading}</Heading>
       <Subheading>{subHeading}</Subheading>
-      <Products title={headingSpecialist} key="especialistas" to="especialistas" />
+      <Products title={headingSpecialist} max={8} key="especialistas" to="especialistas" />
       <SeeMore>
         <Link to="/especialistas">
           Ver mais <img src={arrowRight} alt="Ver mais" />

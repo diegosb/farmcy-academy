@@ -44,28 +44,18 @@ const Links = styled.div`
 `
 
 const Products = ({ max, title, to }) => {
-  const images = to === 'cursos' ? useAllCourses() : useAllSpecialists()
+  let images = to === 'cursos' ? useAllCourses() : useAllSpecialists()
+  if (max) {
+    images = images.slice(0, max)
+  }
+  console.log(images)
   return (
     <TypeSection>
       <TypeHeader>{title}</TypeHeader>
       <Links>
-        {images.map((img, index) => {
+        {images.map(img => {
           const { node } = img
           const { frontmatter } = node
-          if (max) {
-            return index + 1 <= max ? (
-              <PhotoLink
-                key={node.id}
-                title={frontmatter.title}
-                subtitle={frontmatter.thumbnailDescription}
-                imageInfo={{
-                  image: frontmatter.thumbnailImage,
-                  alt: frontmatter.name,
-                }}
-                to={node.fields.slug}
-              />
-            ) : null
-          }
           return (
             <PhotoLink
               key={node.id}

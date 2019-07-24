@@ -4,7 +4,10 @@ const useAllSpecialists = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
       query SpecialistsQuery {
-        allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "specialist-page" } } }) {
+        allMarkdownRemark(
+          sort: { order: ASC, fields: [frontmatter___title] }
+          filter: { frontmatter: { templateKey: { eq: "specialist-page" } } }
+        ) {
           edges {
             node {
               id

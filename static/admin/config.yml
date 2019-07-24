@@ -5,11 +5,12 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dccmvgzia
-    api_key: 295229933859457
+#media_library:
+#  name: cloudinary
+#  use_transformations: false
+#  config:
+#    cloud_name: dccmvgzia
+#    api_key: 295229933859457
 
 collections:
   - name: "cursos"
@@ -44,7 +45,7 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialist-page"}
       - {label: "Nome do Especialista", name: "title", widget: "string"}
       - {label: "Descrição para Thumbnail", name: "thumbnailDescription", widget: "text"}
-      - {label: "Imagem Thumbnail", name: "thumbnailImage", widget: image}
+      - {label: "Imagem Thumbnail", name: "thumbnailImage", widget: image }
       - {label: "Image Landing Especialista", name: "bgImage", widget: image}
       - {label: "Título Landing Especialista", name: "titleLanding", widget: "string"}
       - {label: "Curriculo Especialista", name: "curriculum", widget: "markdown"}

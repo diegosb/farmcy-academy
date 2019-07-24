@@ -16,8 +16,8 @@ const HeroSection = styled.section`
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-position: top;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 0 100px;
   background-image: ${({ bgImage }) =>
@@ -29,13 +29,23 @@ const HeroSection = styled.section`
     padding-bottom: 40px;
     background-size: 150%;
     background-image: ${({ bgImageMobile }) =>
-      `url(${bgImageMobile.childImageSharp
-        ? bgImageMobile.childImageSharp.fluid.src
-        : bgImageMobile})`};  
+      `url(${
+        bgImageMobile.childImageSharp ? bgImageMobile.childImageSharp.fluid.src : bgImageMobile
+      })`};  
   `};
   ${media.xxs`
     min-height: 120vh;
   `};
+  ::after {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(transparent, #000);
+  }
 `
 
 const Description = styled.p`
@@ -62,7 +72,7 @@ const HeroDetails = ({
   callActionBig,
 }) => (
   <HeroSection bgImage={bgImage} bgImageMobile={bgImageMobile}>
-    <Container css="display: flex; flex-direction: column; justify-content: space-between">
+    <Container css="display: flex; flex-direction: column; justify-content: space-between; z-index: 1">
       <Header withLogin />
       <Row bottom="xs">
         <Col md={6}>
