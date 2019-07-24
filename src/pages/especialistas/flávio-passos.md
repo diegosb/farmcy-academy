@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Flávio Passos
 thumbnailDescription: As respostas de
 thumbnailImage: /img/flaviopassos.jpg
-bgImage: /img/flaviopassos.jpg
+bgImage: /img/flaviopassos1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Flávio Passos
 curriculum: >-
   Pesquisador em nutrição e gastronomia saudável, está desde 2015 no canal Sony
