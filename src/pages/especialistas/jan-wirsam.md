@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Jan Wirsam
 thumbnailDescription: As respostas de
 thumbnailImage: /img/jam_wirsam.jpg
-bgImage: /img/jam_wirsam.jpg
+bgImage: /img/jamwirsam1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Jan Wirsam
 curriculum: >-
   Responsável pela área de Operations Management and Innovation na University of
