@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Rosângela de Castro
 thumbnailDescription: As respostas de
 thumbnailImage: /img/rosangeladecastro.jpg
-bgImage: /img/rosangeladecastro.jpg
+bgImage: /img/rosangela1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Rosângela de Castro
 curriculum: >-
   Formada pela Universidade Internacional de Yôga em 1977, é discípula do Mestre
