@@ -67,7 +67,7 @@ testimonials:
       subtitle: Membro da Farmcy Academy
       text: Aqui vai um depoimento sobre o produto
     - name: Ana Maria Weiler
-      photo: /img/fulanodetal.jpg
+      photo: /img/whatsapp-image-2019-07-23-at-17.14.35.jpeg
       subtitle: Membro da Farmcy Academy
       text: >-
         Sempre dependi muito dos outros para entender sobre alimentação e saúde,
