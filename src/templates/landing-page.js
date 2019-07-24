@@ -1,5 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import styled from 'styled-components'
+import { graphql, Link } from 'gatsby'
+
 import Container from '../components/common/Container'
 import Layout from '../components/Layout'
 import Button from '../components/common/Button'
@@ -48,13 +50,23 @@ const LandingSection = styled.section`
     }
   }
 
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
   button,
   a {
     > span {
       color: ${({ theme }) => theme.colors.white};
       font-weight: ${({ theme }) => theme.font.weight.bold};
     }
-    margin-top: 50px;
+    :last-child {
+      margin-top: 50px;
+    }
+    :focus {
+      outline: none;
+    }
   }
 `
 
@@ -72,35 +84,48 @@ const VideoSection = styled.div`
   }
 `
 
-const topo = `
-<h2>Já está disponível o primeiro episódio da série gratuita "O Que Você Vai Comer Amanhã"!</h2>
-<h2><strong>APERTE O PLAY E ASSISTA AGORA!</strong></h2>
-`
-const bottom = `
-<h3>Esta é apenas o início da jornada que transformará a forma como você se relaciona com o alimento.</h3>
-<h3><strong>Dê o próximo passo para encontrar as respostas para suas maiores dúvidas sobre alimentação!</strong></h3>
-`
-
-const LandingPage = () => {
+const LandingPage = ({ data }) => {
+  const { frontmatter: landing } = data.markdownRemark
   const [page, setPage] = useState(1)
+  const {
+    buttonLink,
+    buttonPg01,
+    buttonPg02,
+    descriptionPage,
+    textAbovePg1,
+    textAbovePg2,
+    textBelowPg01,
+    textBelowPg02,
+    titlePage,
+    youtubePg01,
+    youtubePg02,
+    bgImage,
+  } = landing
 
   function renderPageOne() {
     return (
       <Fragment>
-        <HTMLContent content={topo} />
+        <HTMLContent content={textAbovePg1} />
         <VideoSection>
           <iframe
             width="560"
             height="315"
             title="Youtube Urban Farmcy"
-            src="https://www.youtube.com/embed/l4h7NQO-gz4?controls=0"
+            src={`https://www.youtube.com/embed/${youtubePg01}?controls=0`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </VideoSection>
-        <HTMLContent content={bottom} />
-        <Button onClick={() => setPage(2)}>CONTINUE SUA JORNADA</Button>
+        <HTMLContent content={textBelowPg01} />
+        <Button
+          onClick={() => {
+            setPage(2)
+            window.scrollTo(0, 0)
+          }}
+        >
+          {buttonPg01}
+        </Button>
       </Fragment>
     )
   }
@@ -108,38 +133,67 @@ const LandingPage = () => {
   function renderPageTwo() {
     return (
       <Fragment>
-        <HTMLContent content={topo} />
+        <HTMLContent content={textAbovePg2} />
         <VideoSection>
           <iframe
             width="560"
             height="315"
             title="Youtube Urban Farmcy"
-            src="https://www.youtube.com/embed/l4h7NQO-gz4?controls=0"
+            src={`https://www.youtube.com/embed/${youtubePg02}?controls=0`}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </VideoSection>
-        <HTMLContent content={bottom} />
-        <Button element="a" href="/">
-          CONTINUE SUA JORNADA
+        <HTMLContent content={textBelowPg02} />
+        <Button element="a" href={buttonLink}>
+          {buttonPg02}
         </Button>
       </Fragment>
     )
   }
 
   return (
-    <Layout noFooter>
-      <LandingSection bgImage={null}>
+    <Layout noFooter setDescription={descriptionPage} setTitle={titlePage}>
+      <LandingSection bgImage={bgImage}>
         <Container>
-          <Logo src={logo} alt="Logo" />
+          <Link to="/">
+            <Logo src={logo} alt="Logo" />
+          </Link>
           {page === 1 ? renderPageOne() : renderPageTwo()}
         </Container>
       </LandingSection>
     </Layout>
   )
 }
-LandingPage.propTypes = {}
-LandingPage.defaultProps = {}
 
 export default LandingPage
+
+export const pageQuery = graphql`
+  query LandingByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      frontmatter {
+        title
+        titlePage
+        descriptionPage
+        textAbovePg1
+        youtubePg01
+        textBelowPg01
+        buttonPg01
+        textAbovePg2
+        youtubePg02
+        textBelowPg02
+        buttonPg02
+        buttonLink
+        bgImage {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`

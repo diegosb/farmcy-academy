@@ -191,6 +191,9 @@ collections:
     fields:
         - {label: "Template Key", name: "templateKey", widget: "hidden", default: "landing-page"}
         - {label: "Url da página", name: "title", widget: "string"}
+        - {label: "Título da aba na página", name: "titlePage", widget: "string"}
+        - {label: "Descrição da página", name: "descriptionPage", widget: "string"}
+        - {label: "Imagem de fundo das páginas", name: "bgImage", widget: "image", required: false}
         - {label: "Texto acima do vídeo na página 01", name: "textAbovePg1", widget: "markdown"}
         - {label: "Código do vídeo Youtube página 01", name: "youtubePg01", widget: "string"}
         - {label: "Texto abaixo do vídeo na página 01", name: "textBelowPg01", widget: "markdown"}
