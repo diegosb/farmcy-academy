@@ -63,9 +63,13 @@ testimonials:
   description: Faça parte da mudança e transforme sua vida agora
   testimonialList:
     - name: Flavio Souza
-      photo: /img/fulanodetal.jpg
+      photo: /img/26112396_1750021475049094_6758743189533786409_n.jpg
       subtitle: Membro da Farmcy Academy
-      text: Aqui vai um depoimento sobre o produto
+      text: >-
+        O conteúdo do programa da Farmcy Academy confirma todas as minhas
+        crenças sobre saúde e qualidade de vida. Em anos de leitura sobre o
+        assunto, jamais tinha visto material tão completo e fundamentado.
+        Realmente, vale a pena.
     - name: Ana Maria Weiler
       photo: /img/whatsapp-image-2019-07-23-at-17.14.35.jpeg
       subtitle: Membro da Farmcy Academy
@@ -74,7 +78,7 @@ testimonials:
         até acessar todo esse conteúdo. Tenho assistido às aulas da plataforma e
         aproveitado bastante, os professores são super didáticos.
     - name: Vinícius Canhedo
-      photo: /img/fulanodetal.jpg
+      photo: /img/captura-de-tela-2019-07-24-às-19.42.37.png
       subtitle: Membro da Farmcy Academy
       text: >-
         Estou com vocês desde o início. A plataforma ficou sensacional, agradeço
