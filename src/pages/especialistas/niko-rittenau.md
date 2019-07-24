@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Niko Rittenau
 thumbnailDescription: As respostas de
 thumbnailImage: /img/niko_rittenau.jpg
-bgImage: /img/niko_rittenau.jpg
+bgImage: /img/nikorittenay1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Niko Rittenau
 curriculum: >-
   Graduado pela German University of Applied Sciences, o nutricionista ganhou
