@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Cecília Rocha
 thumbnailDescription: As respostas de
 thumbnailImage: /img/cecilia_rocha_sf.01_27_19_10.still001.jpg
-bgImage: /img/cecilia_rocha_sf.01_27_19_10.still001.jpg
+bgImage: /img/ceciliarocha1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Cecília Rocha
 curriculum: >-
   Economista e Professora da Escola de Nutrição na Ryerson University, no
