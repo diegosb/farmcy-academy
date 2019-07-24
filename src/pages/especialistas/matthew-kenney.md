@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Matthew Kenney
 thumbnailDescription: As respostas de
 thumbnailImage: /img/47.-matthew-kenney.jpg
-bgImage: /img/47.-matthew-kenney.jpg
+bgImage: /img/matthewkenney1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Matthew Kenney
 curriculum: >-
   Renomado chef, empreendedor, autor e educador, especializado na culinária
