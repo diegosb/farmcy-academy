@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. Michael Jeitler
 thumbnailDescription: As respostas de
 thumbnailImage: /img/michael_jeitler.jpg
-bgImage: /img/michael_jeitler.jpg
+bgImage: /img/michaeljeitler1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Michael Jeitler
 curriculum: >-
   Médico e pesquisador do Immanuel Krankenhauses, em Berlim. Trabalha desde 2014
