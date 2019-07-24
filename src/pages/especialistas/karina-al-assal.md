@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Karina Al Assal
 thumbnailDescription: As respostas de
 thumbnailImage: /img/karina_al_assal.jpg
-bgImage: /img/karina_al_assal.jpg
+bgImage: /img/karinaalassal1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Karina Al Assal
 curriculum: >-
   Nutricionista especializada em microbiota intestinal, está envolvida em
