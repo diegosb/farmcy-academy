@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. Dickson Despommier
 thumbnailDescription: As respostas de
 thumbnailImage: /img/dickson-despommier.jpg
-bgImage: /img/dickson-despommier.jpg
+bgImage: /img/dicksond1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Dickson Despommier
 curriculum: >-
   Premiado professor de microbiologia e saúde pública na Universidade de
