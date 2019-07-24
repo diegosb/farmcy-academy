@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Ruy Marra
 thumbnailDescription: As respostas de
 thumbnailImage: /img/ruymarra.jpg
-bgImage: /img/ruymarra.jpg
+bgImage: /img/ruymarra1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Ruy Marra
 curriculum: >-
   Pesquisador em neurociência do comportamento, com pós-graduação em
