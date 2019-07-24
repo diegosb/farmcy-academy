@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. T. Colin Campbell
 thumbnailDescription: As respostas de
 thumbnailImage: /img/thomas-collin.jpg
-bgImage: /img/thomas-collin.jpg
+bgImage: /img/tcollin1.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. T. Colin Campbell.
 curriculum: >-
   Autor do bestseller "The China Study" e professor emérito de Nutrição
