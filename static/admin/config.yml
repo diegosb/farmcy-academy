@@ -5,13 +5,6 @@ backend:
 media_folder: static/img
 public_folder: /img
 
-#media_library:
-#  name: cloudinary
-#  use_transformations: false
-#  config:
-#    cloud_name: dccmvgzia
-#    api_key: 295229933859457
-
 collections:
   - name: "cursos"
     label: "Cursos"
@@ -55,30 +48,9 @@ collections:
           {label: Texto, name: text, widget: string}
         ]}
 
-
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/registro/index.md"
-        label: "Formulário"
-        name: "register"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "register-page"}
-          - {label: "Primeiro Passo", name: firstStep, widget: object, fields: [
-          {label: "Título", name: title, widget: string},
-          {label: "Texto botão", name: buttonText, widget: string}
-          ]}
-          - {label: "Segundo Passo", name: secondStep, widget: object, fields: [
-          {label: "Título", name: title, widget: string},
-          {label: "Link vídeo Youtube", name: linkYT, widget: string},
-          {label: "Texto botão", name: buttonText, widget: string}
-          ]}
-          - {label: "Terceiro Passo", name: thirdStep, widget: object, fields: [
-          {label: "Título", name: title, widget: string},
-          {label: "Texto", name: text, widget: string},
-          {label: "Texto botão", name: buttonText, widget: string}
-          ]}
-
       - file: "src/pages/index.md"
         label: "Landing Page"
         name: "index"
@@ -152,21 +124,6 @@ collections:
               ]}
             ]}
 
-      - file: "src/pages/especialistas/index.md"
-        label: "Especialistas"
-        name: "specialists"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialists-page"}
-          - {label: "Texto Pequeno Acima do Botão", name: callActionSmall, widget: string, required: false}
-          - {label: "Texto Grande Acima do Botão", name: callActionBig, widget: string, required: false}
-          - {label: "Text Botão CTA Topo", name: buttonText, widget: string}
-          - {label: "Text Botão CTA Lista", name: buttonTextList, widget: string}
-          - {label: "Banner CTA", name: banner, widget: object, fields: [
-              {label: "Texto principal", name: title, widget: string},
-              {label: "Texto secundário", name: secondaryTitle, widget: string},
-              {label: "Texto botão", name: buttonText, widget: string},
-            ]}
-
       - file: "src/pages/cursos/index.md"
         label: "Cursos"
         name: "courses"
@@ -180,6 +137,22 @@ collections:
               {label: "Texto principal", name: title, widget: string},
               {label: "Texto secundário", name: secondaryTitle, widget: string},
               {label: "Texto botão", name: buttonText, widget: string},
+            ]
+          }
+
+      - file: "src/pages/especialistas/index.md"
+        label: "Especialistas"
+        name: "specialists"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialists-page"}
+          - {label: "Texto Pequeno Acima do Botão", name: callActionSmall, widget: string, required: false}
+          - {label: "Texto Grande Acima do Botão", name: callActionBig, widget: string, required: false}
+          - {label: "Text Botão CTA Topo", name: buttonText, widget: string}
+          - {label: "Text Botão CTA Lista", name: buttonTextList, widget: string}
+          - {label: "Banner CTA", name: banner, widget: object, fields: [
+            {label: "Texto principal", name: title, widget: string},
+            {label: "Texto secundário", name: secondaryTitle, widget: string},
+            {label: "Texto botão", name: buttonText, widget: string},
             ]
           }
 

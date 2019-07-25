@@ -27,6 +27,7 @@ const HeroSection = styled.section`
     text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
+    background-position-y: 75px;
     background-size: 150%;
     background-image: ${({ bgImageMobile }) =>
       `url(${
