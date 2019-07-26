@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Dr. Eric Slywitch
 thumbnailDescription: As respostas de
 thumbnailImage: /img/dr-eric-slywitch.jpg
-bgImage: /img/dr-eric-slywitch.jpg
+bgImage: /img/drericslywitch.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Dr. Eric Slywitch
 curriculum: >-
   Médico especialista em Nutrologia, Nutrição Clínica e Nutrição Enteral e
