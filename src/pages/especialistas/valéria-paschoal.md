@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Valéria Paschoal
 thumbnailDescription: As respostas de
 thumbnailImage: /img/valéria-pascoal.jpg
-bgImage: /img/valéria-pascoal.jpg
+bgImage: /img/valeriapascoal.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Valéria Paschoal
 curriculum: >-
   Nutricionista mestre na área de Nutrição e Pediatria, editora científica da
