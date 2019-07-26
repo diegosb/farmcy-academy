@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Robson Barizon
 thumbnailDescription: As respostas de
 thumbnailImage: /img/robson-barizon.jpg
-bgImage: /img/robson-barizon.jpg
+bgImage: /img/robson.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Robson Barizon
 curriculum: >-
   Agrônomo que hoje atua como pesquisador na Embrapa Meio Ambiente, em projetos
