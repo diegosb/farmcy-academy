@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: José Henrique Vallim
 thumbnailDescription: As respostas de
 thumbnailImage: /img/josé-henrique-vallim.jpg
-bgImage: /img/josé-henrique-vallim.jpg
+bgImage: /img/josçhenriquevalim.jpg
 titleLanding: Aprenda sobre saúde e alimentação com José Henrique Vallim
 curriculum: >-
   Bioquímico especialistas em toxicologia na Embrapa Meio Ambiente, atua como
