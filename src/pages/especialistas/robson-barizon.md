@@ -6,11 +6,13 @@ thumbnailImage: /img/robson-barizon.jpg
 bgImage: /img/robson-barizon.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Robson Barizon
 curriculum: >-
-  Formada pela Universidade Internacional de Yôga em 1977, é discípula do Mestre
-  DeRose e dirigiu a Escola C.O.R.P.O. de 1980 a 1987. Também é autora dos
-  livros "Respiração Total", "O Gourmet Vegetariano" e "Guia de Alimentação
-  Vegetariana". Ministra cursos de yoga nas principais cidades do Brasil,
-  Portugal e Argentina.
+  Agrônomo que hoje atua como pesquisador na Embrapa Meio Ambiente, em projetos
+  relacionados ao comportamento de pesticidas no ambiente, monitoramento
+  ambiental, processos de transporte para atmosfera e cursos d'água, suporte a
+  ferramentas de contabilidade ambiental e estudos de vulnerabilidade de água
+  subterrânea e superficial à contaminação por pesticidas. Ele também é
+  Presidente do Comitê Gestor do portfólio de Manejo Racional de Agrotóxicos da
+  Embrapa.
 description: >-
   Robson Barizon traz seu ponto de vista sobre diversos tópicos referentes à
   alimentação, saúde e muito mais.
