@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Eliane Dallegrave
 thumbnailDescription: As respostas de
 thumbnailImage: /img/eliana.jpg
-bgImage: /img/eliana.jpg
+bgImage: /img/elianedalegrave.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Eliane Dallegrave
 curriculum: >-
   Formada em Ciências e Biologia, é especialista em Toxicologia Aplicada
