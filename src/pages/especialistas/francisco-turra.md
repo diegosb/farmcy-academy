@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Francisco Turra
 thumbnailDescription: As respostas de
 thumbnailImage: /img/captura-de-tela-2019-07-23-às-16.35.jpg
-bgImage: /img/captura-de-tela-2019-07-23-às-16.35.jpg
+bgImage: /img/franciscoturra.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Francisco Turra
 curriculum: >-
   Atual presidente da Associação Brasileira de Proteína Animal. Advogado e
