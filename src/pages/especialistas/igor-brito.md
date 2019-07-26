@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Igor Brito
 thumbnailDescription: As respostas de
 thumbnailImage: /img/igor-brito.jpg
-bgImage: /img/igor-brito.jpg
+bgImage: /img/igor-britto.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Igor Brito
 curriculum: >-
   Mestre em Direitos Fundamentais e Pós-graduado em Direito do Consumo. Foi
