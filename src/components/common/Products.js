@@ -48,7 +48,6 @@ const Products = ({ max, title, to }) => {
   if (max) {
     images = images.slice(0, max)
   }
-  console.log(images)
   return (
     <TypeSection>
       <TypeHeader>{title}</TypeHeader>

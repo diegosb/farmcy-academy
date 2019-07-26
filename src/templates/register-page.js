@@ -9,6 +9,7 @@ import Layout from '../components/Layout'
 import Steps from '../components/Steps'
 import logo from '../img/logo.png'
 import media from '../theme/media'
+import useRegisterPage from '../hooks/useRegisterPage'
 
 function encode(data) {
   const formData = new FormData()
@@ -144,6 +145,7 @@ const Success = styled.div`
 `
 
 const RegisterForm = () => {
+  const { firstStep, secondStep, thirdStep } = useRegisterPage()
   const [step, setStep] = useState(1)
   const [formFields, setFormField] = useState({
     nome: '',
@@ -172,7 +174,6 @@ const RegisterForm = () => {
       if (!isFormValid) {
         return
       }
-
     fetch('/', {
       method: 'POST',
       body: encode({
@@ -194,10 +195,10 @@ const RegisterForm = () => {
   function renderForm() {
     return (
       <Form
-        name="contact-form"
+        name="Formulario Novo - FarmcyAcademy"
         method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        // data-netlify="true"
+        // data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
       >
         <Label htmlFor="nome" hidden>
@@ -233,7 +234,7 @@ const RegisterForm = () => {
           onChange={({ target }) => handleFieldChange(target)}
           required
         />
-        <RegisterButton type="submit">Continuar</RegisterButton>
+        <RegisterButton type="submit">{firstStep.buttonText}</RegisterButton>
       </Form>
     )
   }
@@ -245,12 +246,12 @@ const RegisterForm = () => {
           width="560"
           height="315"
           title="Youtube Urban Farmcy"
-          src="https://www.youtube.com/embed/l4h7NQO-gz4?controls=0"
+          src={`https://www.youtube.com/embed/${secondStep.linkYT}?controls=0`}
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         />
-        <RegisterButton onClick={() => setStep(3)}>Continuar</RegisterButton>
+        <RegisterButton onClick={() => setStep(3)}>{secondStep.buttonText}</RegisterButton>
       </VideoSection>
     )
   }
@@ -258,20 +259,26 @@ const RegisterForm = () => {
   function renderSuccess() {
     return (
       <Success>
-        <Description>
-          Sua assinatura mensal será ativada automaticamente após esse período com a cobrança de
-          R$57,00. Caso não queira se tornar um membro da Farmcy Academy, antes do fim dos 7 dias
-          grátis faça sua solicitação em nosso site e seu cancelamento será realizado
-          automaticamente.
-        </Description>
+        <Description>{thirdStep.text}</Description>
         <RegisterButton
           element="a"
           href="https://pay.hotmart.com/N14071437L?off=dicdq4lw&checkoutMode=10&bid=1562718927033"
         >
-          OBTER 7 DIAS GRÁTIS
+          {thirdStep.buttonText}
         </RegisterButton>
       </Success>
     )
+  }
+
+  function renderTitle() {
+    switch (step) {
+      case 1:
+        return firstStep.title
+      case 2:
+        return secondStep.title
+      default:
+        return thirdStep.title
+    }
   }
 
   const steps = {
@@ -298,9 +305,7 @@ const RegisterForm = () => {
             </Row>
             <Row>
               <Col xs={12}>
-                <Title>
-                  {step === 3 ? 'Falta pouco para liberar os seus 7 dias grátis' : 'Crie sua conta'}
-                </Title>
+                <Title>{renderTitle()}</Title>
               </Col>
             </Row>
             {!isEmailValid ? (
