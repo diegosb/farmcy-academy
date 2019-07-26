@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Márcia Assalim
 thumbnailDescription: As respostas de
 thumbnailImage: /img/márcia-assalim.jpg
-bgImage: /img/márcia-assalim.jpg
+bgImage: /img/marciaassalim.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Márcia Assalim
 curriculum: >-
   Química mestre em Saneamento e Meio Ambiente. Atualmente é Analista na Embrapa
