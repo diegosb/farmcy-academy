@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Barry Smith
 thumbnailDescription: As respostas de
 thumbnailImage: /img/captura-de-tela-2019-07-23-às-15.50.jpg
-bgImage: /img/captura-de-tela-2019-07-23-às-15.50.jpg
+bgImage: /img/barrysmith.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Barry Smith
 curriculum: >-
   Filósofo britânico e Diretor do Instituto de Filosofia no Institute of
