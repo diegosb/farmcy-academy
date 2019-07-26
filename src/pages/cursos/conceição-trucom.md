@@ -6,7 +6,15 @@ thumbnailImage: /img/captura-de-tela-2019-07-26-às-10.46.02.png
 bgImage: /img/captura-de-tela-2019-07-26-às-10.46.02.png
 titleLanding: Alimentos Naturais e Impactos na Saúde com Conceição Trucom
 curriculum: Lorem
-description: Lorem
+description: >-
+  Graduada como Bacharel em Química pela UFRJ em 1977, trabalhou mais de 20 anos
+  com atividades de pesquisa e desenvolvimento em projetos de ciência aplicada
+  na química orgânica, inorgânica e bioquímica. Como empresária e consultora por
+  14 anos (1986 a 1999), iniciou a sua busca por ensinamentos e práticas que lhe
+  proporcionassem mais paz, serenidade e equilíbrio internos. Cientista desde a
+  década de 90, participa de cursos, vivências e formação em dinâmicas de
+  alimentação, desde as mais milenares até as mais modernas, como também
+  técnicas de meditação e os estudos da mente.
 details:
   - icon: /img/ico_cargahoraria.svg
     text: 'Carga horária: 3,5 horas'
