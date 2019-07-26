@@ -3,7 +3,7 @@ templateKey: specialist-page
 title: Marcelo Morandi
 thumbnailDescription: As respostas de
 thumbnailImage: /img/marcelo-morandi.jpg
-bgImage: /img/marcelo-morandi.jpg
+bgImage: /img/marcelomorandi.jpg
 titleLanding: Aprenda sobre saúde e alimentação com Marcelo Morandi
 curriculum: >-
   Engenheiro Agrônomo, Mestre e Doutor em Agronomia, atua como chefe geral da
