@@ -27,36 +27,8 @@ textAbovePg2: >-
   apenas o início de algo muito maior que estamos construindo para você.</p>
 
 
-  <p>O fato de você estar aqui, lendo esse texto agora, é sinal que sua busca
-  por conhecimento sobre o
-
-
-  assunto está além da média de grande parte dos brasileiros.</p>
-
-
-  <p>Considere-se um passo a frente, principalmente quando mais da metade da
-  nossa população se encontra na faixa de sobrepeso e obesidade, vivendo rotinas
-  limitadas pelas condições de uma doença que contribui com milhões de mortes
-  anuais no mundo inteiro.</p>
-
-
-  <p>Seja qual for o seu objetivo, a informação de qualidade é o melhor primeiro
-  passo que você pode dar para iniciar uma mudança na sua própria vida, ou na
-  das pessoas que estão do seu lado.</p>
-
-
-  <p>E é por isso que queremos te acompanhar nesses próximos passos e
-
-
-  criar a qualidade de vida que você sempre desejou.</p>
-
-
-  <p>Aprenda o que há de mais atual em saúde e alimentação com especialistas do
-  mundo inteiro.</p>
-
-
-  <p>Seja qual for a sua dúvida, reunimos as respostas de grandes autoridades no
-  assunto em um só lugar.</p>
+  <p>Assista o vídeo a seguir e entenda um pouco mais sobre o que estamos
+  falando.</p>
 youtubePg02: l4h7NQO-gz4
 textBelowPg02: >-
   <p>Você ja experimentou o potencial máximo da sua saúde?</p>
