@@ -2,8 +2,8 @@
 templateKey: course-page
 title: Conceição Trucom
 thumbnailDescription: Alimentos Naturais e Impactos na Saúde
-thumbnailImage: /img/captura-de-tela-2019-07-26-às-10.46.02.png
-bgImage: /img/captura-de-tela-2019-07-26-às-10.46.02.png
+thumbnailImage: /img/conceicao01.jpg
+bgImage: /img/conceicao01.jpg
 titleLanding: Alimentos Naturais e Impactos na Saúde com Conceição Trucom
 curriculum: Lorem
 description: >-
