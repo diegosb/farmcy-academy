@@ -12,7 +12,7 @@ textAbovePg1: >-
   <h2><strong>APERTE O PLAY E ASSISTA AGORA!</strong></h2>
 youtubePg01: l4h7NQO-gz4
 textBelowPg01: >-
-  <h3>Esta é apenas o início da jornada que transformará a forma como você se
+  <h3>Este é apenas o início da jornada que transformará a forma como você se
   relaciona com o alimento.</h3>
 
 
