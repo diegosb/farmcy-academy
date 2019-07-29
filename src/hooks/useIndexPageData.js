@@ -65,6 +65,16 @@ const useIndexPageData = () => {
               buttonText
               title
             }
+            bannerSpecialist {
+              buttonText
+              title
+              secondaryTitle
+            }
+            bannerCourse {
+              buttonText
+              title
+              secondaryTitle
+            }
             member {
               buttonText
               description

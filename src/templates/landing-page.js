@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from 'react'
 import styled from 'styled-components'
 import { graphql, Link } from 'gatsby'
+import YouTube from 'react-youtube'
 
 import Container from '../components/common/Container'
 import Layout from '../components/Layout'
@@ -103,18 +104,31 @@ const LandingPage = ({ data }) => {
   } = landing
 
   function renderPageOne() {
+    const opts = {
+      height: '315',
+      width: '560',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        rel: 0,
+        showinfo: 0,
+      },
+    }
+
+    function onEventChange() {
+      // console.log(e)
+    }
+
     return (
       <Fragment>
         <HTMLContent content={textAbovePg1} />
         <VideoSection>
-          <iframe
-            width="560"
-            height="315"
-            title="Youtube Urban Farmcy"
-            src={`https://www.youtube.com/embed/${youtubePg01}?controls=0`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+          <YouTube
+            videoId={youtubePg01}
+            opts={opts}
+            onPause={onEventChange}
+            onEnd={onEventChange}
+            onError={onEventChange}
+            onStateChange={onEventChange}
           />
         </VideoSection>
         <HTMLContent content={textBelowPg01} />

@@ -5,28 +5,23 @@ import Layout from '../components/Layout'
 import HeroDetails from '../components/common/HeroDetails'
 import BannerSpecialist from '../components/common/BannerSpecialist'
 import CourseInfo from '../components/common/CourseInfo'
-import useSpecialistPageData from '../hooks/useSpecialistPage'
+import useIndexPageData from '../hooks/useIndexPageData'
 
 const Specialist = ({ data }) => {
   const { frontmatter: specialist } = data.markdownRemark
-  const {
-    callActionSmall,
-    callActionBig,
-    buttonText,
-    buttonTextList,
-    banner,
-  } = useSpecialistPageData()
+  const { hero, bannerSpecialist } = useIndexPageData()
   return (
     <Layout>
       <HeroDetails
         {...specialist}
         bgImageMobile={specialist.bgImage}
-        callActionSmall={callActionSmall}
-        callActionBig={callActionBig}
-        buttonText={buttonText}
+        title={hero.heading}
+        buttonText={hero.buttonText}
+        callActionSmall={hero.callActionSmall}
+        callActionBig={hero.callActionBig}
       />
-      <CourseInfo {...specialist} buttonTextList={buttonTextList} />
-      <BannerSpecialist {...banner} />
+      <CourseInfo {...specialist} buttonTextList="Acessar agora" />
+      <BannerSpecialist {...bannerSpecialist} />
     </Layout>
   )
 }
@@ -52,9 +47,6 @@ export const pageQuery = graphql`
         }
         titleLanding
         curriculum
-        callActionSmall
-        callActionBig
-        buttonText
         description
         details {
           text
