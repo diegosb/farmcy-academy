@@ -7,7 +7,7 @@ bgImage: /img/pedro01.jpg
 titleLanding: Os Caminhos Para Criação de Saúde com Dr. Pedro Schestatsky
 curriculum: >-
   Todos podemos encontrar maneiras para criar mais saúde para nós mesmo, e é
-  exatamente isso que o curso inaugural da Farmcy Academy traz. São três aulas
+  exatamente isso que o curso inaugural da Farmcy Academy traz. São duas aulas
   completas com o Dr. Pedro para você aprender como começar a criar saúde no seu
   dia a dia, de forma simples, ajustando suas escolhas e transformando o seu
   mindset.
@@ -31,8 +31,14 @@ details:
     text: Já disponível na plataforma
 modules:
   - title: Momento Atual
-    description: Lorem
+    description: >-
+      Qual é o estado atual da nossa saúde? Por que e como chegamos até aqui?
+      Conheça alguns dos principais fatores que colaboram para a construção das
+      epidemias que vivemos atualmente.
   - title: Caminhos Para Uma Vida Saudável
-    description: Lorem
+    description: >-
+      É possível criar saúde? Entenda quais são algumas das principais esferas
+      que influenciam diretamente nossa vida e descubra dicas práticas para ter
+      máximo aproveitamento em cada uma delas.
 ---
 
