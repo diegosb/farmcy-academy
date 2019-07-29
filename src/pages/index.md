@@ -52,6 +52,18 @@ howItWorks:
 banner:
   buttonText: Experimente agora
   title: Tenha acesso ilimitado por 7 dias grátis
+bannerSpecialist:
+  buttonText: Experimente agora
+  secondaryTitle: >-
+    Outras dezenas de especialistas já fazem parte da plataforma Farmcy Academy,
+    e você está a poucos cliques de garantir 7 dias de acesso grátis.
+  title: Tenha 7 dias grátis de acesso ilimitado a todos os especialistas.
+bannerCourse:
+  buttonText: Experimente agora
+  secondaryTitle: >-
+    Outros cursos já fazem parte da plataforma Farmcy Academy, e você está a
+    poucos cliques de garantir 7 dias de acesso grátis.
+  title: Tenha 7 dias grátis de acesso ilimitado a todos os cursos.
 member:
   bgImage: /img/bg_impactosocial.png
   buttonText: Inscreva-se agora
