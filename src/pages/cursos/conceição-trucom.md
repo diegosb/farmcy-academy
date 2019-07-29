@@ -5,7 +5,12 @@ thumbnailDescription: Alimentos Naturais e Impactos na Saúde
 thumbnailImage: /img/conceicao01.jpg
 bgImage: /img/conceicao01.jpg
 titleLanding: Alimentos Naturais e Impactos na Saúde com Conceição Trucom
-curriculum: Lorem
+curriculum: >-
+  Existem alimentos naturais que fornecem ao nosso organismo altas concentrações
+  de nutrientes e diversos benefícios, podendo ser chamados de super alimentos.
+  Neste curso, a química Conceição Trucom escolheu quatro desses poderosos
+  alimentos para serem explorados, explicando alguns dos seus benefícios para o
+  nosso uso diário.
 description: >-
   Graduada como Bacharel em Química pela UFRJ em 1977, trabalhou mais de 20 anos
   com atividades de pesquisa e desenvolvimento em projetos de ciência aplicada
