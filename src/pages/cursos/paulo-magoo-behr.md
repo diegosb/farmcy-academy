@@ -42,17 +42,17 @@ modules:
       adaptá-los para a vida do homem moderno sem comprometer seus benefícios.
   - title: 'Alimentação ancestral: das cavernas para a cozinha'
     description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed.
+      Na terceira aula deste curso vamos entender mais sobre a ancestrallidade
+      na alimentação. Alimentação natural não se refere somente a exclusão dos
+      alimentos industrializados, nesse sentido, precisamos enetnder de que
+      forma podemos transformar a nossa alimentação em algo realmente mais
+      natural e mais voltada para a nossa programação genética.
   - title: 'Sedentarismo x Exercício: quem disse que é fácil?'
     description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing
-      elit, sed.
+      O organismo humano foi preparado para desenvolver uma intensa atividade
+      física, mas, dadas as condições de vida atuais, a maioria de nós leva uma
+      vida predominantemente sedentária. Nesta aula vamos descobrir que o
+      exercício vai muito além do emagrecimento e é um hábito que precisa ser
+      adquirido. Naturalmente, ninguém gosta de treinar!
 ---
 
