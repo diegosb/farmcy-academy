@@ -5,7 +5,7 @@ firstStep:
   title: Crie sua conta
 secondStep:
   buttonText: Continuar
-  linkYT: l4h7NQO-gz4
+  linkYT: Y--oWxd0N9o
   title: Crie sua conta
 thirdStep:
   buttonText: Obter 7 dias grátis
