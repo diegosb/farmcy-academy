@@ -29,7 +29,7 @@ textAbovePg2: >-
 
   <p>Assista o vídeo a seguir e entenda um pouco mais sobre o que estamos
   falando.</p>
-youtubePg02: l4h7NQO-gz4
+youtubePg02: Y--oWxd0N9o
 textBelowPg02: >-
   <p>Você ja experimentou o potencial máximo da sua saúde?</p>
 
@@ -40,7 +40,7 @@ textBelowPg02: >-
 
   <p>A mudança que você sempre desejou pra sua vida está a poucos cliques de ser
   iniciada.</p>
-buttonPg02: CONTINUE SUA JORNADA
-buttonLink: 'https://farmcyacademy.club.hotmart.com/login'
+buttonPg02: EXPERIMENTE 7 DIAS GRÁTIS
+buttonLink: 'https://pay.hotmart.com/N14071437L?off=dicdq4lw&checkoutMode=10'
 ---
 
