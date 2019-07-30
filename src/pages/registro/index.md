@@ -6,7 +6,7 @@ firstStep:
 secondStep:
   buttonText: Continuar
   linkYT: Y--oWxd0N9o
-  title: Crie sua conta
+  title: Descubra a Farmcy Academy
 thirdStep:
   buttonText: Obter 7 dias grátis
   text: >-
