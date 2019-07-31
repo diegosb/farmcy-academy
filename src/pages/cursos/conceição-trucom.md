@@ -3,7 +3,7 @@ templateKey: course-page
 title: Conceição Trucom
 thumbnailDescription: Alimentos Naturais e Impactos na Saúde
 thumbnailImage: /img/conceicao01.jpg
-bgImage: /img/conceicao01.jpg
+bgImage: /img/trucomcurso.jpg
 titleLanding: Alimentos Naturais e Impactos na Saúde com Conceição Trucom
 curriculum: >-
   Existem alimentos naturais que fornecem ao nosso organismo altas concentrações
