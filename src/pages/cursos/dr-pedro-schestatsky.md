@@ -3,7 +3,7 @@ templateKey: course-page
 title: Dr. Pedro Schestatsky
 thumbnailDescription: Os Caminhos Para Criação de Saúde
 thumbnailImage: /img/pedro01.jpg
-bgImage: /img/pedro01.jpg
+bgImage: /img/drpedrpcurso.jpg
 titleLanding: Os Caminhos Para Criação de Saúde com Dr. Pedro Schestatsky
 curriculum: >-
   Todos podemos encontrar maneiras para criar mais saúde para nós mesmo, e é
