@@ -14,14 +14,14 @@ const useIndexPageData = () => {
               imageDesktop {
                 childImageSharp {
                   fluid(maxWidth: 2048, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
               imageMobile {
                 childImageSharp {
                   fluid(maxWidth: 2048, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
@@ -83,7 +83,7 @@ const useIndexPageData = () => {
               bgImage {
                 childImageSharp {
                   fluid(maxWidth: 2048, quality: 100) {
-                    ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_withWebp
                   }
                 }
               }
@@ -99,7 +99,7 @@ const useIndexPageData = () => {
                 photo {
                   childImageSharp {
                     fluid(maxWidth: 60, quality: 100) {
-                      ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluid_withWebp
                     }
                   }
                 }

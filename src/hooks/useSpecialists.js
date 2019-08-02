@@ -20,7 +20,7 @@ const useAllSpecialists = () => {
                 thumbnailImage {
                   childImageSharp {
                     fluid(maxWidth: 450, quality: 100) {
-                      ...GatsbyImageSharpFluid
+                      ...GatsbyImageSharpFluid_withWebp
                     }
                   }
                 }

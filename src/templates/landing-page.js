@@ -2,6 +2,7 @@ import React, { Fragment, useState } from 'react'
 import styled from 'styled-components'
 import { graphql, Link } from 'gatsby'
 import YouTube from 'react-youtube'
+import BackgroundImage from 'gatsby-background-image'
 
 import Container from '../components/common/Container'
 import Layout from '../components/Layout'
@@ -14,12 +15,10 @@ const Logo = styled.img`
   margin-bottom: 50px;
 `
 
-const LandingSection = styled.section`
+const LandingSection = styled(BackgroundImage)`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: ${({ bgImage }) =>
-    `url(${bgImage && bgImage.childImageSharp ? bgImage.childImageSharp.fluid.src : bgImage})`};
   background-color: #000;
   width: 100vw;
   min-height: 100vh;
@@ -169,7 +168,7 @@ const LandingPage = ({ data }) => {
 
   return (
     <Layout noFooter setDescription={descriptionPage} setTitle={titlePage}>
-      <LandingSection bgImage={bgImage}>
+      <LandingSection Tag="section" fluid={bgImage.childImageSharp.fluid}>
         <Container>
           <Link to="/">
             <Logo src={logo} alt="Logo" />
@@ -203,7 +202,7 @@ export const pageQuery = graphql`
         bgImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
-import Section from './common/Section'
+import Container from './common/Container'
 import { Heading } from './common/typography'
 import Button from './common/Button'
 import media from '../theme/media'
 import { HTMLContent } from './Content'
 
-const MemberSection = styled(Section)`
+const MemberSection = styled(BackgroundImage)`
   padding: 60px 0 120px;
   background-position: center;
   background-size: cover;
-  background-image: ${({ bgImage }) =>
-    `url(${bgImage.childImageSharp ? bgImage.childImageSharp.fluid.src : bgImage})`};
+  background-color: ${({ theme }) => theme.colors.lightDark};
   > div {
     display: flex;
     flex-direction: column;
@@ -47,13 +47,15 @@ const TextInfo = styled.div`
 `
 
 const Member = ({ bgImage, title, description, buttonText, titleCTA }) => (
-  <MemberSection bgImage={bgImage} bgColor="lightDark">
-    <Heading color="white">{title}</Heading>
-    <TextInfo>
-      <HTMLContent content={description} />
-    </TextInfo>
-    <Heading color="white">{titleCTA}</Heading>
-    <Button element={<Link to="/registro" />}>{buttonText}</Button>
+  <MemberSection Tag="section" fluid={bgImage.childImageSharp.fluid}>
+    <Container>
+      <Heading color="white">{title}</Heading>
+      <TextInfo>
+        <HTMLContent content={description} />
+      </TextInfo>
+      <Heading color="white">{titleCTA}</Heading>
+      <Button element={<Link to="/registro" />}>{buttonText}</Button>
+    </Container>
   </MemberSection>
 )
 

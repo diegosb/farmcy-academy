@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Row, Col } from 'react-flexbox-grid'
 import { Link } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 
 import Container from './Container'
 import Button from './Button'
@@ -11,34 +12,33 @@ import arrow from '../../img/arrow-down.svg'
 import media from '../../theme/media'
 import { MainHeroText, CTAText } from './typography'
 
-const HeroSection = styled.section`
+const HeroSection = styled(BackgroundImage)`
   display: flex;
   min-height: 98vh;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.darkest};
   position: relative;
   overflow: hidden;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+  ::before,
+  ::after {
+    background-position: top !important;
+    background-repeat: no-repeat;
+  }
   padding-top: 50px;
-  background-image: ${({ bgImage }) =>
-    `url(${bgImage.childImageSharp ? bgImage.childImageSharp.fluid.src : bgImage})`};
   ${media.xs`
     text-align: center;
     min-height: 100vh;
     padding-top: 20px;
-    background-position-y: 20%;
     padding-bottom: 80px;
-    background-size: 140%;
-    background-image: ${({ bgImageMobile }) =>
-      `url(${bgImageMobile.childImageSharp
-        ? bgImageMobile.childImageSharp.fluid.src
-        : bgImageMobile})`};  
       > div > .row {
         flex-grow: 1;
         align-items: flex-end;
       }
+      ::before,
+       ::after {
+      background-position-y: 20% !important;
+      background-size: 140% !important;
+    }
   `};
   ${media.xxs`
     min-height: 130vh;
@@ -74,8 +74,12 @@ const Bottom = styled.div`
 `
 
 const Hero = ({ bgImage, bgImageMobile, title, buttonText, callActionSmall, callActionBig }) => {
+  let sources = [bgImageMobile.childImageSharp.fluid, bgImage.childImageSharp.fluid]
+  if (window.innerWidth > 768) {
+    sources = sources.reverse()
+  }
   return (
-    <HeroSection bgImage={bgImage} bgImageMobile={bgImageMobile}>
+    <HeroSection Tag="section" fluid={sources}>
       <Container css="display: flex; flex-direction: column; justify-content: space-between">
         <Header withLogin />
         <Row>

@@ -3,13 +3,14 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Row, Col } from 'react-flexbox-grid'
 import { Link } from 'gatsby'
+import BackgroundImage from 'gatsby-background-image'
 import media from '../../theme/media'
 import Container from './Container'
 import Button from './Button'
 import Header from './Header'
 import { MainHeroText, CTAText } from './typography'
 
-const HeroSection = styled.section`
+const HeroSection = styled(BackgroundImage)`
   background-color: ${({ theme }) => theme.colors.darkest};
   display: flex;
   min-height: 98vh;
@@ -20,19 +21,16 @@ const HeroSection = styled.section`
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 0 100px;
-  background-image: ${({ bgImage }) =>
-    `url(${bgImage.childImageSharp ? bgImage.childImageSharp.fluid.src : bgImage})`};
+
   ${media.xs`
     min-height: 100vh;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 40px;
-    background-position-y: 75px;
-    background-size: 150%;
-    background-image: ${({ bgImageMobile }) =>
-      `url(${
-        bgImageMobile.childImageSharp ? bgImageMobile.childImageSharp.fluid.src : bgImageMobile
-      })`};  
+    ::before {
+      background-position-y: 70px !important;
+      background-size: 175% !important;
+    }
   `};
   ${media.xxs`
     min-height: 120vh;
@@ -65,14 +63,14 @@ const Description = styled.p`
 
 const HeroDetails = ({
   bgImage,
-  bgImageMobile,
+  // bgImageMobile,
   titleLanding,
   curriculum,
   buttonText,
   callActionSmall,
   callActionBig,
 }) => (
-  <HeroSection bgImage={bgImage} bgImageMobile={bgImageMobile}>
+  <HeroSection Tag="section" fluid={bgImage.childImageSharp.fluid}>
     <Container css="display: flex; flex-direction: column; justify-content: space-between; z-index: 1">
       <Header withLogin />
       <Row bottom="xs">
