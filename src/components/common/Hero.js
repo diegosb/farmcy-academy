@@ -75,7 +75,7 @@ const Bottom = styled.div`
 
 const Hero = ({ bgImage, bgImageMobile, title, buttonText, callActionSmall, callActionBig }) => {
   let sources = [bgImageMobile.childImageSharp.fluid, bgImage.childImageSharp.fluid]
-  if (window.innerWidth > 768) {
+  if (typeof window !== `undefined` && window.innerWidth > 768) {
     sources = sources.reverse()
   }
   return (
