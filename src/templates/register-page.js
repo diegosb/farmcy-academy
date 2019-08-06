@@ -119,6 +119,7 @@ const Input = styled.input`
 const RegisterButton = styled(Button)`
   width: 480px;
   padding: 14px;
+  margin-bottom: 25px;
   span {
     font-size: 16px;
   }
@@ -146,7 +147,7 @@ const Success = styled.div`
 
 const RegisterForm = () => {
   const { firstStep, secondStep, thirdStep } = useRegisterPage()
-  const [step, setStep] = useState(1)
+  const [step, setStep] = useState(3)
   const [formFields, setFormField] = useState({
     nome: '',
     email: '',
@@ -265,6 +266,13 @@ const RegisterForm = () => {
           href="https://pay.hotmart.com/N14071437L?off=dicdq4lw&checkoutMode=10&bid=1562718927033"
         >
           {thirdStep.buttonText}
+        </RegisterButton>
+        <RegisterButton
+          element="a"
+          type="secondary"
+          href="https://pay.hotmart.com/N14071437L?off=kbvq445x&checkoutMode=10"
+        >
+          {thirdStep.buttonTextSecondary}
         </RegisterButton>
       </Success>
     )

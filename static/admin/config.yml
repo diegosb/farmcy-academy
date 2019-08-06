@@ -151,7 +151,8 @@ collections:
           - {label: "Terceiro Passo", name: thirdStep, widget: object, fields: [
             {label: "Título", name: title, widget: string},
             {label: "Texto", name: text, widget: string},
-            {label: "Texto botão", name: buttonText, widget: string}
+            {label: "Texto botão", name: buttonText, widget: string},
+            {label: "Texto botão secundário", name: buttonTextSecondary, widget: string}
             ]}
 
   - name: "landings"

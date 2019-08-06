@@ -21,7 +21,7 @@ export default styled(
   width: ${({ type }) => (type === 'transparent' ? '205px' : '320px')};
   border-radius: 5px;
   background-color: ${({ theme, type }) =>
-    type === 'transparent' ? 'transparent' : theme.colors.primary};
+    type === 'transparent' || type === 'secondary' ? 'transparent' : theme.colors.primary};
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
   border: 1px solid
@@ -41,7 +41,10 @@ export default styled(
   :focus,
   :hover {
     background-color: ${({ theme, type }) =>
-      darken(0.05, type === 'transparent' ? 'transparent' : theme.colors.primary)};
+      darken(
+        0.05,
+        type === 'transparent' || type === 'secondary' ? 'transparent' : theme.colors.primary,
+      )};
     color: ${({ theme }) => darken(0.05, theme.colors.white)};
     text-decoration: none;
     outline: none;

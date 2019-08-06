@@ -19,6 +19,7 @@ const useRegisterPage = () => {
               title
               text
               buttonText
+              buttonTextSecondary
             }
           }
         }
