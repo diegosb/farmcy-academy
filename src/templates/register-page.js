@@ -147,7 +147,7 @@ const Success = styled.div`
 
 const RegisterForm = () => {
   const { firstStep, secondStep, thirdStep } = useRegisterPage()
-  const [step, setStep] = useState(3)
+  const [step, setStep] = useState(1)
   const [formFields, setFormField] = useState({
     nome: '',
     email: '',
