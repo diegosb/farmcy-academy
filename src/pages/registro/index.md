@@ -9,6 +9,7 @@ secondStep:
   title: Descubra a Farmcy Academy
 thirdStep:
   buttonText: Obter 7 dias grátis
+  buttonTextSecondary: Plano Anual (20% OFF)
   text: >-
     Sua assinatura mensal será ativada automaticamente após esse período com a
     cobrança de R$57,00. Caso não queira se tornar um membro da Farmcy Academy,
