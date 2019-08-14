@@ -57,12 +57,10 @@ const LandingSection = styled(BackgroundImage)`
 
   button,
   a {
+    margin-top: 40px;
     > span {
       color: ${({ theme }) => theme.colors.white};
       font-weight: ${({ theme }) => theme.font.weight.bold};
-    }
-    :last-child {
-      margin-top: 50px;
     }
     :focus {
       outline: none;
@@ -91,6 +89,8 @@ const LandingPage = ({ data }) => {
     buttonLink,
     buttonPg01,
     buttonPg02,
+    buttonSecondaryPg02,
+    buttonSecondaryLink,
     descriptionPage,
     textAbovePg1,
     textAbovePg2,
@@ -162,6 +162,11 @@ const LandingPage = ({ data }) => {
         <Button element="a" href={buttonLink}>
           {buttonPg02}
         </Button>
+        {buttonSecondaryPg02 && buttonSecondaryLink ? (
+          <Button element="a" href={buttonSecondaryLink} type="secondary">
+            {buttonSecondaryPg02}
+          </Button>
+        ) : null}
       </Fragment>
     )
   }
@@ -199,6 +204,8 @@ export const pageQuery = graphql`
         textBelowPg02
         buttonPg02
         buttonLink
+        buttonSecondaryPg02
+        buttonSecondaryLink
         bgImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

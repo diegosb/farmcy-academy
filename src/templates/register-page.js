@@ -267,13 +267,15 @@ const RegisterForm = () => {
         >
           {thirdStep.buttonText}
         </RegisterButton>
-        <RegisterButton
-          element="a"
-          type="secondary"
-          href="https://pay.hotmart.com/N14071437L?off=kbvq445x&checkoutMode=10"
-        >
-          {thirdStep.buttonTextSecondary}
-        </RegisterButton>
+        {thirdStep.buttonTextSecondary ? (
+          <RegisterButton
+            element="a"
+            type="secondary"
+            href="https://pay.hotmart.com/N14071437L?off=kbvq445x&checkoutMode=10"
+          >
+            {thirdStep.buttonTextSecondary}
+          </RegisterButton>
+        ) : null}
       </Success>
     )
   }

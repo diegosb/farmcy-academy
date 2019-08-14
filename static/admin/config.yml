@@ -152,7 +152,7 @@ collections:
             {label: "Título", name: title, widget: string},
             {label: "Texto", name: text, widget: string},
             {label: "Texto botão", name: buttonText, widget: string},
-            {label: "Texto botão secundário", name: buttonTextSecondary, widget: string}
+            {label: "Texto botão secundário", name: buttonTextSecondary, widget: string, required: false}
             ]}
 
   - name: "landings"
@@ -166,12 +166,14 @@ collections:
         - {label: "Título da aba na página", name: "titlePage", widget: "string"}
         - {label: "Descrição da página", name: "descriptionPage", widget: "string"}
         - {label: "Imagem de fundo das páginas", name: "bgImage", widget: "image", required: false}
-        - {label: "Texto acima do vídeo na página 01", name: "textAbovePg1", widget: "markdown"}
-        - {label: "Código do vídeo Youtube página 01", name: "youtubePg01", widget: "string"}
-        - {label: "Texto abaixo do vídeo na página 01", name: "textBelowPg01", widget: "markdown"}
+        - {label: "Texto acima do vídeo na página 01", name: "textAbovePg1", widget: "markdown", required: false}
+        - {label: "Código do vídeo Youtube página 01", name: "youtubePg01", widget: "string", required: false}
+        - {label: "Texto abaixo do vídeo na página 01", name: "textBelowPg01", widget: "markdown", required: false}
         - {label: "Texto Botão página 01", name: "buttonPg01", widget: "string"}
-        - {label: "Texto acima do vídeo na página 02", name: "textAbovePg2", widget: "markdown"}
-        - {label: "Código do vídeo Youtube página 02", name: "youtubePg02", widget: "string"}
-        - {label: "Texto abaixo do vídeo na página 02", name: "textBelowPg02", widget: "markdown"}
+        - {label: "Texto acima do vídeo na página 02", name: "textAbovePg2", widget: "markdown", required: false}
+        - {label: "Código do vídeo Youtube página 02", name: "youtubePg02", widget: "string", required: false}
+        - {label: "Texto abaixo do vídeo na página 02", name: "textBelowPg02", widget: "markdown", required: false}
         - {label: "Texto Botão página 02", name: "buttonPg02", widget: "string"}
         - {label: "Link Botão página 02", name: "buttonLink", widget: "string"}
+        - {label: "Texto Botão secondário página 02", name: "buttonSecondaryPg02", widget: "string", required: false}
+        - {label: "Link Botão secondário página 02", name: "buttonSecondaryLink", widget: "string", required: false}

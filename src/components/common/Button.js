@@ -20,8 +20,16 @@ export default styled(
   padding: 0.857em 0;
   width: ${({ type }) => (type === 'transparent' ? '205px' : '320px')};
   border-radius: 5px;
-  background-color: ${({ theme, type }) =>
-    type === 'transparent' || type === 'secondary' ? 'transparent' : theme.colors.primary};
+  background-color: ${({ theme, type }) => {
+    switch (type) {
+      case 'transparent':
+        return 'transparent'
+      case 'secondary':
+        return theme.colors.darkest
+      default:
+        return theme.colors.primary
+    }
+  }};
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
   border: 1px solid
