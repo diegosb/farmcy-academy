@@ -120,16 +120,18 @@ const LandingPage = ({ data }) => {
     return (
       <Fragment>
         <HTMLContent content={textAbovePg1} />
-        <VideoSection>
-          <YouTube
-            videoId={youtubePg01}
-            opts={opts}
-            onPause={onEventChange}
-            onEnd={onEventChange}
-            onError={onEventChange}
-            onStateChange={onEventChange}
-          />
-        </VideoSection>
+        {youtubePg01 ? (
+          <VideoSection>
+            <YouTube
+              videoId={youtubePg01}
+              opts={opts}
+              onPause={onEventChange}
+              onEnd={onEventChange}
+              onError={onEventChange}
+              onStateChange={onEventChange}
+            />
+          </VideoSection>
+        ) : null}
         <HTMLContent content={textBelowPg01} />
         <Button
           onClick={() => {
@@ -147,17 +149,19 @@ const LandingPage = ({ data }) => {
     return (
       <Fragment>
         <HTMLContent content={textAbovePg2} />
-        <VideoSection>
-          <iframe
-            width="560"
-            height="315"
-            title="Youtube Urban Farmcy"
-            src={`https://www.youtube.com/embed/${youtubePg02}?controls=0`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </VideoSection>
+        {youtubePg02 ? (
+          <VideoSection>
+            <iframe
+              width="560"
+              height="315"
+              title="Youtube Urban Farmcy"
+              src={`https://www.youtube.com/embed/${youtubePg02}?controls=0`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </VideoSection>
+        ) : null}
         <HTMLContent content={textBelowPg02} />
         <Button element="a" href={buttonLink}>
           {buttonPg02}
