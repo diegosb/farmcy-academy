@@ -42,7 +42,7 @@ textBelowPg02: >-
   iniciada.</p>
 buttonPg02: EXPERIMENTE 7 DIAS GRÁTIS
 buttonLink: 'https://pay.hotmart.com/N14071437L?off=dicdq4lw&checkoutMode=10'
-buttonSecondaryPg02: EXPERIMENTE 7 DIAS GRÁTIS
-buttonSecondaryLink: 'https://pay.hotmart.com/N14071437L?off=dicdq4lw&checkoutMode=10'
+buttonSecondaryPg02: ''
+buttonSecondaryLink: ''
 ---
 
