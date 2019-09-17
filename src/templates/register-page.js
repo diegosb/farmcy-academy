@@ -124,19 +124,6 @@ const RegisterButton = styled(Button)`
     font-size: 16px;
   }
 `
-const VideoSection = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  iframe {
-    margin-bottom: 50px;
-    ${media.xs`
-      width: 100vw;
-      height: auto;
-    `};
-  }
-`
 
 const Success = styled.div`
   display: flex;
@@ -146,7 +133,7 @@ const Success = styled.div`
 `
 
 const RegisterForm = () => {
-  const { firstStep, secondStep, thirdStep } = useRegisterPage()
+  const { firstStep, thirdStep } = useRegisterPage()
   const [step, setStep] = useState(1)
   const [formFields, setFormField] = useState({
     nome: '',
@@ -195,13 +182,7 @@ const RegisterForm = () => {
 
   function renderForm() {
     return (
-      <Form
-        name="Formulario Novo - FarmcyAcademy"
-        method="post"
-        // data-netlify="true"
-        // data-netlify-honeypot="bot-field"
-        onSubmit={handleSubmit}
-      >
+      <Form name="Formulario Novo - FarmcyAcademy" method="post" onSubmit={handleSubmit}>
         <Label htmlFor="nome" hidden>
           Nome
         </Label>
@@ -240,22 +221,22 @@ const RegisterForm = () => {
     )
   }
 
-  function renderVideo() {
-    return (
-      <VideoSection>
-        <iframe
-          width="560"
-          height="315"
-          title="Youtube Urban Farmcy"
-          src={`https://www.youtube.com/embed/${secondStep.linkYT}?controls=0`}
-          frameBorder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-        <RegisterButton onClick={() => setStep(3)}>{secondStep.buttonText}</RegisterButton>
-      </VideoSection>
-    )
-  }
+  // function renderVideo() {
+  //   return (
+  //     <VideoSection>
+  //       <iframe
+  //         width="560"
+  //         height="315"
+  //         title="Youtube Urban Farmcy"
+  //         src={`https://www.youtube.com/embed/${secondStep.linkYT}?controls=0`}
+  //         frameBorder="0"
+  //         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  //         allowFullScreen
+  //       />
+  //       <RegisterButton onClick={() => setStep(3)}>{secondStep.buttonText}</RegisterButton>
+  //     </VideoSection>
+  //   )
+  // }
 
   function renderSuccess() {
     return (
@@ -281,20 +262,15 @@ const RegisterForm = () => {
   }
 
   function renderTitle() {
-    switch (step) {
-      case 1:
-        return firstStep.title
-      case 2:
-        return secondStep.title
-      default:
-        return thirdStep.title
+    if (step === 1) {
+      return firstStep.title
     }
+    return thirdStep.title
   }
 
   const steps = {
     1: renderForm(),
-    2: renderVideo(),
-    3: renderSuccess(),
+    2: renderSuccess(),
   }
   return (
     <Layout noFooter>

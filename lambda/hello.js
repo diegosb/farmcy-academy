@@ -1,4 +1,3 @@
-/* eslint-disable */
 !(function(e, r) {
   for (var t in r) e[t] = r[t]
 })(
@@ -26,7 +25,11 @@
         if ((1 & r && (e = t(e)), 8 & r)) return e
         if (4 & r && 'object' == typeof e && e && e.__esModule) return e
         var n = Object.create(null)
-        if ((t.r(n), Object.defineProperty(n, 'default', { enumerable: !0, value: e }), 2 & r && 'string' != typeof e))
+        if (
+          (t.r(n),
+          Object.defineProperty(n, 'default', { enumerable: !0, value: e }),
+          2 & r && 'string' != typeof e)
+        )
           for (var o in e)
             t.d(
               n,
@@ -57,13 +60,13 @@
   })([
     function(e, r, t) {
       'use strict'
-      function n(e, r, t) {
-        console.log('queryStringParameters', e.queryStringParameters),
-          t(null, { statusCode: 200, body: JSON.stringify({ msg: 'Hello, World! ' + Math.round(10 * Math.random()) }) })
-      }
-      t.r(r),
-        t.d(r, 'handler', function() {
-          return n
+      ;(r.__esModule = !0),
+        (r.handler = function(e, r, t) {
+          console.log('queryStringParameters', e.queryStringParameters),
+            t(null, {
+              statusCode: 200,
+              body: JSON.stringify({ msg: `Hello, World! ${Math.round(10 * Math.random())}` }),
+            })
         })
     },
   ]),

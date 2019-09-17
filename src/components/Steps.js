@@ -19,7 +19,7 @@ const StepsWrapper = styled.div`
     content: '';
     left: 0;
     height: 1px;
-    width: 50%;
+    width: 100%;
     background: ${({ theme, activeStep }) =>
       activeStep > 1 ? theme.colors.primary : theme.colors.darkText};
   }
@@ -28,7 +28,7 @@ const StepsWrapper = styled.div`
     right: 0;
     content: '';
     height: 1px;
-    width: 50%;
+    width: 0%;
     background: ${({ theme, activeStep }) =>
       activeStep > 2 ? theme.colors.primary : theme.colors.darkText};
   }
@@ -68,9 +68,6 @@ const Steps = ({ step }) => (
       <img src={check} alt="Check" />
     </Step>
     <Step activeStep={step} step={2}>
-      <img src={check} alt="Check" />
-    </Step>
-    <Step activeStep={step} step={3}>
       <img src={check} alt="Check" />
     </Step>
   </StepsWrapper>
