@@ -29,7 +29,7 @@ textAbovePg2: >-
 
   <p>Assista o vídeo a seguir e entenda um pouco mais sobre o que estamos
   falando.</p>
-youtubePg02: Y--oWxd0N9o
+youtubePg02: ''
 textBelowPg02: >-
   <p>Você ja experimentou o potencial máximo da sua saúde?</p>
 
