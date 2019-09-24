@@ -1,6 +1,6 @@
 ---
 templateKey: landing-page
-title: curso-drericslywitch
+title: ofertaverao
 titlePage: Farmcy Academy
 descriptionPage: 'VERÃO: Uma estação que encoraja transformações!'
 bgImage: /img/bg_impactosocial.png
@@ -13,7 +13,7 @@ textAbovePg1: >-
   anos. Sabemos que isso não existe e, por isso, queremos proporcionar a
   oportunidade de você transformar seus hábitos de forma genuína, com autonomia
   e consistência.</h2>
-youtubePg01: l4h7NQO-gz4
+youtubePg01: Y--oWxd0N9o
 textBelowPg01: ''
 buttonPg01: SAIBA MAIS
 textAbovePg2: >-
