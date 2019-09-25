@@ -15,7 +15,7 @@ const Logo = styled.img`
   margin-bottom: 50px;
 `
 
-const LandingSection = styled(BackgroundImage)`
+const LandingSection = styled.section`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -177,14 +177,29 @@ const LandingPage = ({ data }) => {
 
   return (
     <Layout noFooter setDescription={descriptionPage} setTitle={titlePage}>
-      <LandingSection Tag="section" fluid={bgImage.childImageSharp.fluid}>
-        <Container>
-          <Link to="/">
-            <Logo src={logo} alt="Logo" />
-          </Link>
-          {page === 1 ? renderPageOne() : renderPageTwo()}
-        </Container>
-      </LandingSection>
+      {bgImage ? (
+        <LandingSection
+          as={BackgroundImage}
+          Tag="section"
+          fluid={bgImage ? bgImage.childImageSharp.fluid : null}
+        >
+          <Container>
+            <Link to="/">
+              <Logo src={logo} alt="Logo" />
+            </Link>
+            {page === 1 ? renderPageOne() : renderPageTwo()}
+          </Container>
+        </LandingSection>
+      ) : (
+        <LandingSection>
+          <Container>
+            <Link to="/">
+              <Logo src={logo} alt="Logo" />
+            </Link>
+            {page === 1 ? renderPageOne() : renderPageTwo()}
+          </Container>
+        </LandingSection>
+      )}
     </Layout>
   )
 }
