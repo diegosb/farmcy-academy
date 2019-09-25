@@ -15,17 +15,8 @@ textAbovePg1: >-
   e consistência.</p>
 youtubePg01: Y--oWxd0N9o
 buttonPg01: SAIBA MAIS
-textAbovePg2: >-
-  “A mídia faz a gente achar que precisa de algumas coisas enquanto, na
-  realidade, a gente não precisa. E conseguir essa libertação é algo muito
-  prazeroso, quando você percebe. Essas mudanças que a gente faz, baseadas no
-  esforço pessoal, elas trazem uma sensação de bem-estar, de poder pessoal
-  mesmo, que ninguém tira. É diferente você emagrecer com remédio e emagrecer
-  porque mudou seu estilo de vida e alimentação. O que a pessoa sente, em termos
-  de poder pessoal, é muito grande. Então, assumir a sua vida, no sentido de
-  promover saúde com seus atos, é o que a gente busca quando pensamos em uma
-  mudança que seja realmente continuada, que seja uma mudança que possa durar a
-  vida inteira.” - Dr. Eric Slywitch - médico especialista em nutrologia.
+textAbovePg2: ''
+youtubePg02: QW6JpGRkqPY
 textBelowPg02: >-
   <h2><p>O início da mudança que você sempre desejou para a sua saúde está a
   poucos cliques de ser iniciada.</p></h2>
