@@ -8,11 +8,11 @@ textAbovePg1: >-
   <h1>Que tal começar a transformar a sua saúde neste verão?</h1>
 
 
-  A internet está está cheia de informações duvidosas, dietas milagrosas,
+  <p>A internet está está cheia de informações duvidosas, dietas milagrosas,
   fórmulas mágicas para você mudar, em poucos meses, hábitos construídos por
   anos. Sabemos que isso não existe e, por isso, queremos proporcionar a
   oportunidade de você transformar seus hábitos de forma genuína, com autonomia
-  e consistência.
+  e consistência.</p>
 youtubePg01: Y--oWxd0N9o
 buttonPg01: SAIBA MAIS
 textAbovePg2: >-
