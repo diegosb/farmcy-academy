@@ -59,6 +59,6 @@ textBelowPg02: >-
 
   INICIE A SUA TRANSFORMAÇÃO ATRAVÉS DE UM PLANO TRIMESTRAL DA FARMCY ACADEMY!
 buttonPg02: ACESSAR
-buttonLink: farmcyacademy.com.br
+buttonLink: 'https://farmcyacademy.com.br'
 ---
 
