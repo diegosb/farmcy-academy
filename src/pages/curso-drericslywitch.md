@@ -33,10 +33,14 @@ textBelowPg02: >-
   cliques de ser iniciada.
 
 
+
+
   A sensação de bem-estar, conquistada quando nos desafiamos a mudar, tem grande
   potencial para criar novos hábitos definitivos. E nada melhor do que estar
   munido com informações seguras, sólidas e verdadeiras para começar a
   transformar a sua saúde com respeito pelo seu corpo e pelo meio ambiente.
+
+
 
 
   Aprenda como se livrar do hábito de comer doces, como praticar jejum
@@ -45,10 +49,14 @@ textBelowPg02: >-
   microbiota intestinal e muito mais!
 
 
+
+
   Reunimos as principais autoridades do mundo para ensinar você a transformar a
   sua saúde! Já são mais de 80 especialistas do mundo inteiro e mais de 100
   horas de conteúdo gravado com o conhecimento e esclarecimentos necessários
   para ajudar você a promover a mudança de vida que sempre desejou.
+
+
 
 
   INICIE A SUA TRANSFORMAÇÃO ATRAVÉS DE UM PLANO TRIMESTRAL DA FARMCY ACADEMY!
