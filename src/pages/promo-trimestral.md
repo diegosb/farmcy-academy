@@ -18,8 +18,8 @@ buttonPg01: SAIBA MAIS
 textAbovePg2: ''
 youtubePg02: QW6JpGRkqPY
 textBelowPg02: >-
-  <h2><p>O início da mudança que você sempre desejou para a sua saúde está a
-  poucos cliques de ser iniciada.</p></h2>
+  ## O início da mudança que você sempre desejou para a sua saúde está a poucos
+  cliques de ser iniciada.
 
 
   <p>A sensação de bem-estar, conquistada quando nos desafiamos a mudar, tem
@@ -40,8 +40,8 @@ textBelowPg02: >-
   para ajudar você a promover a mudança de vida que sempre desejou.</p>
 
 
-  <h2><p>INICIE A SUA TRANSFORMAÇÃO ATRAVÉS DE UM PLANO TRIMESTRAL DA FARMCY
-  ACADEMY!</p></h2>
+  <p>**INICIE A SUA TRANSFORMAÇÃO ATRAVÉS DE UM PLANO TRIMESTRAL DA FARMCY
+  ACADEMY!**</p>
 buttonPg02: ACESSAR
 buttonLink: 'https://farmcyacademy.com.br'
 ---
