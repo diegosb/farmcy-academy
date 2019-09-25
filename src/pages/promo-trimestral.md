@@ -27,8 +27,8 @@ textAbovePg2: >-
   mudança que seja realmente continuada, que seja uma mudança que possa durar a
   vida inteira.” - Dr. Eric Slywitch - médico especialista em nutrologia.
 textBelowPg02: >-
-  <p>O início da mudança que você sempre desejou para a sua saúde está a poucos
-  cliques de ser iniciada.</p>
+  <h2><p>O início da mudança que você sempre desejou para a sua saúde está a
+  poucos cliques de ser iniciada.</p></h2>
 
 
   <p>A sensação de bem-estar, conquistada quando nos desafiamos a mudar, tem
@@ -49,8 +49,8 @@ textBelowPg02: >-
   para ajudar você a promover a mudança de vida que sempre desejou.</p>
 
 
-  <p>INICIE A SUA TRANSFORMAÇÃO ATRAVÉS DE UM PLANO TRIMESTRAL DA FARMCY
-  ACADEMY!</p>
+  <h2><p>INICIE A SUA TRANSFORMAÇÃO ATRAVÉS DE UM PLANO TRIMESTRAL DA FARMCY
+  ACADEMY!</p></h2>
 buttonPg02: ACESSAR
 buttonLink: 'https://farmcyacademy.com.br'
 ---
