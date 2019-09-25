@@ -46,7 +46,8 @@ textBelowPg02: >-
 
 
   UM PLANO TRIMESTRAL DA FARMCY ACADEMY!</p>
-buttonPg02: ACESSAR
-buttonLink: 'https://farmcyacademy.com.br'
+buttonPg02: COMEÇAR AGORA
+buttonLink: >-
+  https://pay.hotmart.com/N14071437L?off=u0evllbc&checkoutMode=0&bid=1569447801908
 ---
 
