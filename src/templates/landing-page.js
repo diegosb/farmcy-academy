@@ -19,13 +19,13 @@ const LandingSection = styled.section`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: ${({ bgColor }) => bgColor || '#000'};
   width: 100vw;
   min-height: 100vh;
   padding: 50px 0;
   overflow-y: auto;
   overflow-x: hidden;
-  color: ${({ theme }) => theme.colors.lightText};
+  color: ${({ theme, letterColor }) => letterColor || theme.colors.lightText};
   > div {
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ const LandingSection = styled.section`
   span,
   small {
     text-align: center;
-    color: ${({ theme }) => theme.colors.lightText};
+    color: ${({ theme, letterColor }) => letterColor || theme.colors.lightText};
     max-width: 650px;
     font-weight: ${({ theme }) => theme.font.weight.regular};
     > strong {
@@ -100,6 +100,8 @@ const LandingPage = ({ data }) => {
     youtubePg01,
     youtubePg02,
     bgImage,
+    bgColor,
+    letterColor,
   } = landing
 
   function renderPageOne() {
@@ -182,6 +184,8 @@ const LandingPage = ({ data }) => {
           as={BackgroundImage}
           Tag="section"
           fluid={bgImage ? bgImage.childImageSharp.fluid : null}
+          bgColor={bgColor}
+          letterColor={letterColor}
         >
           <Container>
             <Link to="/">
@@ -191,7 +195,7 @@ const LandingPage = ({ data }) => {
           </Container>
         </LandingSection>
       ) : (
-        <LandingSection>
+        <LandingSection bgColor={bgColor} letterColor={letterColor}>
           <Container>
             <Link to="/">
               <Logo src={logo} alt="Logo" />
@@ -225,6 +229,8 @@ export const pageQuery = graphql`
         buttonLink
         buttonSecondaryPg02
         buttonSecondaryLink
+        bgColor
+        letterColor
         bgImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {

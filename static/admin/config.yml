@@ -177,3 +177,5 @@ collections:
         - {label: "Link Botão página 02", name: "buttonLink", widget: "string"}
         - {label: "Texto Botão secondário página 02", name: "buttonSecondaryPg02", widget: "string", required: false}
         - {label: "Link Botão secondário página 02", name: "buttonSecondaryLink", widget: "string", required: false}
+        - {label: "Cor de fundo na página (HEX Code)", name: "bgColor", widget: "string", required: false}
+        - {label: "Cor da letra na página (HEX Code)", name: "letterColor", widget: "string", required: false}
