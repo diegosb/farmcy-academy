@@ -49,5 +49,7 @@ textBelowPg02: >-
 buttonPg02: COMEÇAR AGORA
 buttonLink: >-
   https://pay.hotmart.com/N14071437L?off=u0evllbc&checkoutMode=0&bid=1569447801908
+bgColor: '#E85600'
+letterColor: '#FFFFFF'
 ---
 
