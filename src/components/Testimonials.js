@@ -48,7 +48,9 @@ const Testimonials = ({ buttonText, description, title, testimonialList }) => (
         />
       ))}
     </UsersTestimonials>
-    <Button element={<Link to="/registro" />}>{buttonText}</Button>
+    <Button element={<Link to="/registro" />} disabled>
+      {buttonText}
+    </Button>
   </TestimonialsSection>
 )
 

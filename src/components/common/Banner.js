@@ -38,7 +38,9 @@ const Text = styled.h3`
 const Banner = ({ title, buttonText }) => (
   <BannerSection bgColor="dark">
     <Text>{title}</Text>
-    <Button element={<Link to="/registro" />}>{buttonText}</Button>
+    <Button element={<Link to="/registro" />} disabled>
+      {buttonText}
+    </Button>
   </BannerSection>
 )
 

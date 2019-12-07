@@ -54,7 +54,9 @@ const Member = ({ bgImage, title, description, buttonText, titleCTA }) => (
         <HTMLContent content={description} />
       </TextInfo>
       <Heading color="white">{titleCTA}</Heading>
-      <Button element={<Link to="/registro" />}>{buttonText}</Button>
+      <Button element={<Link to="/registro" />} disabled>
+        {buttonText}
+      </Button>
     </Container>
   </MemberSection>
 )

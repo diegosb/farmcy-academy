@@ -40,7 +40,8 @@ export default styled(
     type === 'transparent' ? theme.font.weight.light : theme.font.weight.bold};
   transition: background-color 250ms ease, color 250ms ease;
   text-decoration: none;
-  cursor: pointer;
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
   display: flex;
   justify-content: center;
   align-items: center;

@@ -94,7 +94,9 @@ const Hero = ({ bgImage, bgImageMobile, title, buttonText, callActionSmall, call
                 <CTAText callActionSmall={callActionSmall} callActionBig={callActionBig} />
               </Col>
             </Row>
-            <Button element={<Link to="registro" />}>{buttonText}</Button>
+            <Button element={<Link to="registro" />} disabled>
+              {buttonText}
+            </Button>
           </Col>
         </Row>
         <Bottom>
