@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 hero:
-  buttonText: Acesse todo o conteúdo
+  buttonText: Vagas Encerradas
   callActionBig: 7 dias grátis.
   callActionSmall: Tenha acesso ilimitado por
   heading: >-
@@ -50,28 +50,28 @@ howItWorks:
   heading: 'Ao assinar a Farmcy Academy, você receberá instantaneamente:'
   title: Como funciona
 banner:
-  buttonText: Experimente agora
+  buttonText: Vagas Encerradas
   title: Tenha acesso ilimitado por 7 dias grátis
 bannerSpecialist:
-  buttonText: Experimente agora
+  buttonText: Vagas Encerradas
   secondaryTitle: >-
     Outras dezenas de especialistas já fazem parte da plataforma Farmcy Academy,
     e você está a poucos cliques de garantir 7 dias de acesso grátis.
   title: Tenha 7 dias grátis de acesso ilimitado a todos os especialistas.
 bannerCourse:
-  buttonText: Experimente agora
+  buttonText: Vagas Encerradas
   secondaryTitle: >-
     Outros cursos já fazem parte da plataforma Farmcy Academy, e você está a
     poucos cliques de garantir 7 dias de acesso grátis.
   title: Tenha 7 dias grátis de acesso ilimitado a todos os cursos.
 member:
   bgImage: /img/bg_impactosocial.png
-  buttonText: Inscreva-se agora
+  buttonText: Vagas Encerradas
   description: ' <p>Parte da sua mensalidade é destinada para a produção de uma série totalmente gratuita, que tem a missão de levar conhecimento e informação sobre alimentação e saúde para todos os brasileiros.</p><p>Além de melhorar a sua qualidade de vida, você possibilita que muitas outras pessoas também adquiram conhecimento para transformar suas vidas.</p><p>Até agora, já são mais de 50 mil pessoas impactadas.</p>'
   title: Uma decisão de impacto social
   titleCTA: Seja um membro e financie essa causa
 testimonials:
-  buttonText: Inscreva-se agora
+  buttonText: Vagas Encerradas
   description: Faça parte da mudança e transforme sua vida agora
   testimonialList:
     - name: Flavio Souza
@@ -99,3 +99,4 @@ testimonials:
         explicativos.
   title: Conheça quem já faz parte da jornada
 ---
+
