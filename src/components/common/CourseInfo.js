@@ -83,7 +83,7 @@ const ListItem = styled.li`
   }
 `
 
-const CourseInfo = ({ title, description, details, buttonTextList }) => (
+const CourseInfo = ({ title, description, details }) => (
   <CourseSection>
     <Row center="xs" start="sm">
       <Col xs={12}>
@@ -110,7 +110,9 @@ const CourseInfo = ({ title, description, details, buttonTextList }) => (
             </ListItem>
           ))}
         </List>
-        <Button element={<Link to="/registro" />}>{buttonTextList}</Button>
+        <Button element={<Link to="/registro" />} disabled>
+          Vagas Encerradas
+        </Button>
       </Col>
     </Row>
   </CourseSection>
@@ -118,7 +120,6 @@ const CourseInfo = ({ title, description, details, buttonTextList }) => (
 CourseInfo.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  buttonTextList: PropTypes.string.isRequired,
   details: PropTypes.shape({
     icon: PropTypes.string,
     text: PropTypes.string,

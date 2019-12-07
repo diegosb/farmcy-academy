@@ -83,7 +83,9 @@ const HeroDetails = ({
             <Col xs={12}>
               <CTAText callActionSmall={callActionSmall} callActionBig={callActionBig} />
             </Col>
-            <Button element={<Link to="/registro" />}>{buttonText}</Button>
+            <Button element={<Link to="/registro" />} disabled>
+              {buttonText}
+            </Button>
           </Row>
         </Col>
       </Row>

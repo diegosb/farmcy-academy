@@ -48,7 +48,9 @@ const BannerSpecialist = ({ buttonText, secondaryTitle, title }) => (
   <BannerSection bgColor="darkest">
     <Text>{title}</Text>
     <SubText>{secondaryTitle}</SubText>
-    <Button element={<Link to="/registro" />}>{buttonText}</Button>
+    <Button element={<Link to="/registro" />} disabled>
+      {buttonText}
+    </Button>
   </BannerSection>
 )
 
