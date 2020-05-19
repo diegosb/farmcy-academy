@@ -4,7 +4,7 @@ title: Dania Schumman
 thumbnailDescription: As respostas de
 thumbnailImage: /img/dania_schumann.jpg
 bgImage: /img/daniaschumann1.jpg
-titleLanding: Aprenda sobre saúde e alimentação com Dania Schumman
+titleLanding: Aprenda sobre saúde com Dania Schumman
 curriculum: >-
   Cientista nutricional e apreciadora da alimentação plant-based, acredita no
   estilo de vida saudável de forma holística, abordando temas como alimentação,
